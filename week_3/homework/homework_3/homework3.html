@@ -8,6 +8,57 @@
 
       /* vw is the size unit, it changes based on your current screen size. The bigger screen the font will be bigger and vice versa. */
     }
+
+    .container {
+      display: flex;
+    }
+
+    .box {
+      width: 50%;
+    }
+
+    .box1-content {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .box2-content {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 40px;
+    }
+
+    .box2-content .box2-insd-container {
+      width: 40vw;
+      border-left: 7px solid black;
+      border-top: 7px solid black;
+      border-bottom: 7px solid black;
+    }
+
+    .box2-insd-container .box2-content-layout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box2-content-layout .box2-insd-content {
+      display: block;
+      text-align: end;
+      padding: 20px;
+      margin-right: -40px;
+    }
+
+    .box2-insd-content h1 {
+      padding-bottom: 10px;
+      font-size: 3vmax;
+    }
+
+    .box2-insd-content .content-head {
+      font-weight: bold;
+    }
   </style>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <!-- <link
@@ -16,49 +67,23 @@
         /> -->
 </head>
 <body>
-  <div style="display: flex">
-    <div style="width: 50%">
-      <div style="height: 100vh; display: flex; align-items: center">
+  <div class="container">
+    <div class="box">
+      <div class="box1-content">
         <img src="images/homework_3.jpg" alt="homework_3.jpg" width="99%" />
       </div>
     </div>
-    <div style="width: 50%">
-      <div
-        style="
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          padding-right: 40px;
-        "
-      >
-        <div
-          style="
-            width: 40vw;
-            border-left: 7px solid black;
-            border-top: 7px solid black;
-            border-bottom: 7px solid black;
-          "
-        >
-          <div
-            style="display: flex; align-items: center; justify-content: center"
-          >
-            <div
-              style="
-                display: block;
-                text-align: end;
-                padding: 20px;
-                margin-right: -40px;
-              "
-            >
-              <h1 style="padding-bottom: 10px; font-size: 3vmax">
-                CONNECT WITH US
-              </h1>
-              <p style="font-weight: bold">Mailing Addres</p>
+    <div class="box">
+      <div class="box2-content">
+        <div class="box2-insd-container">
+          <div class="box2-content-layout">
+            <div class="box2-insd-content">
+              <h1>CONNECT WITH US</h1>
+              <p class="content-head">Mailing Addres</p>
               <p>123 Anywhere St., Any City, State, Country 12345</p>
-              <p style="font-weight: bold">Email Address</p>
+              <p class="content-head">Email Address</p>
               <p>hello@reallygretsite.com</p>
-              <p style="font-weight: bold">Phone Number</p>
+              <p class="content-head">Phone Number</p>
               <p>(123) 456 7890</p>
             </div>
           </div>
