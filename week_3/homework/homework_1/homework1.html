@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 1</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        /* If Lato not available, use sans-serif */
+        font-size: 3vw;
+        /* vw is the size unit, it changes based on your current screen size. The bigger screen the font will be bigger and vice versa. */
+      }
+
+      .container {
+        /* Target those elements containing class (dot) called 'container' */
+        display: flex;
+        /* This is the magic to make the 2 div align horizontally */
+      }
+
+      .container .box {
+        /* All the .box under .container */
+        width: 50%;
+        padding-top: 120px;
+      }
+
+      .container .box-1 {
+        border: solid 7px black;
+        border-left: solid 7px white;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container .box1-content {
+        width: 80%;
+      }
+
+      .container .box2-content {
+        margin-top: -120px;
+        padding-left: 75px;
+      }
+
+      h1 {
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 50%;
+        font-weight: bold;
+        margin-top: -50px;
+        padding-bottom: 50px;
+        padding-left: 18px;
+      }
+    </style>
+    <!-- this is HTML Comment 
+         The 2 lines below is to install Google Fonts. 
+         For all font in your homeworks, use Lato (as above)
+        -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="box1" class="box">
+        <div class="box-1">
+          <div class="box1-content">
+            <h1>MERLAND FURNITURE</h1>
+            <p>Furniture, decor, and beyond</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="box2" class="box">
+          <div class="box2-content">
+            <img src="images/homework_1.jpg" alt="homework_1.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
