@@ -1,0 +1,112 @@
+#container {
+    background-color: #F1F1F1;
+    max-width: 1024px; /*can smaller, but width up to 1024 only */
+    margin: auto; /*horizontally center*/
+  }
+  
+.header {
+  text-align: center;
+  padding: 20px;
+  background-image: url("../images/background.jpg");
+  background-size: 1085px 280px;
+  /* background-size: cover; */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: black;
+  margin-top: -20px;
+}
+
+/* The navbar container */
+.topnav {
+  display: flex;
+  background-color: #333;
+  /* flex-direction: row-reverse; */
+  /* flex-wrap: wrap; */
+  padding: 14px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar links */
+.topnav a { /*not only the next generation, include next next next .....*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* width: 200px; */
+}
+
+/* .topnav .end{
+  width: 69%;
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
+/* .topnav .end{
+  margin-left: 63%;
+} */
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+}
+
+/* Column */
+.column {
+  width: 25%;
+}
+
+#column1 {
+  width: 50%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  /* .row {
+  display: block;
+  } */
+
+  .row{
+    flex-direction: column;
+  }
+
+  .column {
+	width: 100%;
+  }
+}
+
+
+/* Row */
+/* .row2 {
+  display: flex;
+} */
+
+/* Row */
+/* .column2 {
+  width: 33.33%;
+} */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+/* @media screen and (max-width: 600px) {
+  .row2 {
+  display: block;
+  }
+
+  .column2{
+    width: 100%;
+  }
+} */
+
+
+
+
+  
