@@ -6948,7 +6948,7 @@ textarea.form-control-lg {
 }
 
 .w-50 {
-  width: 50% !important;
+  width: 50%;
 }
 
 .w-75 {
@@ -11494,13 +11494,13 @@ header.masthead h1, header.masthead .h1 {
   }
 
   .homework-item{
-    width: 50%;
+    max-width: 50%;
   }
 }
 
 @media (max-width: 400px){
   .homework-item{
-    width: 100%;
+    min-width: 100%;
   }
 }
 
