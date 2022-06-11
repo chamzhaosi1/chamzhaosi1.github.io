@@ -1,0 +1,135 @@
+.container {
+    max-width: 1024px;
+    padding: 10px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #de857e;
+    min-width: 280PX;
+}
+
+h1{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.phone_num {
+    text-align: center;
+}
+
+.phone_num h1{
+    background-color: #deae7e;
+    text-transform: uppercase;
+}
+
+.menu{
+    background-color: #f0fc6d;
+    text-align: center;
+}
+
+.image_slide{
+    background-color: #b5fc6d;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flat_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+}
+
+.flat{
+    width: 24%;
+    min-height: 150px;
+    background-color: #6dfc82;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_content{
+    width: 67%;
+    min-height: 300px;
+    background-color: #6dfcee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar{
+    min-width: 30%;
+    min-height: 300px;
+    background-color: #6d6dfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #c86dfc;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .flat_container{
+        flex-wrap: wrap;
+    }
+
+    .flat{
+        width: 48%;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-wrap: wrap; 
+    }
+
+    .logo {
+        width: 100%;  
+    }
+
+    .phone_num {
+        width: 100%;
+        margin-bottom: -20px;
+    }
+
+    .flat{
+        width: 100%;
+    }
+
+    .content_container{
+        flex-wrap: wrap;
+    }
+
+    .text_content{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
