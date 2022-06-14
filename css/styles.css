@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #f4623a;
+  --bs-primary: 109, 114, 222;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -41,13 +41,13 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 244, 98, 58;
+  --bs-primary-rgb: 109, 114, 222;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 82, 94, 168;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -236,11 +236,12 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  color: #8452a8;
   text-decoration: underline;
+  word-wrap: break-word;
 }
 a:hover {
-  color: #c34e2e;
+  color: #ab7e44
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3032,32 +3033,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: #628fde;
+  border-color: #628fde;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #cf5331;
-  border-color: #c34e2e;
+  background-color: #6273de;
+  border-color: #6273de;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #cf5331;
-  border-color: #c34e2e;
-  box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
+  background-color: #6273de;
+  border-color: #6273de;
+  box-shadow: 0 0 0 0.25rem rgba(98, 115, 222, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #c34e2e;
-  border-color: #b74a2c;
+  background-color: #6273de;
+  border-color: #6273de;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(98, 115, 222, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: #6273de;
+  border-color: #6273de;
 }
 
 .btn-secondary {
@@ -11319,7 +11320,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #6dde71;
   opacity: 1;
 }
 
@@ -11389,6 +11390,9 @@ hr.divider-light {
   }
 }
 
+
+
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -11418,6 +11422,15 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.7) 0%, rgba(92, 77, 66, 0.7) 100%), url("../images/mobile_view.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
   }
 }
 
@@ -11498,7 +11511,7 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 480px){
   .homework-item{
     min-width: 100%;
   }
@@ -11509,5 +11522,28 @@ span{
   color: black;
   font-style: italic;
   font-size: xx-large;
+}
+
+audio{
+  position: fixed;
+  bottom:0;
+  right: 0;
+  opacity: 0.5;
+}
+
+audio:hover{
+  opacity: 0.9;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: #a0276e;
+  color: #a0276e;
+}
+
+@media (max-width: 480px){
+  audio{
+    max-width: 100px;
+  }
 }
 
