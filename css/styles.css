@@ -11547,3 +11547,19 @@ audio::-webkit-media-controls-panel {
   }
 }
 
+.bd-frame-hover:hover{
+  box-shadow: 0px 0px 20px 10px  rgba(255, 255, 255, 0.5);
+}
+
+.window-btn:hover{
+  animation: mycolorbtn 3s infinite;
+}
+
+@keyframes mycolorbtn {
+  0% {background-color: rgba(255, 0, 0, 0.2)}
+  25% {background-color: rgba(255, 0, 0, 0.6)}
+  50% {background-color: rgba(255, 0, 0, 0.8)}
+  75% {background-color: rgba(255, 0, 0, 0.6)}
+  100% {background-color: rgba(255, 0, 0, 0.2)}
+
+}
