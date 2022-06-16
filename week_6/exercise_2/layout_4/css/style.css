@@ -1,6 +1,10 @@
+.blog_menu{
+    grid-area: blog_menu;
+}
+
 .logo{
     grid-area: logo;
-    height: 150px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,10 +15,14 @@
     align-items: center;
     justify-content: center;
     max-height: 20px;
-    margin-top: 80px;
 }
 .menu{
     grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 20px;
+    margin-top: 40px;
 }
 .image_slideshow{
     grid-area: image_slideshow;
@@ -23,37 +31,9 @@
     align-items: center;
     justify-content: center;
 }
-.flat_1{
-    grid-area: flat_1;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.flat_2{
-    grid-area: flat_2;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.flat_3{
-    grid-area: flat_3;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.flat_4{
-    grid-area: flat_4;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .sidebar{
     grid-area: sidebar;
-    height: 400px;
+    height: 658px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,6 +47,10 @@
 }
 .footer{
     grid-area: footer;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-container > div {
@@ -80,14 +64,14 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-      'logo empty empty phone'
-      'menu menu menu menu'
-      'image_slideshow image_slideshow image_slideshow image_slideshow'
-      'flat_1 flat_2 flat_3 flat_4'
-      'text_content text_content text_content sidebar '
-      'footer footer footer footer';
-    gap: 10px;
-    background-color: orange;
+    'blog_menu blog_menu blog_menu'
+    'logo empty phone'
+    'logo menu menu'
+    'image_slideshow image_slideshow sidebar'
+    'text_content text_content sidebar '
+    'footer footer footer';
+    gap: 20px;
+    background-color: green;
     padding: 10px;
   }
   
