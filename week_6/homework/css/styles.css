@@ -266,7 +266,7 @@
 }
 
 .thrid_container .below_container{
-    height: 617px;
+    height: 1000px;
     background-image: url("../images/thrid_container_bg_img.png");
     
 }
@@ -286,13 +286,15 @@
     padding: 20px;
     box-shadow: 0px 5px 10px lightgray;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 }
 
 .thrid_container .below_container .inside_container .box img{
     margin: auto;
+    margin-top: 9px;
+    margin-bottom: 18px;
 }
 
 .thrid_container .below_container .inside_container .box h5{
@@ -301,29 +303,278 @@
     margin-top: 20px ;
 }
 
-.thrid_container .below_container .inside_container .box .btn-box{
+.thrid_container .below_container .inside_container .box .btn_box_container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.thrid_container .below_container .inside_container .box .btn_box_container .btn-box{
     background-image: url("../images/Rectangle_8@2x.png");
     background-repeat: no-repeat;
     padding: 10px 10px 0px 10px;
     display: flex;
-    margin-left: 200px;
+    margin-left: 160px;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 40%;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
-
-.thrid_container .below_container .inside_container .box .btn-box a{
+.thrid_container .below_container .inside_container .box .btn_box_container .btn-box a{
     text-decoration: none;
 }
 
-.thrid_container .below_container .inside_container .box .btn-box a h6{
+.thrid_container .below_container .inside_container .box .btn_box_container .btn-box a h6{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     margin-top: 6px;
     margin-bottom: 15px;
     color: white;
     text-decoration: none;
+}
+
+.four_container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(236,234,255,255);
+}
+
+.four_container .above_container{
+    text-align: center;
+}
+
+.four_container .above_container h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: rgba(148,143,225,255);
+    margin: 0px ;
+    margin-top: 40px;
+}
+
+.four_container .above_container h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+    margin-bottom: 18px;
+    margin-top: 0px;
+}
+
+.four_container .below_container{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.four_container .below_container .below_box{
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    margin: 30px 60px;
+}
+
+.four_container .below_container .below_box h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 40px;
+}
+
+.four_container .below_container .below_box p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    color: rgba(150,155,170,255);
+    margin: 10px;
+}
+
+.four_container .below_container .below_box h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin: 20px;
+    color: rgba(18,5,224,255);
+}
+
+.four_container .below_container .below_box .btn_box_container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.four_container .below_container .below_box .btn_box_container .btn-box.active{
+    background-image: url("../images/Rectangle_8@2x.png");
+    background-repeat: no-repeat;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-radius: 50px;
+    margin: 10px 0px 40px 0px;
+}
+
+.four_container .below_container .below_box .btn_box_container .btn-box.non_active{
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 10px 0px 40px 0px;
+}
+
+.four_container .below_container .below_box .btn_box_container .btn-box a{
+    text-decoration: none;
+}
+
+.four_container .below_container .below_box .btn_box_container .btn-box a h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.four_container .below_container .below_box .btn_box_container .btn-box.non_active a h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.four_container .footer_dot_contaier{
+    text-align: center;
+    padding: 20px;
+}
+
+.four_container .footer_dot_contaier .footer_dot{
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.four_container .footer_dot_contaier .footer_dot:hover {
+    height: 15px;
+    width: 15px;
+    background-color: #717171;
+}
+
+.fifth_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.fifth_container .above_container{
+    height: 227px;
+}
+
+.fifth_container .above_container .above_inside_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.fifth_container .above_container .above_inside_container h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: rgba(148,143,225,255);
+    margin: 0px ;
+    margin-top: 40px;
+}
+
+.fifth_container .above_container .above_inside_container h5{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.fifth_container .above_container .above_inside_container h5 span{
+    font-weight: 900;
+}
+
+.fifth_container .above_container .below_inside_container{
+    display: flex;
+    justify-content: center;
+}
+
+.fifth_container .above_container .below_inside_container form input[type=text]{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 350px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(246,247,251,255);
+    padding: 7px 15px;
+}
+
+.fifth_container .above_container .below_inside_container form input[type=submit]{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(50,42,189,255);
+    color: white;
+    cursor: pointer;
+}
+
+.fifth_container .below_container{
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(66,55,209,255);
+}
+
+.fifth_container .below_container .inside_container{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.fifth_container .below_container .inside_container .first_box{
+    min-width: 300px;
+    padding: 20px;
+}
+
+.fifth_container .below_container .inside_container .first_box h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.fifth_container .below_container .inside_container .first_box span{
+    padding: 10px
+}
+
+.fifth_container .below_container .inside_container .first_box span#fb-rotate img{
+    transform: rotate(270deg);
+}
+
+.fifth_container .below_container .inside_container .first_box span#gg-rotate img{
+    transform: rotate(270deg);
 }
