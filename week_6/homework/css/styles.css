@@ -242,6 +242,8 @@
 .thrid_container{
     display: flex;
     flex-direction: column;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .thrid_container .above_box{
@@ -279,10 +281,49 @@
 }
 
 .thrid_container .below_container .inside_container .box{
-    width: 25%;
+    background-color: white;
+    width: 24%;
     padding: 20px;
-    border: 1px solid black;
+    box-shadow: 0px 5px 10px lightgray;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
+.thrid_container .below_container .inside_container .box img{
+    margin: auto;
+}
+
+.thrid_container .below_container .inside_container .box h5{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900; 
+    margin-top: 20px ;
+}
+
+.thrid_container .below_container .inside_container .box .btn-box{
+    background-image: url("../images/Rectangle_8@2x.png");
+    background-repeat: no-repeat;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    margin-left: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+
+.thrid_container .below_container .inside_container .box .btn-box a{
+    text-decoration: none;
+}
+
+.thrid_container .below_container .inside_container .box .btn-box a h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: white;
+    text-decoration: none;
+}
