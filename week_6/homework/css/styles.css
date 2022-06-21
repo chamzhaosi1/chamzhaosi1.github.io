@@ -3,8 +3,8 @@
 }
 
 body{
-    margin: -4px;
-    overflow-x: hidden;
+    margin: 0px;
+    /* overflow-x: hidden; */
 }
 
 .container{
@@ -70,7 +70,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60vw;
+    width: 47vw;
+    background-color: red;
 }
 
 .container .left_container .inside_box .right_inside_container .right_box{
@@ -232,6 +233,7 @@ body{
     padding: 10px;
     border-radius: 60%;
     box-shadow: 2px 10px 20px lightgray;
+    background-color: red;
 }
 
 @media screen and (max-width: 920px) {
@@ -279,6 +281,7 @@ body{
         background-image: url("../images/Bg_Shape@2x.png");
         background-size: 100% 80%;
         background-repeat: no-repeat;
+        width: 100%;
     }
 
     .container .right_container{
@@ -356,6 +359,7 @@ body{
     .container .left_container .top_bar h1{
         font-size: 4vw;
         padding-top: 0px;
+        color: white;
     }
 
     .container .left_container .inside_box .left_nav_bar .small-right-border{
@@ -981,6 +985,7 @@ body{
     }
 
     .fifth_container .below_container{
+        padding: 10px;
         display: block;
     }
 
@@ -1003,6 +1008,11 @@ body{
     .fifth_container .below_container .inside_right_container .box p{
         min-width: 70px;
         font-size: 2.35vw;
+        padding-right: 10px;
+    }
+
+    .fifth_container .below_container .inside_right_container .box .a_container{
+        min-width: 90%;
     }
 
     .fifth_container .below_container .inside_right_container .box .a_container a.quick_links{
@@ -1011,7 +1021,8 @@ body{
     }
 
     .fifth_container .below_container .inside_right_container .box .a_container a{
-        min-width: 100px;
-        font-size: 2.5vw;
+        min-width: 80%;
+        font-size: 1.5vw;
+        padding-right: 5px;
     }
 }
