@@ -365,6 +365,10 @@ body{
     .container .left_container .inside_box .left_nav_bar .small-right-border{
         width: 50%;
     }
+
+    .container .left_container .inside_box .right_inside_container .right_box .btn_box_container{
+        width: 50%;
+    }
 }
 
 .second_container{
@@ -458,6 +462,10 @@ body{
     .second_container .right_container .right_container_content{
         width: 65%;
         margin-left: -60px;
+    }
+
+    .second_container .right_container .right_container_content .btn-box{
+        width: 30%;
     }
 }
 
