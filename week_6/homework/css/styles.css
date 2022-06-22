@@ -102,20 +102,20 @@ body{
 }
 
 .container .left_container .inside_box .right_inside_container .right_box .btn_box_container{
-    background-image: url("../images/Rectangle_8@2x.png");
-    background-repeat: no-repeat;
-    width: 40%;
+    width: 29%;
+    min-height: 100%;
 }
 
 .container .left_container .inside_box .right_inside_container .right_box .btn_box_container .btn_box{
     font-family: 'Lato', sans-serif;
-    
     padding: 7px 10px 0px 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 90%;
     border-radius: 50px;
+    background-image: url("../images/Rectangle_8@2x.png");
+    background-repeat: no-repeat;
 }
 
 .container .left_container .inside_box .right_inside_container .right_box .btn_box_container .btn_box a{
