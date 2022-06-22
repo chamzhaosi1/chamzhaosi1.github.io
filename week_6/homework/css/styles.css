@@ -290,7 +290,7 @@ body{
     }
 
     .container .mouse_box{
-        left: 170px;
+        left: 150px;
     }
 
     .container .left_container .inside_box .right_inside_container{
@@ -1039,5 +1039,7 @@ body{
         min-width: 80%;
         font-size: 1.5vw;
         padding-right: 5px;
+        display: flex;
+        align-items: center;
     }
 }
