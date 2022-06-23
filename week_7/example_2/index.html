@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
+<title>Week 6 Exercise !</title>
+</head>
+<body>
+
+<div id="myCurtainMenu" class="overlay">
+  <a href="#" class="closebtn" onclick="closeNav()"> 
+    <i id="xicon" class="fa-solid fa-x"></i>
+  </a>
+  <div class="overlay-content">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="openNav()">
+    <i id="icon" class="fa-solid fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+
+function openNav(){
+  document.getElementById("myCurtainMenu").style.width = "100%"; 
+  // document.getElementById("icon").style.display = "none";
+}
+
+function closeNav(){
+  document.getElementById("myCurtainMenu").style.width = "0%";
+  // document.getElementById("icon").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
