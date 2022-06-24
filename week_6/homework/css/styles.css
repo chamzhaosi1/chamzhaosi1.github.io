@@ -602,6 +602,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     margin: 40px;
+    flex-wrap: wrap;
 }
 
 .four_container .below_container .below_box p{
@@ -622,7 +623,6 @@ body{
 .four_container .below_container .below_box .btn_box_container{
     display: flex;
     justify-content: center;
-    height: 100%;
 }
 
 .four_container .below_container .below_box .btn_box_container .btn-box.active{
