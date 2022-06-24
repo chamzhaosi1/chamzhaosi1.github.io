@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="shortcut icon"
@@ -25,81 +26,90 @@
     <title>Week 6 Homework</title>
   </head>
   <body>
-    <div class="container" id="about">
-      <div class="left_container">
-        <div class="top_bar">
-          <img
-            src="images/Group_1539@2x.png"
-            alt="Group_1539@2x.png"
-            width="70px"
-            height="auto"
-          />
-          <h1>Marketing</h1>
-        </div>
-        <div class="inside_box">
-          <div class="left_nav_bar">
-            <a href="#"
-              ><img src="images/003-facebook@2x.png" alt="003-facebook@2x.png"
-            /></a>
-            <a href="#"
-              ><img
-                src="images/002-google-plus@2x.png"
-                alt="002-google-plus@2x.png"
-            /></a>
-            <a href="#"
-              ><img
-                src="images/001-twitter-logo-silhouette@2x.png"
-                alt="001-twitter-logo-silhouette@2x.png"
-            /></a>
-            <a href="#"
-              ><img src="images/instagram@2x.png" alt="instagram@2x.png"
-            /></a>
-            <div class="small-right-border"></div>
+    <div class="first_coatainer">
+      <div class="container" id="about">
+        <div class="left_container">
+          <div class="top_bar">
+            <img
+              src="images/Group_1539@2x.png"
+              alt="Group_1539@2x.png"
+              width="70px"
+              height="auto"
+            />
+            <h1>Marketing</h1>
           </div>
-          <div class="right_inside_container">
-            <div class="right_box">
-              <h1 id="above_font_type">SOCIAL MEDIA <br> <span>FOR BUSINESS!</span></h1>
-              <div class="paragrah_box">
-                <p>PERFOMANCE BASED SOCIAL MEDIA AGENCY WE ARE LOREM MEDIA</p>
+          <div class="inside_box">
+            <div class="left_nav_bar">
+              <a href="#"
+                ><img src="images/003-facebook@2x.png" alt="003-facebook@2x.png"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/002-google-plus@2x.png"
+                  alt="002-google-plus@2x.png"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/001-twitter-logo-silhouette@2x.png"
+                  alt="001-twitter-logo-silhouette@2x.png"
+              /></a>
+              <a href="#"
+                ><img src="images/instagram@2x.png" alt="instagram@2x.png"
+              /></a>
+              <div class="small-right-border"></div>
+            </div>
+            <div class="right_inside_container">
+              <div class="upon_image">
+                <img
+                  src="images/Group_1423@2x.png"
+                  alt="Group_1423@2x.png"
+                  width="50%"
+                />
               </div>
-              <div class="btn_box_container">
-                <div class="btn_box">
-                  <a href="#"><h4>GET A FREE AUDIT</h4></a>
+              <div class="right_box">
+                <h1 id="above_font_type">SOCIAL MEDIA <br> <span>FOR BUSINESS!</span></h1>
+                <div class="paragrah_box">
+                  <p>PERFOMANCE BASED SOCIAL MEDIA AGENCY WE ARE LOREM MEDIA</p>
+                </div>
+                <div class="btn_box_container">
+                  <div class="btn_box">
+                    <a href="#"><h4>GET A FREE AUDIT</h4></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="right_container">
-        <div class="top_nav_mobile_box">
-          <div class="top_nav_mobile">
-            <button>MEMU</button>
-          <div class="nav_content">
+        <div class="right_container">
+          <div class="top_nav_mobile_box" onclick="menu()">
+            <div class="top_nav_mobile">
+              <i class="icon fa-solid fa-bars"></i>
+            <div id="nav_content">
+              <a href="#home">HOME</a>
+              <a href="#services">SERVICES</a>
+              <a href="#prices">PRICES</a>
+              <a href="#contact">CONTACT</a>
+            </div>
+          </div>
+          </div>
+          <div class="top_nav">
             <a href="#home">HOME</a>
             <a href="#services">SERVICES</a>
             <a href="#prices">PRICES</a>
             <a href="#contact">CONTACT</a>
           </div>
-        </div>
-        </div>
-        <div class="top_nav">
-          <a href="#home">HOME</a>
-          <a href="#services">SERVICES</a>
-          <a href="#prices">PRICES</a>
-          <a href="#contact">CONTACT</a>
-        </div>
-        <div class="bg_img">
-          <img
-            src="images/Group_1423@2x.png"
-            alt="Group_1423@2x.png"
-            width="90%"
-          />
+          <div class="bg_img">
+            <img
+              src="images/Group_1423@2x.png"
+              alt="Group_1423@2x.png"
+              width="80%"
+            />
+          </div>
         </div>
       </div>
-      <div class="mouse_box">
-        <img src="images/mouse@2x.png" alt="/mouse@2x.png" width="55%" />
-      </div>
+       <div class="mouse_box">
+          <img src="images/mouse@2x.png" alt="/mouse@2x.png" width="50%" />
+        </div>
     </div>
     <div class="second_container">
       <div class="left_container">
@@ -411,4 +421,17 @@
       </div>
     </div>
   </body>
+  <script>
+    function menu(){
+      var style_display = document.getElementById("nav_content").style.display
+
+      if (style_display == "none" || style_display == ""){
+        document.getElementById("nav_content").style.display = "flex";
+      }else{
+        document.getElementById("nav_content").style.display = "none";
+      }
+      
+    }
+
+  </script>
 </html>

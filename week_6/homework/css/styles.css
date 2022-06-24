@@ -7,11 +7,17 @@ body{
     overflow-x: hidden;
 }
 
+.first_container{
+    display: flex;
+    flex-direction: column;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
     margin: 0px 0px;
     position: relative;
+    max-height: 540px;
 }
 
 .container .left_container{
@@ -40,9 +46,9 @@ body{
 .container .left_container .inside_box .left_nav_bar{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 20%;
-    padding-top: 250px;
+    padding-top: 200px;
     margin-left: 30px;
     
 }
@@ -61,9 +67,10 @@ body{
 }
 
 .container .left_container .inside_box .left_nav_bar .small-right-border{
-    width: 50%;
+    width: 2px;
     height: 30px;
-    border-left: 2px solid rgba(26,17,158,255)
+    border-left: 2px solid rgba(26,17,158,255);
+    margin: auto;
 }
 
 .container .left_container .inside_box .right_inside_container{
@@ -75,6 +82,10 @@ body{
     align-items: center;
     min-width: 60vw;
     padding-left: 5%;
+}
+
+.container .left_container .inside_box .upon_image{
+    display: none;
 }
 
 .container .left_container .inside_box .right_inside_container .right_box{
@@ -94,7 +105,7 @@ body{
 }
 
 .container .left_container .inside_box .right_inside_container .right_box .paragrah_box{
-    margin-top: 55px;
+    margin-top: 10px;
     width: 50%;
 }
 
@@ -118,8 +129,7 @@ body{
     align-items: center;
     width: 90%;
     border-radius: 50px;
-    background-image: url("../images/Rectangle_8@2x.png");
-    background-repeat: no-repeat;
+    background-color: rgba(50,42,189,255);
 }
 
 .container .left_container .inside_box .right_inside_container .right_box .btn_box_container .btn_box a{
@@ -141,7 +151,7 @@ body{
 
 .container .right_container{
     /* need to change width and height*/
-    width: 48%;
+    width: 600px;
     height: 680px; 
     background-image: url("../images/Bg_Shape@2x.png");
     background-size: 100% 90%;
@@ -158,6 +168,7 @@ body{
     text-transform: uppercase;
     color: white;
     padding: 10px;
+    font-size: 1.5vw;
 }
 
 .container .right_container .top_nav a:hover{
@@ -166,10 +177,16 @@ body{
 }
 
 .container .right_container .top_nav_mobile_box{
-    flex-direction: row-reverse;
-    width: 100%;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    width: fit-content;
     display: none;
-    
+    font-size: 20px
+}
+
+.container .right_container .top_nav_mobile_box .icon{
+    color: white;
 }
 
 .container .right_container .top_nav_mobile_box .top_nav_mobile{
@@ -178,39 +195,29 @@ body{
     margin-right: 18px;
 }
 
-.container .right_container .top_nav_mobile_box .top_nav_mobile:hover .nav_content{
-    display: flex;
-    flex-direction: column;
-}
-
-.container .right_container .top_nav_mobile_box .top_nav_mobile button{
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgba(50,42,189,0.6);
+.container .right_container .top_nav_mobile_box .top_nav_mobile .icon{
     color: white;
-    cursor: pointer;
-    position: relative;
 }
 
-.container .right_container .top_nav_mobile_box .top_nav_mobile button:hover{
+
+.container .right_container .top_nav_mobile_box .top_nav_mobile i:hover{
     box-shadow: 1px 1px 10px white;
 }
 
-.container .right_container .top_nav_mobile_box .top_nav_mobile .nav_content{
+.container .right_container .top_nav_mobile_box .top_nav_mobile #nav_content{
     position: absolute;
-    top: 7%;
-    right: 4%;
+    top: 40px;
+    right: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     text-decoration: none;
-    border: 1px solid lightgray;
-    border-radius: 10px;
+
     display: none;
+    z-index: 2;
 }
 
-.container .right_container .top_nav_mobile_box .top_nav_mobile .nav_content a{
+.container .right_container .top_nav_mobile_box .top_nav_mobile #nav_content a{
     text-decoration: none;
     color: black;
     border-bottom: 1px solid black;
@@ -219,7 +226,7 @@ body{
     background-color: lightblue;
 }
 
-.container .right_container .top_nav_mobile_box .top_nav_mobile .nav_content a:hover{
+.container .right_container .top_nav_mobile_box .top_nav_mobile #nav_content a:hover{
     background-color: lightgray;
 }
 
@@ -229,150 +236,110 @@ body{
     justify-content: center;
 }
 
-.container .mouse_box{
+.mouse_box{
+    margin: auto;
     display: flex;
     justify-content: center;
-    margin: auto;
-    position: absolute;
-    top: 80%;
-    left: 50%;
     padding: 10px;
     border-radius: 60%;
     box-shadow: 2px 10px 20px lightgray;
+    width: fit-content;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 920px) {
-    .container .left_container .inside_box .right_inside_container{
-        left: 60px;
-    }
-
-    .container .left_container .inside_box .right_inside_container .right_box h1#above_font_type{
-        padding-bottom: 10px;
-    }
-
-    .container .left_container .inside_box .left_nav_bar .small-right-border{
-        width: 30%;
-    }
-
     .container .mouse_box{
         left: 380px;
         top: 80%;
     }
 
     .container .right_container .top_nav{
-        padding-top: 20px;
-        padding-left: 5px;
+        padding: 50px 5px;
     }
 
     .container .right_container img{
         padding-left: 0px;
     }
 
-    .container .right_container .bg_img img{
-        width: 95%;
-    }
-
     .container .left_container .inside_box .left_nav_bar img{
         width: 70%;
     }
+
+    .container .left_container .inside_box .right_inside_container .right_box .paragrah_box p{
+        font-size: 1.5vw;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
     .container .right_container .bg_img img{
         display: none;
     }
 
-    .container{
-        background-image: url("../images/Bg_Shape@2x.png");
-        background-size: 100% 80%;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-
-    .container .right_container{
-        background-image: url(" ");
-    }
-
-    .container .mouse_box{
-        left: 150px;
-    }
-
     .container .left_container .inside_box .right_inside_container{
-        top: 180px;
-        left: 200px;
+        flex-direction: column;
+        min-width: 600px;
     }
 
-    .container .left_container{
-        background-image: url("../images/Group_1423@2x.png");
-        background-size: 95%;
-        background-repeat: no-repeat;
-        background-position: 10% 20%;
+    .container .left_container .inside_box .right_inside_container .upon_image{
+        display: flex;
+        min-width: 100px;
+        z-index: 1;
+    }
+
+    .mouse_box{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container .right_container .top_nav_mobile_box{
+        display: flex;
     }
 
     .container .right_container .top_nav{
         display: none;
     }
 
-    .container .right_container .top_nav_mobile_box{
-        display: flex;
+    .container .right_container{
+        background-image: url("../images/Bg_Shape@2x.png");
     }
 
-    .container .left_container .inside_box .right_inside_container .right_box h1#above_font_type{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 4vw;
-        padding-bottom: 30px;
-        color: white;
-    }
-    
-    
-    .container .left_container .inside_box .right_inside_container .right_box h1#below_font_type{
-        font-family: 'Lato', sans-serif;
-        font-size: 6vw;
-        color: white;
-        margin: -38px -0px;
-    }
-
-    .container .left_container .inside_box .right_inside_container .right_box .paragrah_box{
-        width: 70%;
-    }
-
-    .container .left_container .inside_box .right_inside_container .right_box .paragrah_box p{
-        font-family: 'Lato', sans-serif;
-        color: darkgray;
-        font-size: 2vw;
-        font-weight: 400;
-    }
-
-    .container .left_container .inside_box .right_inside_container .right_box .btn_box_container{
-        width: 40;
-    }
-
-    .container .left_container .inside_box .right_inside_container .right_box .btn_box_container .btn_box a h4{
-        font-size: 2vw;
-    }
-
-    .container .left_container .top_bar{
-        padding: 10px;
-    }
-
-    .container .left_container .top_bar img{
-        width: 30px;
-        height: auto;
-        padding-left: 20px;
+    .container{
+        background-image: url("../images/Bg_Shape@2x.png");
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
     }
 
     .container .left_container .top_bar h1{
-        font-size: 4vw;
-        padding-top: 0px;
+        z-index: 1;
         color: white;
     }
 
-    .container .left_container .inside_box .left_nav_bar .small-right-border{
-        width: 50%;
+    .container .left_container .inside_box .right_inside_container .right_box .paragrah_box{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container .left_container .inside_box .right_inside_container .upon_image img{
+        min-width: 100%;
     }
 
-    .container .left_container .inside_box .right_inside_container .right_box .btn_box_container{
-        width: 50%;
+    .container .left_container .inside_box .right_inside_container{
+        min-width: 98%;
+    }
+
+    .container .left_container {
+        width: 70%;
+    }
+
+    .container .right_container {
+        max-width: 0px
+    }
+
+    .container{
+        background-size: 100% 70%
     }
 }
 
