@@ -44,11 +44,74 @@
             <div class="top_container">
                 <div class="top_content">
                     <h1>
-                        Contact
+                        My Practices
                     </h1>
                     <h4>
-                        Any question? Please contact me.
+                        All My Web Design Practices Exercise and Homework
                     </h4>
+                </div>
+            </div>
+
+            <div class="second_container">
+                <div class="nav_bar">
+                    <a onclick="show_all()" class="active" href="">Show All <span>22</span></a>
+                    <a onclick="week_2_function()">2nd Week <span>1</span></a>
+                    <a onclick="week_3_function()">3rd Week <span>7</span></a>
+                    <a onclick="week_4_function()">4rd Week <span>2</span></a>
+                    <a onclick="week_5_function()">5rd Week <span>4</span></a>
+                    <a onclick="week_6_function()">6rd Week <span>6</span></a>
+                    <a onclick="week_7_function()">7rd Week <span>2</span></a>
+                </div>
+                <div class="content_container">
+                    <div id="practice_1" class="box">
+                        <h1>
+                            HTML BASIC
+                        </h1>
+                        <div class="box_btn">
+                            2nd Week
+                        </div> 
+                        </div>
+                    <div id="practice_2" class="box">
+                        <h1>
+                            HTML, CSS, BOORSTRAP
+                           </h1>
+                        <div class="box_btn">
+                             3rd Week
+                        </div> 
+                     </div>
+                     <div id="practice_3" class="box">
+                        <h1>
+                            REVISED HOME PAGE
+                           </h1>
+                        <div class="box_btn">
+                             4th Week
+                        </div> 
+                     </div>
+                     <div id="practice_4" class="box">
+                        <h1>
+                            LAYOUT RESPONSIVE
+                           </h1>
+                        <div class="box_btn">
+                             5th Week
+                        </div> 
+                     </div>
+                     <div id="practice_5" class="box">
+                        <h1>
+                            CSS PROPERTIES, GRID LAYOUT
+                           </h1>
+                        <div class="box_btn">
+                             6th Week
+                        </div> 
+                     </div>
+                     <div id="practice_6" class="box">
+                        <h1>
+                            MOBILE, CURTAIN MENU
+                           </h1>
+                        <div class="box_btn">
+                             7th Week
+                        </div> 
+                     </div>
+                     
                 </div>
             </div>
 
@@ -129,6 +192,10 @@
                     menu_icon.className = "fa-solid fa-bars"
                     menu_icon.style.color = "white"
                 }
+            }
+
+            function show_all(){
+                document.getElementById("practice_1").style.display = 'none'
             }
         </script>
     </body>

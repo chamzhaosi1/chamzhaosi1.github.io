@@ -274,7 +274,6 @@ a{
     }
 }
 
-
 .footer_container{
     display: flex;
     flex-direction: column;
@@ -292,7 +291,6 @@ a{
 .footer_container .above_container .box{
     margin: 50px 0px;
     max-width: 25%;
-    text-align: center;
 }
 
 .footer_container .above_container .box h2{
@@ -379,6 +377,7 @@ a{
     .footer_container .above_container .box{
         min-width: 50%;
         margin: 20px 0px;
+        text-align: center
     }
 
     .footer_container .above_container .box h4{

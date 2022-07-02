@@ -121,11 +121,130 @@ a{
     }
 }
 
+.second_container{
+    background-color: #F3D5C0;
+    display: flex;
+    flex-direction: column;
+}
+
+.second_container .nav_bar{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 90%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.second_container .nav_bar a{
+    color: #391400;
+    padding-left: 20px;
+    font-size: 1.5vw;
+    font-weight: 300;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.second_container .nav_bar a:hover{
+    font-weight: 700;
+}
+
+.second_container .nav_bar a.active{
+    font-weight: 700;
+}
+
+.second_container .nav_bar a span{
+    vertical-align: text-top;
+    font-size: 1vw;
+}
+
+
+.second_container .content_container{
+    max-width: 90%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.second_container .content_container #practice_1{
+    background: rgba(0,0,0,0.5) url(../images/practices_1.jpg);
+    background-position: -80px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.second_container .content_container #practice_2{
+    background: rgba(0,0,0,0.5) url(../images/practices_2.jpg);
+    background-position: -80px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.second_container .content_container #practice_3{
+    background: rgba(0,0,0,0.5) url(../images/practices_3.jpg);
+    background-position: -80px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.second_container .content_container #practice_4{
+    background: rgba(0,0,0,0.5) url(../images/practices_4.jpg);
+    background-position: -80px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.second_container .content_container #practice_5{
+    background: rgba(0,0,0,0.5) url(../images/practices_5.jpg);
+    background-position: -80px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.second_container .content_container #practice_6{
+    background: rgba(0,0,0,0.5) url(../images/practices_6.jpg);
+    background-position: -80px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.second_container .content_container .box{
+    width: 25%;
+    min-height: 300px;
+    padding: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.second_container .content_container .box .box_btn{
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+.second_container .content_container .box h1{
+    font-weight: 900;
+    color: white;
+}
+
+
+
+
+
+
+
 
 .footer_container{
     display: flex;
     flex-direction: column;
-    background-color: #506D84;
+    background-color: #D4B499;
 }
 
 .footer_container .above_container{
@@ -142,7 +261,7 @@ a{
 }
 
 .footer_container .above_container .box h2{
-    color: white;
+    color: #391400;
 }
 
 .footer_container .above_container .box h4{
@@ -152,10 +271,10 @@ a{
 }
 
 .footer_container .above_container .box a{
-    color: white;
+    color:  #391400;
     display: block;
     padding-bottom: 10px;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 1.3vw;
 }
 
@@ -166,7 +285,7 @@ a{
 .footer_container .above_container .box .inside_box i{
     padding-right: 5px;
     padding-bottom: 5px;
-    color: white;
+    color:  #391400;
 }
 
 .footer_container .above_container .box .inside_box .round{
@@ -178,12 +297,13 @@ a{
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    color: white;
+    color: #391400;
 }
 
 .footer_container .above_container .box .inside_box .round i{
     padding-right: 0px;
     padding-bottom: 0px;
+    color: white;
 }
 
 .footer_container .below_container{
@@ -191,6 +311,7 @@ a{
     justify-content: space-between;
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 .footer_container .below_container .left_box{
@@ -199,8 +320,8 @@ a{
 }
 
 .footer_container .below_container .left_box h4{
-    color: white;
-    font-weight: 300;
+    color:  #391400;
+    font-weight: 500;
 }
 
 .footer_container .below_container .right_box{
@@ -212,8 +333,8 @@ a{
 }
 
 .footer_container .below_container .right_box h4{
-    color: white;
-    font-weight: 300;
+    color:  #391400;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 720px) {
@@ -224,6 +345,7 @@ a{
     .footer_container .above_container .box{
         min-width: 50%;
         margin: 20px 0px;
+        text-align: center;
     }
 
     .footer_container .above_container .box h4{
@@ -240,12 +362,18 @@ a{
 
     .footer_container .below_container .left_box{
         padding-bottom: 10px;
+        width: 100%;
     }
 
     .footer_container .below_container .right_box{
-        width: 300px;
+        width: 100%;
         padding-bottom: 0px;
         padding-top: 0px;
+    }
+
+    .footer_container .above_container .box .inside_box{
+        max-width: fit-content;
+        margin: auto;
     }
 }
 
