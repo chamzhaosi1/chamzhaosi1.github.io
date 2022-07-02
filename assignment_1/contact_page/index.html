@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
+        <title>
+            Assignment 1: Contact Page
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav_container">
+                <div id="nav_bar" class="nav_bar">
+                    <div class="portfolio_box">
+                        <img src="images/logo.png" alt="logo" height="53px">
+                        <a href="#"><h2>Portfolio</h2></a>
+                    </div>
+                    <a href="#">About</a>
+                    <a href="#">Work Experience</a>
+                    <a href="#">My Interest</a>
+                    <a href="#">My Practices</a>
+                    <a href="#">
+                        <h4>
+                            CONTACT
+                        </h4>
+                    </a>
+                    <div id="menu_content" class="menu_content">
+                        <a href="#about">About</a>
+                        <a href="#">Work Experience</a>
+                        <a href="#">My Interest</a>
+                        <a href="#">My Practices</a>
+                        <a href="#">Contact</a>
+                    </div>  
+                    <div class="menu_bar" onclick="show_menu_content()">
+                        <i id="menu_icon" class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top_container">
+                <div class="top_content">
+                    <h1>
+                        Contact
+                    </h1>
+                    <h4>
+                        Any question? Please contact me.
+                    </h4>
+                </div>
+            </div>
+
+            <div id="about">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+               wdasdas
+           </div>
+        </div>
+
+        
+        <script>
+            function show_menu_content() {
+                let menu_content = document.getElementById("menu_content");
+                let menu_icon = document.getElementById("menu_icon");
+                
+                if (menu_icon.className == "fa-solid fa-bars"){
+                    menu_content.style.display = "flex"
+                    menu_icon.className = "fa-solid fa-xmark"
+                }else{
+                    menu_content.style.display ="none"
+                    menu_icon.className = "fa-solid fa-bars"
+                }
+            }
+        </script>
+    </body>
+</html>
