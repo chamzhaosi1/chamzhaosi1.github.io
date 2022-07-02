@@ -121,159 +121,6 @@ a{
     }
 }
 
-.second_container{
-    background-color: #F3D5C0;
-    min-height: 700px;
-}
-
-.second_container .map_container{
-    background-image: url("../images/location.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, 100%;
-    background-position: 0px 30px;
-    padding: 30px 50px;
-}
-
-.second_container .mobl_map_view img{
-    display: none;
-}
-
-.second_container .map_container .contact_form{
-    background-color: white;
-    max-width: 25%;
-    padding: 5%;
-    margin: 5% 0px;
-    border-radius: 10px;
-}
-
-.second_container .map_container .contact_form h2{
-    margin: 10px;
-    font-size: 3vw;
-}
-
-.second_container .map_container .contact_form form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.second_container .map_container .contact_form form input[type=text]{
-    border: #F3D5C0 solid 1px;
-    border-radius: 5px;
-    padding: 4%;
-    margin: 3%;
-    width: 87%;
-}
-
-.second_container .map_container .contact_form form input[type=submit]{
-    width: fit-content;
-    padding: 5% 10%;
-    margin: 10% 10%;
-    border: #F3D5C0 solid 1px;
-    border-radius: 5px;
-    color: white;
-    background-color: #9C3D54;
-    font-size: 1.5vw;
-}
-
-.second_container .map_container .contact_form form select{
-    border: #F3D5C0 solid 1px;
-    border-radius: 5px;
-    padding: 3%;
-    margin: 3%;
-    width: 96%;
-}
-
-.second_container .below_container{
-    display: flex;
-    flex-direction: row;
-    max-width: 85%;
-    margin: auto;
-}
-
-.second_container .below_container .detail_box{
-   width: 30%;
-   text-align: left;
-   margin: auto;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   padding: 10px 30px;
-   height: 150px;
-}
-
-.second_container .below_container .detail_box:hover{
-    background-color: #f5ebe4;
- }
-
-.second_container .below_container .detail_box h3{
-    color: #391400;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.second_container .below_container .detail_box .round_counter{
-    display: flex;
-    flex-direction: row;
-}
-
-.second_container .below_container .detail_box .round_counter .round{
-    border-radius: 50%;
-    height: 60px;
-    min-width: 60px;
-    background-color: #9C3D54;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-    color: white;
-}
-
-.second_container .below_container .detail_box .round_counter h4{
-    color: #EF6D58;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-@media screen and (max-width: 720px) {
-    .second_container .map_container{
-        background-image: none
-    }
-
-    .second_container .mobl_map_view img{
-        display: flex;
-    }
-
-    .second_container .map_container .contact_form{
-        margin: auto;
-        max-width: 80%;
-    }
-
-    .second_container .below_container{
-        flex-wrap: wrap;
-    }
-
-    .second_container .below_container .detail_box{
-        margin-bottom: 10px;
-        height: 140px;
-    }
-
-    .second_container .below_container .detail_box h3{
-        font-size: 2.5vw;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .second_container .below_container .detail_box{
-        margin-top: 10px;
-        width: 51%;
-        height: 110px;
-    }
-
-    .second_container .below_container .detail_box h3{
-        font-size: 3vw;
-    }
-}
-
 
 .footer_container{
     display: flex;
@@ -292,7 +139,6 @@ a{
 .footer_container .above_container .box{
     margin: 50px 0px;
     max-width: 25%;
-    text-align: center;
 }
 
 .footer_container .above_container .box h2{
@@ -345,7 +191,6 @@ a{
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    text-align: center;
 }
 
 .footer_container .below_container .left_box{
@@ -395,18 +240,12 @@ a{
 
     .footer_container .below_container .left_box{
         padding-bottom: 10px;
-        width: 100%;
     }
 
     .footer_container .below_container .right_box{
-        width: 100%;
+        width: 300px;
         padding-bottom: 0px;
         padding-top: 0px;
-    }
-
-    .footer_container .above_container .box .inside_box{
-        max-width: fit-content;
-        margin: auto;
     }
 }
 
