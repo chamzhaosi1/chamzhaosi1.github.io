@@ -115,9 +115,9 @@ a{
 }
 
 @media screen and (min-width: 800px) {
-    .nav_container .nav_bar .menu_content a
+    .nav_container .nav_bar .menu_content
     {
-        display: none;
+        display: none !important;
     }
 }
 

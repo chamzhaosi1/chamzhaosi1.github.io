@@ -114,10 +114,10 @@ a{
     }
 }
 
-@media screen and (min-width: 800px) {
-    .nav_container .nav_bar .menu_content a
+@media screen and (min-width: 801px) {
+    .nav_container .nav_bar .menu_content
     {
-        display: none;
+        display: none !important;
     }
 }
 
