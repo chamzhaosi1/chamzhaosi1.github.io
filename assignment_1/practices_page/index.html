@@ -54,15 +54,25 @@
 
             <div class="second_container">
                 <div class="nav_bar">
-                    <a onclick="show_all_each(99)" class="active">Show All <span>22</span></a>
-                    <a onclick="show_all_each(1)">2nd Week <span>1</span></a>
-                    <a onclick="show_all_each(2)">3rd Week <span>7</span></a>
-                    <a onclick="show_all_each(3)">4rd Week <span>2</span></a>
-                    <a onclick="show_all_each(4)">5rd Week <span>4</span></a>
-                    <a onclick="show_all_each(5)">6rd Week <span>6</span></a>
-                    <a onclick="show_all_each(6)">7rd Week <span>2</span></a>
+                    <a onclick="show_all_each(99)" class="99_week active">Show All <span>22</span></a>
+                    <a onclick="show_all_each(1)" class="2_week">2nd Week <span>1</span></a>
+                    <a onclick="show_all_each(2)" class="3_week">3rd Week <span>7</span></a>
+                    <a onclick="show_all_each(3)" class="4_week">4th Week <span>2</span></a>
+                    <a onclick="show_all_each(4)" class="5_week">5th Week <span>4</span></a>
+                    <a onclick="show_all_each(5)" class="6_week">6th Week <span>6</span></a>
+                    <a onclick="show_all_each(6)" class="7_week">7th Week <span>2</span></a>
+
+                    <select name="week_select" id="week_select" onchange="change_week()">
+                        <option value="99" >Show All</option>
+                        <option value="1">2nd Week</option>
+                        <option value="2">3rd Week</option>
+                        <option value="3">4th Week</option>
+                        <option value="4">5th Week</option>
+                        <option value="5">6th Week</option>
+                        <option value="6">7th Week</option>
+                    </select>
                 </div>
-                
+
                 <div class="content_container">
                     <div id="week_2" class="inside_container">
                         <div class="top_bar">
@@ -433,6 +443,11 @@
                 }
             }
 
+            function change_week(){
+                let index = document.getElementById("week_select").value
+                show_all_each(index)
+            }
+
             function show_all_each(index){
                 if(index == 99){
                     document.getElementById("practice_1").style.display = 'flex';
@@ -448,8 +463,19 @@
                     document.getElementById("practice_4").style.display = 'none';
                     document.getElementById("practice_5").style.display = 'none';
                     document.getElementById("practice_6").style.display = 'none';
+
+                    document.getElementById("practice_"+index).style.display = 'flex';
                 }
-                document.getElementById("practice_"+index).style.display = 'flex';
+                
+                let y = document.getElementsByClassName("active");
+                y[0].classList.remove("active")
+
+                if (index != 99){
+                    index++;
+                }
+
+                let x = document.getElementsByClassName(index+"_week");
+                x[0].className += " active"
             }
 
             function show_exe_hm_container(index){
