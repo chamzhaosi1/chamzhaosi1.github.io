@@ -140,14 +140,14 @@ a{
 }
 
 .second_cantainer .top_detail_container .left_box{
-    max-width: 250px;
+    max-width: fit-content;
     padding: 50px;
     padding-top: 0px;
     margin-top: 0px;
 }
 
 .second_cantainer .top_detail_container .left_box h5{
-    font-weight: 300;
+    font-weight: 500;
     color: #EF6D58;
     font-size: 15px;
 }
@@ -155,7 +155,7 @@ a{
 .second_cantainer .top_detail_container .left_box h1{
     font-weight: 900;
     color: #391400;
-    font-size: 25px;
+    font-size: 3vw;
 }
 
 .second_cantainer .top_detail_container .right_box{
@@ -276,6 +276,7 @@ a{
 .second_cantainer .languages_container .title h5{
     font-weight: 500;
     color: #EF6D58;
+    font-size: 15px;
 }
 
 .second_cantainer .languages_container .each_container{
@@ -355,7 +356,11 @@ a{
     .second_cantainer .top_detail_container .left_box{
         padding-bottom: 0px;
         margin: auto;
+        max-width: 400px;
+    }
 
+    .second_cantainer .top_detail_container .left_box h1{
+        font-size: 5vw;
     }
     
     .second_cantainer .top_detail_container .right_box{
@@ -411,9 +416,9 @@ a{
 }
 
 .footer_container .above_container .box h4{
-    font-weight: 300;
+    font-weight: 700;
     color: #EF6D58;
-    font-size: 1.25vw;
+    font-size: 16px;
 }
 
 .footer_container .above_container .box a{
