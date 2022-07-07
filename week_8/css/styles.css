@@ -1,0 +1,115 @@
+body{
+    margin-top: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1{
+    padding: 10px;
+}
+
+label{
+    padding-bottom: 5px;
+}
+
+form{
+    background-color: #baf2a2;
+}
+
+fieldset{
+    padding: 0px 20px;
+    margin: 0px -15px;
+}
+
+label{
+    color: #366e1f;
+    font-weight: 900;
+}
+
+::placeholder{
+    color: #60a145; 
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+
+.first_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.first_container input{
+    padding: 5px;
+    width: 48%;
+    height: 20px;
+}
+
+.inside_container{
+    width: 100%;
+}
+
+.inside_container.phone_cont{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.inside_container input{
+    width: 97%;
+}
+
+.thrid_container{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: left;
+}
+
+.four_container{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.four_container input{
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.four_container .four_inside_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.four_container .four_inside_container input{
+    width: 48%;
+}
+
+.four_container .four_inside_container select{
+    width: 49.4%;
+    height: 34px;
+}
+
+.btn_container{
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.btn_container input[type=submit]{
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+}
+
+.thanks_container{
+    margin: auto;
+    max-width: fit-content;
+}
+
+
