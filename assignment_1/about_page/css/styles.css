@@ -140,15 +140,15 @@ a{
 }
 
 .secondary_container .img_container img{
-    min-width: 400px;
+    min-width: 295px;
     max-width: 100%;
 }
 
 .secondary_container .content_container{
-    max-width: 40%;
+    max-width: 500px;
     margin: auto;
     text-align: left;
-    padding: 10px;
+    padding: 10px 50px 50px 50px;
 }
 
 .secondary_container .content_container h4{
@@ -174,88 +174,59 @@ a{
 .secondary_container .experience_practices_container{
     display: flex;  
     justify-content: center;
-    max-width: 100%;
     margin: auto;
     padding: 20px;
 }
 
-.secondary_container .experience_practices_container .left_box{
-    padding: 30px 100px;
-    min-height: 20px;
+.secondary_container .experience_practices_container .inside_box{
+    padding: 2% 3%;
+    min-width: 50%;
     border-top :1px solid #391400;
     border-right: 1px solid #391400;
     border-bottom: 1px solid #391400;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
-.secondary_container .experience_practices_container .left_box:hover{
-    background-color: #FDF0E9;
-}
-
-.secondary_container .experience_practices_container .left_box .round{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    background-color: #9C3D54;
-}
-
-.secondary_container .experience_practices_container .left_box .content_box{
-    display: block;
-    padding-left: 20px;
-}
-
-.secondary_container .experience_practices_container .left_box .round i{
-    margin: auto;
-    color: white;
-    font-size: 50px;
-}
-
-
-.secondary_container .experience_practices_container .right_box{
-    padding: 30px 50px;
-    min-height: 20px;
-    border-top :1px solid #391400;
+.secondary_container .experience_practices_container .inside_box.right{
+    border-right: none;
     border-left: 1px solid #391400;
-    border-bottom: 1px solid #391400;
-    display: flex;
-    flex-direction: row;
 }
 
-.secondary_container .experience_practices_container .right_box:hover{
+.secondary_container .experience_practices_container .inside_box:hover{
     background-color: #FDF0E9;
 }
 
-.secondary_container .experience_practices_container .right_box .round{
+.secondary_container .experience_practices_container .inside_box .round{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 110px;
+    min-width: 110px;
     height: 110px;
     background-color: #9C3D54;
 }
 
-.secondary_container .experience_practices_container .right_box .content_box{
+.secondary_container .experience_practices_container .inside_box .content_box{
     display: block;
     padding-left: 20px;
 }
 
-.secondary_container .experience_practices_container .right_box .round i{
+.secondary_container .experience_practices_container .inside_box .round i{
     margin: auto;
     color: white;
     font-size: 50px;
 }
+
 
 .secondary_container .autobiography{
-    max-width: 30%;
+    max-width: 570px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: left;
-    padding: 10px;
+    padding: 20px 50px;
 }
 
 .secondary_container .autobiography h4{
@@ -272,13 +243,128 @@ a{
 }
 
 .secondary_container .autobiography p{
+    max-width: 500px;
+    margin: auto;
     font-weight: 300;
     color: #391400;
     line-height: 1.6;
     text-align: justify;
+    padding: 20px 0;
+}
+
+.secondary_container .autobiography .school_container{
+    margin: auto;
+}
+
+.secondary_container .autobiography .school_container img{
+    min-width: 255px;
+    max-width: 100%;
+}
+
+.secondary_container .autobiography .text_container p{
+    max-width: 500px;
+    margin: auto;
+    font-weight: 300;
+    color: #391400;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.secondary_container .life_quotes_container{
+    max-width: 570px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.secondary_container .life_quotes_container h4{
+    font-weight: 700;
+    color: #EF6D58;
+    font-size: 15px;
 }
 
 
+.secondary_container .life_quotes_container i{
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline;
+}
+
+.secondary_container .life_quotes_container h1{
+    font-weight: 900;
+    color: #391400;
+    font-size: 45px;
+    margin: 0px;
+    display: inline;
+    line-height: 1.5;
+}
+
+.secondary_container .life_quotes_container h1.move_up{
+    padding-bottom: 20px;
+    display: flex;
+}
+
+
+@media screen and (max-width: 880px) {
+    .secondary_container .experience_practices_container{
+        flex-wrap: wrap;
+    }
+
+    .secondary_container .experience_practices_container .inside_box{
+        width: 60%;
+        min-width: 300px;
+        border-right: none;
+        justify-content: left;
+    }
+
+    .secondary_container .experience_practices_container .inside_box.right{
+        border-left: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .secondary_container .life_quotes_container h1{
+        font-size: 5.6vw;
+    }
+
+    
+    .secondary_container .life_quotes_container i{
+        font-size: 11vw;
+
+    }
+
+    .secondary_container .life_quotes_container{
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 580px) { 
+    .secondary_container .content_container h1{
+        font-size: 10vw;
+    }
+
+    .secondary_container .content_container{
+        min-width: 100px;
+    }
+
+    .secondary_container .autobiography{
+        min-width: 100px;
+    }
+
+    .secondary_container .autobiography h1{
+        font-size: 10vw;
+    }
+
+    .secondary_container .life_quotes_container{
+        max-width: 430px;
+    }
+
+    .secondary_container .life_quotes_container h1{
+        font-size: 5.2vw;
+    }
+}
 
 
 
