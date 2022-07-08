@@ -166,10 +166,10 @@ a{
 
 
 .second_container .content_container{
-    max-width: 90%;
+    max-width: 80%;
     padding-bottom: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -248,7 +248,8 @@ a{
 
 .second_container .inside_container{
     position: fixed;
-    top: 60px;
+    top: 20%;
+    left: 10%;
     width: 0%;
     max-height: 90%;
     background-color: rgba(150, 149, 146, 0.8);
