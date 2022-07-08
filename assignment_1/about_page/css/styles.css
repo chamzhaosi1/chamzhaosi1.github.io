@@ -139,8 +139,13 @@ a{
     padding: 30px;
 }
 
+.secondary_container .img_container img{
+    min-width: 400px;
+    max-width: 100%;
+}
+
 .secondary_container .content_container{
-    max-width: 50%;
+    max-width: 40%;
     margin: auto;
     text-align: left;
     padding: 10px;
@@ -149,7 +154,7 @@ a{
 .secondary_container .content_container h4{
     font-weight: 700;
     color: #EF6D58;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .secondary_container .content_container h1{
@@ -162,24 +167,115 @@ a{
 .secondary_container .content_container p{
     font-weight: 300;
     color: #391400;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .secondary_container .experience_practices_container{
     display: flex;  
     justify-content: center;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
+    padding: 20px;
 }
 
 .secondary_container .experience_practices_container .left_box{
-    max-width: 50%;
+    padding: 30px 100px;
+    min-height: 20px;
     border-top :1px solid #391400;
     border-right: 1px solid #391400;
     border-bottom: 1px solid #391400;
+    display: flex;
+    flex-direction: row;
 }
 
+.secondary_container .experience_practices_container .left_box:hover{
+    background-color: #FDF0E9;
+}
+
+.secondary_container .experience_practices_container .left_box .round{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: #9C3D54;
+}
+
+.secondary_container .experience_practices_container .left_box .content_box{
+    display: block;
+    padding-left: 20px;
+}
+
+.secondary_container .experience_practices_container .left_box .round i{
+    margin: auto;
+    color: white;
+    font-size: 50px;
+}
+
+
 .secondary_container .experience_practices_container .right_box{
-    max-width: 50%;
+    padding: 30px 50px;
+    min-height: 20px;
+    border-top :1px solid #391400;
+    border-left: 1px solid #391400;
+    border-bottom: 1px solid #391400;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary_container .experience_practices_container .right_box:hover{
+    background-color: #FDF0E9;
+}
+
+.secondary_container .experience_practices_container .right_box .round{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: #9C3D54;
+}
+
+.secondary_container .experience_practices_container .right_box .content_box{
+    display: block;
+    padding-left: 20px;
+}
+
+.secondary_container .experience_practices_container .right_box .round i{
+    margin: auto;
+    color: white;
+    font-size: 50px;
+}
+
+.secondary_container .autobiography{
+    max-width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+    padding: 10px;
+}
+
+.secondary_container .autobiography h4{
+    font-weight: 700;
+    color: #EF6D58;
+    font-size: 15px;
+}
+
+.secondary_container .autobiography h1{
+    font-weight: 900;
+    color: #391400;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.secondary_container .autobiography p{
+    font-weight: 300;
+    color: #391400;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 
