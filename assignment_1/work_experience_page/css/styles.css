@@ -135,12 +135,12 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;
 }
 
 .second_cantainer .top_detail_container .left_box{
-    max-width: fit-content;
+    max-width: 50%;
     padding: 50px;
     padding-top: 0px;
     margin-top: 0px;
@@ -159,8 +159,10 @@ a{
 }
 
 .second_cantainer .top_detail_container .right_box{
-    max-width: 400px;
+    max-width: 30%;
+    min-width: 400px;
     padding: 50px;
+    padding-right: 150px;
 }
 
 .second_cantainer .top_detail_container .right_box p{
@@ -215,17 +217,30 @@ a{
     justify-content: space-between;
     overflow: hidden;
     margin-bottom: 40px;
+    min-width: 90%;
+    margin: auto;
 }
 
 .second_cantainer .work_container .content .left_box{
-    max-width: 450px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.second_cantainer .work_container .content .left_box img{
+    min-width: 400px;
 }
 
 .second_cantainer .work_container .content .right_box{
-    max-width: 550;
-    padding-right: 89px;
+    min-width: 400px;
+    padding-right: 150px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
+}
+
+.second_cantainer .work_container .content .right_box h2{
+    max-width: 300px;
 }
 
 .second_cantainer .work_container .content .right_box p{
@@ -325,7 +340,7 @@ a{
 }
 
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:995px) {
     .second_cantainer .work_container .content{
         flex-wrap: wrap;
     }
@@ -365,6 +380,7 @@ a{
     
     .second_cantainer .top_detail_container .right_box{
         padding-top: 0px;
+        padding-right: 50px;
         margin: auto;
     }
 }
