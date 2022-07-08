@@ -134,9 +134,56 @@ a{
 }
 
 .secondary_container .img_container{
+    max-width: 90%;
+    margin: auto;
+    padding: 30px;
+}
+
+.secondary_container .content_container{
+    max-width: 50%;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.secondary_container .content_container h4{
+    font-weight: 700;
+    color: #EF6D58;
+    font-size: 10px;
+}
+
+.secondary_container .content_container h1{
+    font-weight: 900;
+    color: #391400;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.secondary_container .content_container p{
+    font-weight: 300;
+    color: #391400;
+}
+
+.secondary_container .experience_practices_container{
+    display: flex;  
+    justify-content: center;
     max-width: 80%;
     margin: auto;
 }
+
+.secondary_container .experience_practices_container .left_box{
+    max-width: 50%;
+    border-top :1px solid #391400;
+    border-right: 1px solid #391400;
+    border-bottom: 1px solid #391400;
+}
+
+.secondary_container .experience_practices_container .right_box{
+    max-width: 50%;
+}
+
+
+
 
 
 .footer_container{
