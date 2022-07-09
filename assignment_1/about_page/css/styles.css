@@ -33,6 +33,8 @@ a{
     position: sticky;
     top: 0;
     background-color: #889EAF; 
+    /* if not z-index below logo with upon it */
+    z-index: 1; 
 }
 
 .nav_container .nav_bar{
@@ -306,6 +308,76 @@ a{
     display: flex;
 }
 
+.secondary_container .logo_container{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    min-width: 90%;
+    opacity: 0.7;
+    
+    padding: 30px 20px;
+}
+
+.secondary_container .footer_upon{
+    background-color: #D4B499;
+}
+
+.secondary_container .footer_upon .get_started_container{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary_container .footer_upon .get_started_container .left_box{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    padding-bottom: 20px;
+}
+
+.secondary_container .footer_upon .get_started_container .left_box h4{
+    font-weight: 700;
+    color: #EF6D58;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+
+.secondary_container .footer_upon .get_started_container .left_box h1{
+    font-weight: 900;
+    color: #391400;
+    font-size: 2.5vw;
+    margin: 0px;
+    display: inline;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.secondary_container .footer_upon .get_started_container .left_box .btn{
+    background-color: #9C3D54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #9C3D54;
+    width: fit-content;
+    color: white;
+}
+
+.secondary_container .footer_upon .get_started_container p{
+    max-width: 30%;
+    color: #391400;
+    margin: auto;
+    font-weight: 300;
+}
+
+.secondary_container .footer_upon .get_started_container img{
+    max-width: 30%;
+    color: #391400;
+    margin: auto;
+    font-weight: 300;
+    margin: 20px;
+}
+
 
 @media screen and (max-width: 880px) {
     .secondary_container .experience_practices_container{
@@ -331,12 +403,17 @@ a{
 
     
     .secondary_container .life_quotes_container i{
-        font-size: 11vw;
+        font-size: 10.5vw;
 
     }
 
     .secondary_container .life_quotes_container{
         max-width: 500px;
+    }
+
+    .secondary_container .logo_container img{
+        width: 10vw;
+        min-width: 90px;
     }
 }
 
@@ -350,7 +427,9 @@ a{
     }
 
     .secondary_container .autobiography{
-        min-width: 100px;
+        min-width: 50%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .secondary_container .autobiography h1{
@@ -358,11 +437,59 @@ a{
     }
 
     .secondary_container .life_quotes_container{
-        max-width: 430px;
+        max-width: 410px;
     }
 
     .secondary_container .life_quotes_container h1{
         font-size: 5.2vw;
+    }
+
+    .secondary_container .logo_container{
+        flex-wrap: wrap;
+        min-width: 75%;
+    }
+
+    .secondary_container .logo_container img{
+        width: 22vw;
+        min-width: 90px;
+    }
+
+    .secondary_container .footer_upon .get_started_container{
+        flex-wrap: wrap;
+    }
+
+    .secondary_container .footer_upon .get_started_container .left_box{
+        min-width: 55%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+    .secondary_container .footer_upon .get_started_container .left_box h1{
+        font-size: 5vw;
+    }
+
+    .secondary_container .footer_upon .get_started_container p{
+        min-width: 60%;
+        padding: 20px 0px;
+    }
+    
+    .secondary_container .footer_upon .get_started_container img{
+        min-width: 60%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    .secondary_container .footer_upon .get_started_container .left_box{
+        min-width: 90%;
+    }
+
+    .secondary_container .footer_upon .get_started_container p{
+        min-width: 90%;
+    }
+    
+    .secondary_container .footer_upon .get_started_container img{
+        min-width: 90%;
     }
 }
 
