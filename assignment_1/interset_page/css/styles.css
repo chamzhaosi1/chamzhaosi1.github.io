@@ -29,7 +29,7 @@ a{
 }
 
 .top_container .top_content h1{ 
-    font-size: 70px;
+    font-size: 60px;
     color: #391400;
     font-weight: 800;
     margin-top: 0px;
@@ -238,6 +238,10 @@ a{
         min-width: 90%;
     }
 
+    .second_container .below_container .left_box_picture img{
+        max-width: 285px;
+    }
+
     .second_container .below_container .left_box_content{
         padding-left: 20px;
         width: 90%;
@@ -245,6 +249,10 @@ a{
 
     .second_container .below_container .right_box_picture{
         min-width: 100%;
+    }
+
+    .second_container .below_container .right_box_picture img{
+        max-width: 285px;
     }
     
 }
