@@ -165,7 +165,7 @@ a {
 
 .second_container .map_container .contact_form form input[type="submit"] {
   width: fit-content;
-  padding: 5% 10%;
+  padding: 10px 20px;
   margin: 10% 10%;
   border: #f3d5c0 solid 1px;
   border-radius: 5px;
@@ -185,18 +185,32 @@ a {
 .second_container .below_container {
   display: flex;
   flex-direction: row;
-  max-width: 85%;
+  max-width: 90%;
   margin: auto;
 }
 
 .second_container .below_container .detail_box {
-  width: 30%;
+  width: 25%;
   text-align: left;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px 30px;
   height: 150px;
+}
+
+.second_container .below_container .detail_box.email {
+  width: 35%;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  height: 150px;
+}
+
+.second_container .below_container .detail_box.email h3{
+  word-wrap: break-word;
 }
 
 .second_container .below_container .detail_box:hover {
@@ -246,13 +260,27 @@ a {
     max-width: 80%;
   }
 
+  .second_container .map_container .contact_form form input[type="submit"] {
+    font-size: 15px;
+  }
+
   .second_container .below_container {
     flex-wrap: wrap;
   }
 
   .second_container .below_container .detail_box {
-    margin-bottom: 10px;
-    height: 140px;
+    margin-bottom: 20px;
+    height: 135px;
+  }
+
+  .second_container .below_container .detail_box.email {
+    margin-left: 20px;
+    height: 135px;
+  }
+
+  .second_container .below_container .detail_box.address {
+    min-width: 300px;
+    height: 135px;
   }
 
   .second_container .below_container .detail_box h3 {
@@ -261,14 +289,37 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .second_container .map_container .contact_form form input[type="submit"] {
+    font-size: 2.5vw;
+  }
+
   .second_container .below_container .detail_box {
     margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 51%;
-    height: 110px;
+    height: 100px;
+    min-width: 80%;
+  }
+  
+  .second_container .below_container .detail_box.email {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px;
+    min-width: 80%;
+    height: 110px
+  }
+
+  .second_container .below_container .detail_box.address {
+    padding-left: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 80%;
+    height: 120px
   }
 
   .second_container .below_container .detail_box h3 {
-    font-size: 3vw;
+    font-size: 15px;
   }
 }
 
