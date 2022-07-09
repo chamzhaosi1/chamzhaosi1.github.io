@@ -25,6 +25,8 @@ a{
 
 .top_container .top_content h4{ 
     padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #391400;
     margin-bottom: 0px;
 }
@@ -118,6 +120,12 @@ a{
     .nav_container .nav_bar .menu_content
     {
         display: none !important;
+    }
+}
+
+@media screen and (max-width:450px){
+    .top_container .top_content h1{ 
+        font-size: 55px;
     }
 }
 
@@ -248,7 +256,7 @@ a{
 
 .second_container .inside_container{
     position: fixed;
-    top: 20%;
+    top: 7%;
     left: 10%;
     width: 0%;
     max-height: 90%;
@@ -258,6 +266,7 @@ a{
     border-radius: 10px;
     overflow-y: auto;
     transition: 1s;
+    overflow-x: hidden;
 }
 
 .second_container .inside_container #week_2_bg{
@@ -419,9 +428,35 @@ a{
         font-size: 3vw;
     }
 
+    .second_container .inside_container .inside_box_container .inside_box{
+        width: 60vw;
+    }
+
     .second_container .content_container .box{
         margin-left: 0px;
     }
+
+    .second_container .inside_container{
+        max-width: 90%;
+    }
+
+    .second_container .inside_container .top_bar{
+        max-width: 90%;
+    }
+    
+    .second_container .inside_container .top_bar h1{
+        font-size: 10vw;
+        padding: 10px 25px;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .second_container .content_container .box h1{
+        font-size: 8vw;
+    }
+
+
 }
 
 
