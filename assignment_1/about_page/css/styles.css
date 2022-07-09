@@ -142,7 +142,7 @@ a{
 }
 
 .secondary_container .img_container img{
-    min-width: 295px;
+    min-width: 240px;
     max-width: 100%;
 }
 
@@ -422,10 +422,6 @@ a{
         font-size: 10vw;
     }
 
-    .secondary_container .content_container{
-        min-width: 100px;
-    }
-
     .secondary_container .autobiography{
         min-width: 50%;
         padding-right: 20px;
@@ -480,6 +476,37 @@ a{
 }
 
 @media screen and (max-width: 400px) { 
+    .secondary_container .content_container{
+        min-width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .secondary_container .experience_practices_container{
+        max-width: 85%;
+    }
+
+    .secondary_container .experience_practices_container .inside_box{
+        min-width: 280px;
+    }
+
+    .secondary_container .experience_practices_container .inside_box .round{
+        min-width: 100px;
+        height: 100px;
+    }
+
+    .secondary_container .experience_practices_container .inside_box .content_box{
+        max-width: 70%;
+    }
+
+    .secondary_container .life_quotes_container{
+        padding: 0px 20px 0px 40px;
+    }
+
+    .secondary_container .life_quotes_container h1{
+        font-size: 6vw;
+    }
+    
     .secondary_container .footer_upon .get_started_container .left_box{
         min-width: 90%;
     }
