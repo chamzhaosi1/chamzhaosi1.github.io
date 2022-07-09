@@ -169,6 +169,7 @@ a{
     font-weight: 100;
     color: #391400;
     text-align: justify;
+    line-height: 20px;
 }
 
 .second_cantainer .work_container{
@@ -183,7 +184,6 @@ a{
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -208,7 +208,7 @@ a{
     margin-top: 0px;
     margin-bottom: 0px;
     color: #391400;
-    min-width: 85%;
+    min-width: 75%;
     font-weight: 900;
 }
 
@@ -228,11 +228,11 @@ a{
 }
 
 .second_cantainer .work_container .content .left_box img{
-    min-width: 400px;
+    min-width: 250px;
 }
 
 .second_cantainer .work_container .content .right_box{
-    min-width: 400px;
+    min-width: 250px;
     padding-right: 150px;
     padding-left: 50px;
     display: flex;
@@ -249,6 +249,7 @@ a{
     flex-direction: column;
     text-align: justify;
     font-weight: 300;
+    line-height: 20px;
 }
 
 .second_cantainer .work_container .content .skill_box{
@@ -308,14 +309,14 @@ a{
     margin-bottom: 20px;
 }
 
-.second_cantainer .languages_container .each_container .box .bash{
-    min-width: 90%;
+.second_cantainer .languages_container .each_container .box .base{
+    min-width: 85%;
     background-color: lightgray;
     margin-left: 10px;
     margin-right: 30px;
 }
 
-.second_cantainer .languages_container .each_container .box .bash .level_1{
+.second_cantainer .languages_container .each_container .box .base .level_1{
     text-align: center;
     max-width: 33%;
     background-color: #506D84;
@@ -323,7 +324,7 @@ a{
     padding: 3px;
 }
 
-.second_cantainer .languages_container .each_container .box .bash .level_2{
+.second_cantainer .languages_container .each_container .box .base .level_2{
     text-align: center;
     max-width: 80%;
     background-color: #506D84;
@@ -331,7 +332,7 @@ a{
     padding: 3px;
 }
 
-.second_cantainer .languages_container .each_container .box .bash .level_3{
+.second_cantainer .languages_container .each_container .box .base .level_3{
     text-align: center;
     max-width: 55%;
     background-color: #506D84;
@@ -391,7 +392,7 @@ a{
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:520px) {
     .second_cantainer .work_container .top_collapse{
         padding-left: 0px;
     }
@@ -405,6 +406,38 @@ a{
         min-width: 35px;
         font-size: 15px;
         margin-top: 8px;
+    }
+
+    .second_cantainer .top_detail_container .right_box{
+        min-width: 80%;
+        padding: 0px 20px;
+    }
+
+    .second_cantainer .work_container .content .left_box{
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+    
+    .second_cantainer .work_container .content .right_box{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .second_cantainer .work_container .top_collapse h1{
+        font-size: 6vw;
+    }
+
+    .second_cantainer .work_container .content .left_box img{
+        min-width: 210px;
+    }
+
+    .second_cantainer .work_container .content .right_box p{
+        max-width: 90%;
+    }
+
+    .second_cantainer .work_container .content .right_box h2{
+       font-size: 8vw;
     }
 }
 
