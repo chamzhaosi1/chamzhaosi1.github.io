@@ -455,12 +455,7 @@ a{
     .second_container .content_container .box h1{
         font-size: 8vw;
     }
-
-
 }
-
-
-
 
 .footer_container{
     display: flex;
@@ -482,6 +477,7 @@ a{
 }
 
 .footer_container .above_container .box h2{
+    font-weight: 700;
     color: #391400;
 }
 
@@ -495,6 +491,7 @@ a{
     color:  #391400;
     display: block;
     padding-bottom: 10px;
+    line-height: 20px;
     font-weight: 500;
     font-size: 1.3vw;
 }
@@ -540,8 +537,9 @@ a{
 }
 
 .footer_container .below_container .left_box h4{
-    color:  #391400;
-    font-weight: 500;
+    color: rgba(57, 20, 0, 0.64);
+    font-weight: 400;
+    line-height: 32px;
 }
 
 .footer_container .below_container .right_box{
@@ -554,7 +552,8 @@ a{
 
 .footer_container .below_container .right_box h4{
     color:  #391400;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 @media screen and (max-width: 720px) {

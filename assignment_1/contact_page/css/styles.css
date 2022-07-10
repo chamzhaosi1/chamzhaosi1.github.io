@@ -344,10 +344,11 @@ a {
 
 .footer_container .above_container .box h2 {
   color: white;
+  font-weight: 700;
 }
 
 .footer_container .above_container .box h4 {
-  font-weight: 700;
+  font-weight: 400;
   color: #ef6d58;
   font-size: 16px;
 }
@@ -357,6 +358,7 @@ a {
   display: block;
   padding-bottom: 10px;
   font-weight: 100;
+  line-height: 20px;
   font-size: 1.3vw;
 }
 
@@ -401,8 +403,9 @@ a {
 }
 
 .footer_container .below_container .left_box h4 {
-  color: white;
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.64);
+  font-weight: 400;
+  line-height: 32px;
 }
 
 .footer_container .below_container .right_box {
@@ -415,7 +418,8 @@ a {
 
 .footer_container .below_container .right_box h4 {
   color: white;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 32px;
 }
 
 @media screen and (max-width: 720px) {
