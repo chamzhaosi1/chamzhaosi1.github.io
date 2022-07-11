@@ -9,79 +9,6 @@ a{
     color: white;
 }
 
-.top_container{ 
-    background-color: grey;
-}
-
-.top_container .content_container{ 
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    max-width: 90%;
-    padding: 20px 10px;
-}
-
-.top_container .content_container .left_box{ 
-    max-width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.top_container .content_container .left_box h4{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #EF6D58;
-}
-
-.top_container .content_container .left_box h1{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 5.3vw;
-    line-height: 6vw;
-    color: #391400;
-    letter-spacing: -2px;
-    margin: 10px 0px;
-}
-
-.top_container .content_container .left_box p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: rgba(255, 255, 255, 0.64);
-}
-
-.top_container .content_container .left_box .btn{ 
-    max-width: fit-content;
-    border-radius: 5px;
-    background-color: #9C3D54;
-    padding: 20px 10px;  
-    font-style: normal;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF; 
-}
-
-.top_container .content_container .right_box{ 
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-}
-
-.top_container .content_container .right_box img{ 
-    max-width: 500px;
-    min-width: 250px;
-}
-
-
 .nav_container{
     position: sticky;
     top: 0;
@@ -156,6 +83,151 @@ a{
     background-color: #9C3D54;
 }
 
+.top_container{ 
+    background-color: grey;
+}
+
+.top_container .content_container{ 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 90%;
+    padding: 20px 10px;
+}
+
+.top_container .content_container .left_box{ 
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_container .content_container .left_box h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+
+.top_container .content_container .left_box h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.3vw;
+    line-height: 6vw;
+    color: #391400;
+    letter-spacing: -2px;
+    margin: 10px 0px;
+}
+
+.top_container .content_container .left_box p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.top_container .content_container .left_box .btn{ 
+    max-width: fit-content;
+    border-radius: 5px;
+    background-color: #9C3D54;
+    padding: 20px 10px;  
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+
+.top_container .content_container .right_box{ 
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.top_container .content_container .right_box img{ 
+    max-width: 500px;
+    min-width: 250px;
+}
+
+.second_container{
+    background-color: #FDF0E9;
+}
+
+.second_container .content_container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 90%;
+    padding: 20px 10px;
+}
+
+.second_container .content_container .left_box{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.second_container .content_container .left_box img{ 
+    max-width: 500px;
+    min-width: 250px;
+    border-radius: 25px;
+}
+
+.second_container .content_container .right_box{ 
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.second_container .content_container .right_box h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+
+.second_container .content_container .right_box h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.3vw;
+    line-height: 6vw;
+    color: #391400;
+    letter-spacing: -2px;
+    margin: 10px 0px;
+}
+
+.second_container .content_container .right_box p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(57, 20, 0, 0.64);
+}
+
+.second_container .content_container .right_box .btn{ 
+    max-width: fit-content;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 20px 10px;  
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #391400; 
+}
+
 @media screen and (max-width: 800px) {
     .top_container .content_container{ 
         flex-direction: column-reverse;
@@ -175,6 +247,26 @@ a{
         max-width: 80%;
         margin: auto;
         padding-left: 0px; 
+    }
+
+    .second_container .content_container{ 
+        flex-direction: column;
+    }
+
+    .second_container .content_container .right_box{ 
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .second_container .content_container .right_box h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .second_container .content_container .left_box{ 
+        max-width: 80%;
+        margin: auto;
+        padding-right: 0px; 
     }
     
     .nav_container .nav_bar a{
@@ -211,15 +303,39 @@ a{
         line-height: 50px;
     }
 
+    .top_container .content_container .left_box .btn{ 
+        font-size: 12px;
+    }
+
     .top_container .content_container .right_box{ 
         margin: 0px 10px;
         max-width: 95%;
     }
 
-    .top_container .content_container .left_box .btn{ 
-        font-size: 12px;
+    .second_container .content_container .right_box{ 
+        margin: 0px 10px;
+        max-width: 90%;
     }
-    
+
+    .second_container .content_container .right_box h4{
+        margin: 10px 0px 0px 0px;
+        font-size: 3.5vw;
+    }
+
+    .second_container .content_container .right_box h1{
+        font-size: 11vw;
+        line-height: 50px;
+    }
+
+    .second_container .content_container .right_box .btn{ 
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .second_container .content_container .left_box{ 
+        margin: 0px 10px;
+        max-width: 95%;
+    }  
 }
 
 
