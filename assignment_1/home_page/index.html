@@ -429,13 +429,15 @@
                         <h2>
                             Get In Touch
                         </h2>
-                        <form>
-                            <input type="text" placeholder="Your email">
-                            <select name="subject" id="">
-                                <option value="Subject">Subject</option>
+                        <form name="contact_form" action="#" onsubmit="submit_notification()">
+                            <input type="email" id="email" placeholder="Your email" required>
+                            <select name="subject" id="subject" required>
+                                <option value="">--Select one option--</option>
+                                <option value="discussion">DISCUSIION</option>
+                                <option value="learning">LEARNING</option>
                             </select>
-                            <input class="textarea" type="text" placeholder="Message">
-                            <input type="submit" value="SUBMIT NOW">
+                            <textarea id="message" name="message" rows="4" cols="50" placeholder="message" required></textarea>
+                            <input type="submit" value="SUBMIT NOW" required>
                         </form>
                     </div>
                     <div class="right_box">
@@ -580,6 +582,14 @@
 
             function close_icon(index){
                 document.getElementById("week_"+index).style.width = "0%";
+            }
+
+            function submit_notification(){
+                alert("Your message has been submitted, we will contact you as soon as possible!");
+
+                document.getElementById("email").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("message").value = "";
             }
         </script>
     </body>

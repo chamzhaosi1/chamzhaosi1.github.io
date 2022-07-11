@@ -59,6 +59,10 @@ a {
   font-size: 30px;
 }
 
+.nav_container .nav_bar a{
+  font-size:calc(9px + 0.5vw);
+}
+
 .nav_container .nav_bar h4 {
   border: rgba(255, 255, 255, 0.5) solid 1px;
   border-radius: 5px;
@@ -125,9 +129,9 @@ a {
 }
 
 .second_container .map_container {
-  background-image: url("../images/location.jpg");
+  background-image: url("../images/location.png");
   background-repeat: no-repeat;
-  background-size: 100%, 100%;
+  background-size: cover;
   background-position: 0px 30px;
   padding: 30px 50px;
 }
@@ -138,15 +142,17 @@ a {
 
 .second_container .map_container .contact_form {
   background-color: white;
-  max-width: 25%;
-  padding: 5%;
+  max-width: 300px;
+  padding: 50px 50px 10px 50px;
   margin: 5% 0px;
   border-radius: 10px;
 }
 
 .second_container .map_container .contact_form h2 {
-  margin: 10px;
-  font-size: 3vw;
+  margin: 10px 0px;
+  font-size: calc(17px + 1.5vw);
+  color: #391400;
+  font-weight: 700;
 }
 
 .second_container .map_container .contact_form form {
@@ -155,12 +161,22 @@ a {
   align-items: flex-end;
 }
 
-.second_container .map_container .contact_form form input[type="text"] {
+.second_container .map_container .contact_form form input[type="email"] {
   border: #f3d5c0 solid 1px;
   border-radius: 5px;
   padding: 4%;
   margin: 3%;
-  width: 87%;
+  width: 265px;
+}
+
+.second_container .map_container .contact_form form textarea {
+  border: #f3d5c0 solid 1px;
+  border-radius: 5px;
+  padding: 4%;
+  margin: 3%;
+  width: 265px;
+  height: 100px;
+  word-break: break-all;
 }
 
 .second_container .map_container .contact_form form input[type="submit"] {
@@ -171,7 +187,12 @@ a {
   border-radius: 5px;
   color: white;
   background-color: #9c3d54;
-  font-size: 1.5vw;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.second_container .map_container .contact_form form input[type="submit"]:hover {
+  box-shadow: 3px 3px 10px #391400;
 }
 
 .second_container .map_container .contact_form form select {
@@ -179,7 +200,7 @@ a {
   border-radius: 5px;
   padding: 3%;
   margin: 3%;
-  width: 96%;
+  width: 290px;
 }
 
 .second_container .below_container {
@@ -257,7 +278,7 @@ a {
 
   .second_container .map_container .contact_form {
     margin: auto;
-    max-width: 80%;
+    max-width: 300px;
   }
 
   .second_container .map_container .contact_form form input[type="submit"] {
@@ -289,6 +310,27 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .second_container .map_container{
+    padding: 30px 10px;
+  }
+
+  .second_container .map_container .contact_form form input[type="email"] {
+      width: 90%;
+  }
+
+  .second_container .map_container .contact_form form select {
+      width: 99%
+  }
+
+  .second_container .map_container .contact_form form textarea {
+      width: 90%;
+  }
+
+  .second_container .map_container .contact_form{
+      min-width: 60%;
+      
+  }
+
   .second_container .map_container .contact_form form input[type="submit"] {
     font-size: 2.5vw;
   }
@@ -359,7 +401,12 @@ a {
   padding-bottom: 10px;
   font-weight: 100;
   line-height: 20px;
-  font-size: 1.3vw;
+  font-size: calc(4px + 1.0vw);
+}
+
+.footer_container .above_container .box a:hover{
+  color: #391400;
+  font-weight: 400;
 }
 
 .footer_container .above_container .box .inside_box {
@@ -382,6 +429,11 @@ a {
   align-items: center;
   margin-right: 10px;
   color: white;
+  cursor: pointer;
+}
+
+.footer_container .above_container .box .inside_box .round:hover{
+  box-shadow: 0px 0px 10px white;
 }
 
 .footer_container .above_container .box .inside_box .round i {
@@ -413,13 +465,14 @@ a {
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 50px;
-  width: 22%;
+  width: 300px;
 }
 
 .footer_container .below_container .right_box h4 {
   color: white;
   font-weight: 400;
   line-height: 32px;
+  padding-left: 20px;
 }
 
 @media screen and (max-width: 720px) {

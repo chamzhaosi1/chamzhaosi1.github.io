@@ -863,7 +863,7 @@ a{
     align-items: flex-end;
 }
 
-.seventh_container .content_container .left_box form input[type="text"] {
+.seventh_container .content_container .left_box form input[type="email"] {
     border: #f3d5c0 solid 1px;
     border-radius: 5px;
     padding: 4%;
@@ -871,7 +871,7 @@ a{
     width: 250px;
 }
 
-.seventh_container .content_container .left_box select {
+.seventh_container .content_container .left_box form select {
     border: #f3d5c0 solid 1px;
     border-radius: 5px;
     padding: 3%;
@@ -879,7 +879,7 @@ a{
     width: 275px;
 }
 
-.seventh_container .content_container .left_box form input[type="text"].textarea {
+.seventh_container .content_container .left_box form textarea {
     border: #f3d5c0 solid 1px;
     border-radius: 5px;
     padding: 4%;
@@ -901,7 +901,7 @@ a{
 }
 
 .seventh_container .content_container .left_box form input[type="submit"]:hover {
-    box-shadow: 3px 3px 10px #391400;;
+    box-shadow: 3px 3px 10px #391400;
 }
 
 .seventh_container .content_container .right_box{
@@ -950,7 +950,6 @@ a{
     margin-right: 20px;
     color: white;
 }
-
 
 .eight_container{
     display: flex;
@@ -1103,15 +1102,15 @@ a{
         max-width: none;
     }
 
-    .seventh_container .content_container .left_box form input[type="text"] {
+    .seventh_container .content_container .left_box form input[type="email"] {
         width: 90%;
     }
     
-    .seventh_container .content_container .left_box select {
+    .seventh_container .content_container .left_box form select {
         width: 99%
     }
     
-    .seventh_container .content_container .left_box form input[type="text"].textarea {
+    .seventh_container .content_container .left_box form textarea {
         width: 90%;
     }
 
@@ -1131,10 +1130,7 @@ a{
     .eight_container .img_box img{
         min-width: 100.5%;
     }
-
-   
 }
-
 
 @media screen and (min-width: 801px) {
     .nav_container .nav_bar .menu_content
@@ -1415,10 +1411,15 @@ a{
     color:  white;
     display: block;
     padding-bottom: 10px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 20px;
-    font-size: calc(2px + 1.4vw);
+    font-size: calc(4px + 1.0vw);
 }
+
+.footer_container .above_container .box a:hover{
+    color: #391400;
+    font-weight: 400;
+  }
 
 .footer_container .above_container .box .inside_box{
     display: flex;
@@ -1440,7 +1441,12 @@ a{
     align-items: center;
     margin-right: 10px;
     color: white;
+    cursor: pointer;
 }
+
+.footer_container .above_container .box .inside_box .round:hover{
+    box-shadow: 0px 0px 10px white;
+  }
 
 .footer_container .above_container .box .inside_box .round i{
     padding-right: 0px;
