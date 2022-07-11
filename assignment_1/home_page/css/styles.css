@@ -285,8 +285,8 @@ a{
 .third_container .content_container .left_box{
     max-width: 50%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    justify-content: left;
 }
 
 .third_container .content_container .left_box h4{
@@ -305,35 +305,105 @@ a{
 .third_container .content_container .left_box h1{
     font-weight: 900;
     color: #391400;
-    font-size: 45px;
+    font-size: 2.6vw;
     margin: 0px;
-    display: inline;
-    line-height: 1.5;
+    line-height: 2.3;
 }
 
 .third_container .content_container .left_box h1.move_up{
-    padding-bottom: 20px;
+    
     display: flex;
+    align-items: center;
 }
 
 .third_container .content_container .right_box{
-    max-width: 50%;
+    margin: auto;
     display: flex;
     align-items: center;
-    padding-right: 50px;
+    padding: 20px 20px;
 }
 
 
 .third_container .content_container .right_box img{ 
     max-width: 500px;
     min-width: 250px;
+    width: 105%;
     border-radius: 25px;
 }
 
+.third_container .footer_upon{
+    background-color: #D4B499;
+}
 
+.third_container .footer_upon .get_started_container{
+    max-width: 89%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.third_container .footer_upon .get_started_container .left_box{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    padding-bottom: 20px;
+}
+
+.third_container .footer_upon .get_started_container .left_box h4{
+    font-weight: 700;
+    color: #EF6D58;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 2px;
+}
+
+.third_container .footer_upon .get_started_container .left_box h1{
+    font-weight: 900;
+    color: #391400;
+    font-size: 2.5vw;
+    margin: 0px;
+    display: inline;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.third_container .footer_upon .get_started_container .left_box .btn{
+    background-color: #9C3D54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #9C3D54;
+    width: fit-content;
+    color: white;
+}
+
+.third_container .footer_upon .get_started_container p{
+    max-width: 30%;
+    color: #391400;
+    margin: auto;
+    font-weight: 300;
+}
+
+.third_container .footer_upon .get_started_container img{
+    max-width: 30%;
+    color: #391400;
+    margin: auto;
+    font-weight: 300;
+    margin: 20px;
+}
 
 
 @media screen and (max-width: 800px) {
+    .nav_container .nav_bar a{
+        display: none;
+    }
+
+    .nav_container .nav_bar .portfolio_box a,
+    .nav_container .nav_bar .menu_bar, 
+    .nav_container .nav_bar .menu_content a
+    {
+        display: flex;
+    }
+
     .top_container .content_container{ 
         flex-direction: column-reverse;
     }
@@ -382,16 +452,18 @@ a{
         justify-content: left;
         padding: 10px 40px;
     }
-    
-    .nav_container .nav_bar a{
-        display: none;
+
+    .third_container .content_container{
+        flex-direction: column-reverse;
     }
 
-    .nav_container .nav_bar .portfolio_box a,
-    .nav_container .nav_bar .menu_bar, 
-    .nav_container .nav_bar .menu_content a
-    {
-        display: flex;
+    .third_container .content_container .left_box{
+        min-width: 500px;
+        padding: 20px;
+    }
+
+    .third_container .content_container .left_box h1{
+        font-size: 28px;
     }
 }
 
@@ -399,6 +471,45 @@ a{
     .nav_container .nav_bar .menu_content
     {
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .third_container .content_container .left_box{
+        min-width: 90%;
+        padding: 10px;
+    }
+
+    .third_container .content_container .left_box h1{
+        font-size: 4.6vw;
+    }
+
+    .third_container .footer_upon .get_started_container{
+        flex-wrap: wrap;
+    }
+
+    .third_container .footer_upon .get_started_container .left_box{
+        min-width: 90%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+    .third_container .footer_upon .get_started_container .left_box h1{
+        font-size: 5vw;
+    }
+
+    .third_container .footer_upon .get_started_container p{
+        min-width: 90%;
+        padding: 20px 0px;
+    }
+    
+    .third_container .footer_upon .get_started_container img{
+        min-width: 90%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    .third_container .footer_upon .get_started_container .left_box .btn{
+        font-size: 3vw;
     }
 }
 
@@ -466,6 +577,18 @@ a{
 
     .second_container .bottom_container .inside_box .content_box h3{
         font-size: 5vw;
+    }
+
+    .third_container .content_container .left_box i{
+        font-size: 15vw;
+    }
+
+    .third_container .content_container .right_box{
+        padding: 20px 0px 0px 0px;
+    }
+
+    .third_container .footer_upon .get_started_container{
+        min-width: 90%;
     }
 }
 
