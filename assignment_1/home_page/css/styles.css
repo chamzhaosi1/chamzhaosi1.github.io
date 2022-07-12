@@ -1280,6 +1280,11 @@ a{
         padding: 20px 0px;
     }
 
+    .four_container .content_container .btn{ 
+        font-size: 12px;
+        padding: 10px;
+    }
+
     .four_container .content_container .left_box{
         min-width: 100%;
     }
@@ -1372,6 +1377,11 @@ a{
 
     .sixth_container .content_container .left_box h2{
         min-width: 100%;
+    }
+
+    .sixth_container .content_container .left_box .btn{ 
+        font-size: 12px;
+        padding: 10px;
     }
 
     .seventh_container .content_container{
