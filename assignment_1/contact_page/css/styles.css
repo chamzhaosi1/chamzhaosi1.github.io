@@ -59,14 +59,27 @@ a {
   font-size: 30px;
 }
 
+.nav_container .nav_bar .portfolio_box h2:hover {
+  color: #391400;
+}
+
 .nav_container .nav_bar a{
   font-size:calc(9px + 0.5vw);
+}
+
+.nav_container .nav_bar a:hover{
+  color: #391400;
 }
 
 .nav_container .nav_bar h4 {
   border: rgba(255, 255, 255, 0.5) solid 1px;
   border-radius: 5px;
   padding: 10px 25px;
+}
+
+.nav_container .nav_bar h4:hover{
+  background-color: #391400;
+  color: white;
 }
 
 .nav_container .nav_bar .menu_bar {
@@ -78,6 +91,10 @@ a {
   border-radius: 5px;
   padding: 10px;
   display: none;
+}
+
+.nav_container .nav_bar .menu_bar:hover{
+  background-color:#391400;
 }
 
 .nav_container .nav_bar .menu_content {

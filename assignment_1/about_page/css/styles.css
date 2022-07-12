@@ -61,11 +61,28 @@ a{
     font-size: 30px;
 }
 
+.nav_container .nav_bar .portfolio_box h2:hover {
+    color: #391400;
+}
+  
+.nav_container .nav_bar a{
+    font-size:calc(9px + 0.5vw);
+}
+  
+.nav_container .nav_bar a:hover{
+    color: #391400;
+}
+
 .nav_container .nav_bar h4{
     border: rgba(255, 255, 255, 0.5) solid 1px;
     border-radius: 5px;
     padding: 10px 25px;
 }
+
+.nav_container .nav_bar h4:hover{
+    background-color: #391400;
+    color: white;
+  }
 
 .nav_container .nav_bar .menu_bar{
     position: absolute;
@@ -76,6 +93,10 @@ a{
     border-radius: 5px;
     padding: 10px;
     display: none;
+}
+
+.nav_container .nav_bar .menu_bar:hover{
+    background-color:#391400;;
 }
 
 .nav_container .nav_bar .menu_content{
@@ -361,6 +382,11 @@ a{
     border: 1px solid #9C3D54;
     width: fit-content;
     color: white;
+    font-size: calc(10px + 0.5vw);
+}
+
+.secondary_container .footer_upon .get_started_container .left_box .btn:hover{
+    box-shadow: 3px 3px 10px #391400;
 }
 
 .secondary_container .footer_upon .get_started_container p{
@@ -368,6 +394,8 @@ a{
     color: #391400;
     margin: auto;
     font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
 }
 
 .secondary_container .footer_upon .get_started_container img{
@@ -511,6 +539,10 @@ a{
         min-width: 90%;
     }
 
+    .secondary_container .footer_upon .get_started_container .left_box h1{
+        font-size: calc(20px + 1.5vw);
+    }
+
     .secondary_container .footer_upon .get_started_container p{
         min-width: 90%;
     }
@@ -543,11 +575,12 @@ a{
 
 .footer_container .above_container .box h2{
     color: white;
+    font-weight: 700;
 }
 
 .footer_container .above_container .box h4{
-    font-weight: 700;
-    color: #EF6D58;
+    font-weight: 400;
+    color: #ef6d58;
     font-size: 16px;
 }
 
@@ -555,10 +588,15 @@ a{
     color:  white;
     display: block;
     padding-bottom: 10px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 20px;
-    font-size: 1.3vw;
+    font-size: calc(4px + 1.0vw);
 }
+
+.footer_container .above_container .box a:hover{
+    color: #391400;
+    font-weight: 400;
+  }
 
 .footer_container .above_container .box .inside_box{
     display: flex;
@@ -580,6 +618,11 @@ a{
     align-items: center;
     margin-right: 10px;
     color: white;
+    cursor: pointer;
+}
+
+.footer_container .above_container .box .inside_box .round:hover{
+    box-shadow: 0px 0px 10px white;
 }
 
 .footer_container .above_container .box .inside_box .round i{
@@ -611,13 +654,14 @@ a{
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 50px;
-    width: 22%;
+    width: 300px;
 }
 
 .footer_container .below_container .right_box h4{
     color:  white;
     font-weight: 400;
     line-height: 32px;
+    padding-left: 20px;
 }
 
 @media screen and (max-width: 720px) {
