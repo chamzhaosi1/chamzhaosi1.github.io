@@ -196,7 +196,7 @@ a{
     max-width: 80%;
     padding-bottom: 30px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-wrap: wrap;
     margin: auto;
 }
