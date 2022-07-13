@@ -241,7 +241,7 @@ a{
 
 .second_cantainer .work_container .content{
     display: none;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
     margin-bottom: 40px;
     min-width: 90%;
@@ -260,8 +260,7 @@ a{
 
 .second_cantainer .work_container .content .right_box{
     min-width: 250px;
-    padding-right: 150px;
-    padding-left: 50px;
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
 }

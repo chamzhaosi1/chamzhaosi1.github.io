@@ -51,6 +51,9 @@
 
             <div class="second_container">
                 <div class="map_container">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497.9926178574719!2d101.630144!3d3.110328!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4be30091b2af%3A0x895b2580b89eba25!2s116%2C%20Jalan%2020%2F2%2C%20Taman%20Paramount%2C%2046300%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1657698194390!5m2!1sen!2smy"  style="border:0;" allowfullscreen="yes" loading="lazy" marginheight="0" marginwidth="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                     <div class="contact_form">
                         <h2>
                             Get In Touch
@@ -68,7 +71,7 @@
                     </div>
                 </div>
                 <div class="mobl_map_view">
-                    <img src="images/mob_location.png" alt="mob_location.jpg" width="100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497.9926178574719!2d101.630144!3d3.110328!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4be30091b2af%3A0x895b2580b89eba25!2s116%2C%20Jalan%2020%2F2%2C%20Taman%20Paramount%2C%2046300%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1657698194390!5m2!1sen!2smy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="below_container">
                     <div class="detail_box">
@@ -171,33 +174,32 @@
                         </h4>
                     </div>
                 </div>
-           </div>
+           </div>   
         </div>
+                    <script>
 
-        
-        <script>
-            function show_menu_content() {
-                let menu_content = document.getElementById("menu_content");
-                let menu_icon = document.getElementById("menu_icon");
-                
-                if (menu_icon.className == "fa-solid fa-bars"){
-                    menu_content.style.display = "flex"
-                    menu_icon.className = "fa-solid fa-xmark"
-                    menu_icon.style.color = "#c94b69"
-                }else{
-                    menu_content.style.display ="none"
-                    menu_icon.className = "fa-solid fa-bars"
-                    menu_icon.style.color = "white"
-                }
-            }
+                        function show_menu_content() {
+                            let menu_content = document.getElementById("menu_content");
+                            let menu_icon = document.getElementById("menu_icon");
+                            
+                            if (menu_icon.className == "fa-solid fa-bars"){
+                                menu_content.style.display = "flex"
+                                menu_icon.className = "fa-solid fa-xmark"
+                                menu_icon.style.color = "#c94b69"
+                            }else{
+                                menu_content.style.display ="none"
+                                menu_icon.className = "fa-solid fa-bars"
+                                menu_icon.style.color = "white"
+                            }
+                        }
 
-            function submit_notification(){
-                alert("Your message has been submitted, we will contact you as soon as possible!");
+                        function submit_notification(){
+                            alert("Your message has been submitted, we will contact you as soon as possible!");
 
-                document.getElementById("email").value = "";
-                document.getElementById("subject").value = "";
-                document.getElementById("message").value = "";
-            }
-        </script>
-    </body>
-</html>
+                            document.getElementById("email").value = "";
+                            document.getElementById("subject").value = "";
+                            document.getElementById("message").value = "";
+                        }
+                    </script>
+                </body>
+            </html>
