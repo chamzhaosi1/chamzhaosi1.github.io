@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="top" class="container">
-            <div class="nav_container">
+            <div id="nav_container" class="nav_container">
                 <div id="nav_bar" class="nav_bar">
                     <div class="portfolio_box">
                         <img src="images/logo.png" alt="logo" height="53px">
@@ -449,6 +449,20 @@
                     menu_icon.style.color = "white"
                 }
             }
+
+            var navContainer = document.getElementById('nav_container');
+            var navBar = document.getElementById('nav_bar');
+            window.onscroll = function () { 
+                "use strict";
+                if (document.documentElement.scrollTop >= 3 ) {
+                    navContainer.classList.add("chg_color");
+                    navBar.classList.add("chg_color");
+                } 
+                else {
+                    navContainer.classList.remove("chg_color");
+                    navBar.classList.remove("chg_color");
+                }
+            };
 
             function change_week(){
                 let index = document.getElementById("week_select").value

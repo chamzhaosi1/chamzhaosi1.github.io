@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: Epilogue;
+    position: relative;
 }
 
 a{
@@ -33,6 +34,12 @@ a{
     position: sticky;
     top: 0;
     background-color: #889EAF; 
+    transition: 1s;
+}
+
+.nav_container.chg_color{
+    background-color: #A0937D; 
+    transition: 1s;
 }
 
 .nav_container .nav_bar{
@@ -44,6 +51,12 @@ a{
     margin: auto;
     align-items: center;
     background-color: #889EAF; 
+    transition: 1s;
+}
+
+.nav_container .nav_bar.chg_color{
+    background-color: #A0937D;  
+    transition: 1s;
 }
 
 .nav_container .nav_bar .portfolio_box{
@@ -69,6 +82,7 @@ a{
   
 .nav_container .nav_bar a:hover{
     color: #391400;
+    font-weight: bold;
 }
 
 .nav_container .nav_bar h4{
@@ -106,7 +120,7 @@ a{
     position: absolute;
     right: -30px;
     top: 60px;
-    background-color: rgba(255, 200, 199, 0.8);
+    background-color: rgba(215, 151, 113, 0.9);
 }
 
 .nav_container .nav_bar .menu_content a{
@@ -119,7 +133,7 @@ a{
 }
 
 .nav_container .nav_bar .menu_content a:hover{
-    background-color: #9C3D54;
+    background-color: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -172,7 +186,7 @@ a{
 .second_container .nav_bar a{
     color: #391400;
     padding-left: 20px;
-    font-size: 1.5vw;
+    font-size: calc(2px + 1.5vw);
     font-weight: 300;
     padding: 15px;
     cursor: pointer;
@@ -245,7 +259,7 @@ a{
 
 .second_container .content_container .box{
     width: 20%;
-    min-width: 250px;
+    min-width: 210px;
     min-height: 300px;
     padding: 40px;
     margin-bottom: 20px;
@@ -287,6 +301,7 @@ a{
     overflow-y: auto;
     transition: 1s;
     overflow-x: hidden;
+    margin: auto;
 }
 
 .second_container .inside_container #week_2_bg{
