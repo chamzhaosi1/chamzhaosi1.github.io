@@ -941,7 +941,7 @@ a{
 
 .seventh_container .content_container .right_box h1{
     font-weight: 900;
-    font-size: 4.0vw;
+    font-size: calc(5px + 4.0vw);
     color: white;
 }
 
