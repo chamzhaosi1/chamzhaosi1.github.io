@@ -475,7 +475,7 @@ a{
 
 .four_container .content_container .right_box h1{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 5.3vw;
     color: #391400;
 }
 
@@ -788,7 +788,7 @@ a{
 
 .sixth_container .content_container .left_box h1{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 5.3vw;
     color: #391400;
 }
 
@@ -941,7 +941,7 @@ a{
 
 .seventh_container .content_container .right_box h1{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 4.0vw;
     color: white;
 }
 
@@ -1077,6 +1077,10 @@ a{
         padding-left: 0px;
     }
 
+    .four_container .content_container .right_box h1{
+        font-size: 50px;
+    }
+
     .fifth_container .content_container .above_container .right_box{
         padding: 20px;
     }
@@ -1111,6 +1115,10 @@ a{
         padding-right: 0px;
     }
 
+    .sixth_container .content_container .left_box h1{
+        font-size: 50px;
+    }
+
     .seventh_container .content_container{
         max-width: 90%;
         display: block;
@@ -1138,6 +1146,10 @@ a{
     .seventh_container .content_container .right_box{
         min-width: 80%;
         padding-left: 0px;
+    }
+
+    .seventh_container .content_container .right_box h1{
+        font-size: 50px;
     }
 
     .eight_container{
@@ -1296,6 +1308,8 @@ a{
 
     .four_container .content_container .right_box h1{
         text-align: center;
+        font-size: 11vw;
+        line-height: 50px;
     }
 
     .four_container .content_container .right_box h2{
@@ -1374,6 +1388,8 @@ a{
 
     .sixth_container .content_container .left_box h1{
         text-align: center;
+        font-size: 11vw;
+        line-height: 50px;
     }
 
     .sixth_container .content_container .left_box h2{
@@ -1396,6 +1412,11 @@ a{
 
     .seventh_container .content_container .right_box {
         min-width: 90%;
+    }
+
+    .seventh_container .content_container .right_box h1{
+        font-size: 11vw;
+        line-height: 50px;
     }
 
     .eight_container .img_box{
