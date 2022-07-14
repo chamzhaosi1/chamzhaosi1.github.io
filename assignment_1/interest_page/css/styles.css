@@ -59,6 +59,12 @@ a{
     position: sticky;
     top: 0;
     background-color: #889EAF; 
+    transition: 1s;
+}
+
+.nav_container.chg_color{
+    background-color: #A0937D; 
+    transition: 1s;
 }
 
 .nav_container .nav_bar{
@@ -70,6 +76,12 @@ a{
     margin: auto;
     align-items: center;
     background-color: #889EAF; 
+    transition: 1s;
+}
+
+.nav_container .nav_bar.chg_color{
+    background-color: #A0937D;  
+    transition: 1s;
 }
 
 .nav_container .nav_bar .portfolio_box{
@@ -95,6 +107,7 @@ a{
   
 .nav_container .nav_bar a:hover{
     color: #391400;
+    font-weight: bold;
 }
 
 .nav_container .nav_bar h4{
@@ -132,7 +145,7 @@ a{
     position: absolute;
     right: -30px;
     top: 60px;
-    background-color: rgba(255, 200, 199, 0.8);
+    background-color: rgba(215, 151, 113, 0.9);
 }
 
 .nav_container .nav_bar .menu_content a{
@@ -145,7 +158,7 @@ a{
 }
 
 .nav_container .nav_bar .menu_content a:hover{
-    background-color: #9C3D54;
+    background-color: white;
 }
 
 @media screen and (max-width: 800px) {

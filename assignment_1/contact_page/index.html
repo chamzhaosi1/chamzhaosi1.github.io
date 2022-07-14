@@ -14,7 +14,7 @@
     </head>
     <body>
         <div id="top" class="container">
-            <div class="nav_container">
+            <div id="nav_container" class="nav_container">
                 <div id="nav_bar" class="nav_bar">
                     <div class="portfolio_box">
                         <img src="images/logo.png" alt="logo" height="53px">
@@ -177,7 +177,6 @@
            </div>   
         </div>
                     <script>
-
                         function show_menu_content() {
                             let menu_content = document.getElementById("menu_content");
                             let menu_icon = document.getElementById("menu_icon");
@@ -192,6 +191,20 @@
                                 menu_icon.style.color = "white"
                             }
                         }
+
+                        var navContainer = document.getElementById('nav_container');
+                        var navBar = document.getElementById('nav_bar');
+                        window.onscroll = function () { 
+                            "use strict";
+                            if (document.documentElement.scrollTop >= 3 ) {
+                                navContainer.classList.add("chg_color");
+                                navBar.classList.add("chg_color");
+                            } 
+                            else {
+                                navContainer.classList.remove("chg_color");
+                                navBar.classList.remove("chg_color");
+                            }
+                        };
 
                         function submit_notification(){
                             alert("Your message has been submitted, we will contact you as soon as possible!");
