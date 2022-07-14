@@ -1063,7 +1063,7 @@ a{
     }
 
     .four_container .content_container{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .four_container .content_container .left_box{
