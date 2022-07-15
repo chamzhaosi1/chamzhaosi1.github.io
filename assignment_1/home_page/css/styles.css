@@ -978,7 +978,7 @@ a{
 }
 
 .eight_container .img_box{
-    max-width: 16.66%;
+    width: calc(100%/6);
     height: 240px;
 }
 
@@ -1430,60 +1430,44 @@ a{
 
 
 .footer_container{
-    display: flex;
-    flex-direction: column;
     background-color: #506D84;
 }
 
-.footer_container .above_container{
+.footer_container .bottom_container{
     width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    border-bottom: solid 1px #F3D5C0;
 }
 
-.footer_container .above_container .box{
-    margin: 50px 0px;
-    max-width: 25%;
+.footer_container .bottom_container .left_box{
+    padding: 20px 20px;
 }
 
-.footer_container .above_container .box h2{
-    font-weight: 700;
-    color: white;
-}
-
-.footer_container .above_container .box h4{
+.footer_container .bottom_container .left_box h4{
+    color: rgba(255, 255, 255, 0.64);
     font-weight: 400;
-    color: #EF6D58;
-    font-size: 16px;
+    line-height: 32px;
 }
 
-.footer_container .above_container .box a{
-    color:  white;
+.footer_container .bottom_container .right_box{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_container .bottom_container .right_box a{
+    color:white;
     display: block;
     padding-bottom: 10px;
-    font-weight: 100;
-    line-height: 20px;
-    font-size: calc(4px + 1.0vw);
+    font-size: large;
 }
 
-.footer_container .above_container .box a:hover{
-    color: #391400;
-    font-weight: 400;
-  }
-
-.footer_container .above_container .box .inside_box{
+.footer_container .bottom_container .right_box .inside_box{
     display: flex;
 }
 
-.footer_container .above_container .box .inside_box i{
-    padding-right: 5px;
-    padding-bottom: 5px;
-    color:  white;
-}
-
-.footer_container .above_container .box .inside_box .round{
+.footer_container .bottom_container .right_box .inside_box .round{
     border-radius: 50%;
     height: 50px;
     min-width: 50px;
@@ -1496,106 +1480,30 @@ a{
     cursor: pointer;
 }
 
-.footer_container .above_container .box .inside_box .round:hover{
+.footer_container .bottom_container .right_box .inside_box .round:hover{
     box-shadow: 0px 0px 10px white;
-  }
+}
 
-.footer_container .above_container .box .inside_box .round i{
+.footer_container .bottom_container .right_box .inside_box .round i{
     padding-right: 0px;
     padding-bottom: 0px;
 }
 
-.footer_container .below_container{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
-.footer_container .below_container .left_box{
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-.footer_container .below_container .left_box h4{
-    color: rgba(255, 255, 255, 0.64);
-    font-weight: 400;
-    line-height: 32px;
-}
-
-.footer_container .below_container .right_box{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    width: 300px;
-}
-
-.footer_container .below_container .right_box h4{
-    color:  white;
-    font-weight: 400;
-    line-height: 32px;
-    padding-left: 20px;
-}
-
-@media screen and (max-width: 720px) {
-    .footer_container .above_container{
-        flex-wrap: wrap;
+@media screen and (max-width: 800px) {
+    .footer_container .bottom_container{
+        flex-direction: column-reverse;
     }
 
-    .footer_container .above_container .box{
-        min-width: 50%;
-        margin: 20px 0px;
-        text-align: center;
-    }
-
-    .footer_container .above_container .box h4{
-        font-size: 15px;
-    }
-    
-    .footer_container .above_container .box a{
-        font-size: 15px;
-    }
-
-    .footer_container .below_container{
-        flex-wrap: wrap;
-    }
-
-    .footer_container .below_container .left_box{
-        padding-bottom: 10px;
-        width: 100%;
-    }
-
-    .footer_container .below_container .right_box{
-        width: 100%;
-        padding-bottom: 0px;
+    .footer_container .bottom_container .left_box{
+        margin: auto;
         padding-top: 0px;
-    }
-
-    .footer_container .above_container .box .inside_box{
-        max-width: fit-content;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .footer_container .above_container{
-        flex-wrap: wrap;
-    }
-
-    .footer_container .above_container .box{
-        min-width: 100%;
         text-align: center;
     }
 
-    .footer_container .above_container .box .inside_box{
+    .footer_container .bottom_container .right_box{
         margin: auto;
-        width: fit-content;
-    }
-
-    .footer_container{
-        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 50px;
     }
 
 }
