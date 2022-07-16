@@ -148,7 +148,7 @@ a{
 .top_container .content_container .left_box p{
     font-style: normal;
     font-weight: 400;
-    font-size: calc(12px + 1vw);
+    font-size: calc(10px + 1vw);
     line-height: 30px;
     color: rgba(255, 255, 255, 0.64);
     text-align: justify;
@@ -158,10 +158,10 @@ a{
     width: fit-content;
     border-radius: 5px;
     background-color: #9C3D54;
-    padding: 15px;  
+    padding: 15px 20px;  
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -245,7 +245,7 @@ a{
 .second_container .content_container .right_box p{
     font-style: normal;
     font-weight: 400;
-    font-size: calc(12px + 1vw);
+    font-size: calc(10px + 1vw);
     line-height: 30px;
     text-align: justify;
     color: rgba(57, 20, 0, 0.64);
@@ -256,10 +256,10 @@ a{
     width: fit-content;
     border-radius: 5px;
     background-color: #FFFFFF;
-    padding: 15px 15px;  
+    padding: 15px 20px;  
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -379,7 +379,7 @@ a{
 }
 
 .third_container .footer_upon .get_started_container{
-    max-width: 89%;
+    max-width: 85%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -403,7 +403,7 @@ a{
 .third_container .footer_upon .get_started_container .left_box h1{
     font-weight: 900;
     color: #391400;
-    font-size: 2.5vw;
+    font-size: calc(6px + 2vw);
     margin: 0px;
     display: inline;
     line-height: 1.5;
@@ -429,6 +429,7 @@ a{
     color: #391400;
     margin: auto;
     font-weight: 300;
+    font-size: calc(6px + 1vw);
 }
 
 .third_container .footer_upon .get_started_container img{
@@ -437,6 +438,7 @@ a{
     margin: auto;
     font-weight: 300;
     margin: 20px;
+    border-radius: 50px;
 }
 
 .four_container{
@@ -450,12 +452,12 @@ a{
     display: flex;
     justify-content: center;
     padding: 20px 10px;
-    border-bottom: #F3D1BF solid 1px;
 }
 
 .four_container .content_container .left_box{
     max-width: 50%;
     display: block;
+    margin: auto;
 }
 
 .four_container .content_container .left_box .each_work{
@@ -463,8 +465,6 @@ a{
     display: block;
     text-align: center;
     padding: 0px 10px;
-    border-top: #506D84 1px solid;
-    border-bottom: #506D84 1px solid;
     text-align: left;
 }
 
@@ -491,8 +491,9 @@ a{
 
 .four_container .content_container .right_box h1{
     font-weight: 900;
-    font-size: 5.3vw;
+    font-size: calc(20px + 2.5vw);
     color: #391400;
+    margin-bottom: 20px;
 }
 
 .four_container .content_container .right_box h4{
@@ -503,22 +504,23 @@ a{
 }
 
 .four_container .content_container .right_box h2{
-    max-width: 70%;
+    max-width: 80%;
     font-weight: 900;
     color: #391400;
     font-size: 25px;
     margin: 0px;
     line-height: 1.2;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .four_container .content_container .right_box p{
     color: #391400;
     margin: auto;
+    font-size: calc(10px + 1vw);
     font-weight: 300;
     text-align: justify;
     line-height: 1.5;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .four_container .content_container .right_box .btn{
@@ -528,7 +530,7 @@ a{
     padding: 10px 15px;  
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -1031,13 +1033,17 @@ a{
     }
 
     .top_container .content_container .left_box{ 
-        max-width: 70%;
+        max-width: 80%;
         margin: auto;
     }
 
     .top_container .content_container .left_box h1{
-        font-size: 50px;
+        font-size: calc(25px + 2.5vw);
         line-height: 60px;
+    }
+
+    .top_container .content_container .left_box p{
+        font-size: calc(13px + 1vw);
     }
 
     .top_container .content_container .right_box{ 
@@ -1051,13 +1057,17 @@ a{
     }
 
     .second_container .content_container .right_box{ 
-        max-width: 70%;
+        max-width: 80%;
         margin: auto;
     }
 
     .second_container .content_container .right_box h1{
         font-size: 50px;
         line-height: 60px;
+    }
+
+    .second_container .content_container .right_box p{
+        font-size: calc(13px + 1vw);
     }
 
     .second_container .content_container .left_box{ 
@@ -1105,6 +1115,10 @@ a{
 
     .four_container .content_container .right_box h1{
         font-size: 50px;
+    }
+
+    .four_container .content_container .right_box .btn{
+        margin-bottom: 30px;
     }
 
     .fifth_container .content_container .above_container .right_box{
