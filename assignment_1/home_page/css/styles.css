@@ -112,13 +112,17 @@ a{
     justify-content: center;
     margin: auto;
     max-width: 90%;
-    padding: 20px 10px;
+    padding: 20px 10px 50px 10px;
 }
 
 .top_container .content_container .left_box{ 
-    max-width: 45%;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
+}
+
+.top_container .content_container .left_box a{ 
+    max-width: fit-content;
 }
 
 .top_container .content_container .left_box h4{
@@ -134,27 +138,27 @@ a{
 .top_container .content_container .left_box h1{
     font-style: normal;
     font-weight: 800;
-    font-size: 5.3vw;
-    line-height: 6vw;
+    font-size: calc(20px + 2.5vw);
+    line-height: 4vw;
     color: #391400;
     letter-spacing: -2px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .top_container .content_container .left_box p{
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: calc(12px + 1vw);
+    line-height: 30px;
     color: rgba(255, 255, 255, 0.64);
     text-align: justify;
 }
 
 .top_container .content_container .left_box .btn{ 
-    max-width: fit-content;
+    width: fit-content;
     border-radius: 5px;
     background-color: #9C3D54;
-    padding: 20px 10px;  
+    padding: 15px;  
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -173,12 +177,13 @@ a{
     max-width: 50%;
     display: flex;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 80px;
 }
 
 .top_container .content_container .right_box img{ 
     max-width: 500px;
     min-width: 250px;
+    border-radius: 50px;
 }
 
 .second_container{
@@ -190,7 +195,7 @@ a{
     justify-content: center;
     margin: auto;
     max-width: 90%;
-    padding: 20px 10px;
+    padding: 50px 10px 40px 10px;
 }
 
 .second_container .content_container .left_box{
@@ -204,12 +209,17 @@ a{
     max-width: 500px;
     min-width: 250px;
     border-radius: 25px;
+    max-height: 650px;
 }
 
 .second_container .content_container .right_box{ 
     max-width: 45%;
     display: flex;
     flex-direction: column;
+}
+
+.second_container .content_container .right_box a{ 
+    max-width: fit-content;
 }
 
 .second_container .content_container .right_box h4{
@@ -225,7 +235,7 @@ a{
 .second_container .content_container .right_box h1{
     font-style: normal;
     font-weight: 800;
-    font-size: 5.3vw;
+    font-size: calc(20px + 2.5vw);
     line-height: 6vw;
     color: #391400;
     letter-spacing: -2px;
@@ -235,17 +245,18 @@ a{
 .second_container .content_container .right_box p{
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: calc(12px + 1vw);
+    line-height: 30px;
     text-align: justify;
     color: rgba(57, 20, 0, 0.64);
+    padding-bottom: 20px;
 }
 
 .second_container .content_container .right_box .btn{ 
-    max-width: fit-content;
+    width: fit-content;
     border-radius: 5px;
     background-color: #FFFFFF;
-    padding: 20px 10px;  
+    padding: 15px 15px;  
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -469,8 +480,13 @@ a{
 
 .four_container .content_container .right_box{
     max-width: 45%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-left: 100px;
+}
+
+.four_container .content_container .right_box a{
+    max-width: fit-content;
 }
 
 .four_container .content_container .right_box h1{
@@ -502,14 +518,14 @@ a{
     font-weight: 300;
     text-align: justify;
     line-height: 1.5;
+    padding-bottom: 50px;
 }
 
-.four_container .content_container .btn{
-    max-width: fit-content;
-    margin: auto;
+.four_container .content_container .right_box .btn{
+    width: fit-content;
     border-radius: 5px;
     background-color: #FFFFFF;
-    padding: 20px 10px;  
+    padding: 10px 15px;  
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -521,7 +537,7 @@ a{
     box-shadow: 5px 5px 20px lightgray;
 }
 
-.four_container .content_container .btn:hover{
+.four_container .content_container .right_box .btn:hover{
     background-color: #391400; 
     color: white;
 }
@@ -782,14 +798,20 @@ a{
 
 .sixth_container .content_container .left_box{
     max-width: 45%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-right: 100px;
+}
+
+.sixth_container .content_container .left_box a{
+    max-width: fit-content
 }
 
 .sixth_container .content_container .left_box h1{
     font-weight: 900;
     font-size: 5.3vw;
     color: #391400;
+    margin-bottom: 5px;
 }
 
 .sixth_container .content_container .left_box h4{
@@ -806,14 +828,14 @@ a{
     font-weight: 300;
     text-align: justify;
     line-height: 1.5;
+    margin: 5px 0px 30px 0px; 
 }
 
 .sixth_container .content_container .left_box .btn{
-    max-width: fit-content;
-    margin: auto;
+    width: fit-content;
     border-radius: 5px;
     background-color: #FFFFFF;
-    padding: 20px 10px;  
+    padding: 10px 15px;  
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -970,6 +992,10 @@ a{
     align-items: center;
     margin-right: 20px;
     color: white;
+}
+
+.seventh_container .content_container .right_box .round_container .round:hover{
+    box-shadow: 0px 0px 10px white;
 }
 
 .eight_container{
