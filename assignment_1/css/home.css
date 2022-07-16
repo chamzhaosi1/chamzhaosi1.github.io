@@ -9,10 +9,35 @@ a{
     color: white;
 }
 
+.top_round{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    border-radius: 50%;
+    height: 60px;
+    min-width: 60px;
+    background-color: #D8CCA3;
+    border: 1px solid lightgray;
+}
+
+.top_round i{
+    margin: auto;
+    font-size: 30px;
+    color: #87805E;
+}
+
 .nav_container{
     position: sticky;
     top: 0;
     background-color: #506D84; 
+    z-index: 2;
+    transition: 1s;
+}
+
+.nav_container.chg_color{
+    background-color: #A0937D; 
+    transition: 1s;
 }
 
 .nav_container .nav_bar{
@@ -24,6 +49,12 @@ a{
     margin: auto;
     align-items: center;
     background-color: #506D84; 
+    transition: 1s;
+}
+
+.nav_container .nav_bar.chg_color{
+    background-color: #A0937D;  
+    transition: 1s;
 }
 
 .nav_container .nav_bar .portfolio_box{
@@ -323,13 +354,22 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 50px 0px;
 }
 
 .third_container .content_container .left_box{
-    max-width: 50%;
+    max-width: 45%;
+    height: 500px;
     margin: auto;
     display: block;
     justify-content: left;
+    background: rgba(0,0,0,0.4) url(../images/home_page_life.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -10px;
+    background-blend-mode: darken;
+    border-radius: 20px;
+    padding-right: 10px;
 }
 
 .third_container .content_container .left_box h4{
@@ -337,41 +377,58 @@ a{
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #EF6D58;
+    margin: 20px 0px 0px 20px;
 }
 
 .third_container .content_container .left_box i{
     font-size: 80px;
-    color: rgba(255, 255, 255, 0.5);
-    display: inline;
+    color: rgba(255, 255, 255, 0.7);
+    display:inline-block;
+    vertical-align:middle;
 }
 
 .third_container .content_container .left_box h1{
     font-weight: 900;
-    color: #391400;
-    font-size: 2.6vw;
-    margin: 0px;
-    line-height: 2.3;
-}
-
-.third_container .content_container .left_box h1.move_up{
-    
-    display: flex;
-    align-items: center;
+    color: white;
+    font-size: 2.5vw;
+    margin: 0px 0px 0px 20px;
+    display:inline-block;
+    vertical-align:middle;
+    max-width: 80%;
 }
 
 .third_container .content_container .right_box{
+    max-width: 45%;
+    height: 500px;
     margin: auto;
     display: flex;
-    align-items: center;
-    padding: 20px 20px;
+    flex-direction: column;
+    justify-content: end;
+    background: rgba(0,0,0,0.4) url(../images/home_page_life_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -20px;
+    background-blend-mode: darken;
+    border-radius: 20px;
+    padding-right: 10px;
 }
 
 
-.third_container .content_container .right_box img{ 
-    max-width: 500px;
-    min-width: 250px;
-    width: 105%;
-    border-radius: 25px;
+.third_container .content_container .right_box i{
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.7);
+    display:inline;
+    vertical-align:middle;
+}
+
+.third_container .content_container .right_box h1{
+    font-weight: 900;
+    color: white;
+    font-size: 2.5vw;
+    margin-left: 20px;
+    display:inline-block;
+    vertical-align:middle;
+    max-width: 90%;
 }
 
 .third_container .footer_upon{
@@ -440,6 +497,7 @@ a{
     font-weight: 300;
     font-size: calc(10px + 1vw);
     padding-right: 30px;
+    line-height: 20px;
 }
 
 .third_container .footer_upon .get_started_container .special_box img{
@@ -523,12 +581,12 @@ a{
 }
 
 .four_container .content_container .right_box p{
-    color: #391400;
+    color: rgba(57, 20, 0, 0.64);
     margin: auto;
     font-size: calc(10px + 1vw);
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 30px;
     padding-bottom: 30px;
 }
 
@@ -561,7 +619,7 @@ a{
     max-width: 90%;
     display: block;
     margin: auto;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .fifth_container .content_container .above_container{
@@ -572,8 +630,8 @@ a{
 }
 
 .fifth_container .content_container .above_container .left_box{
-    padding: 50px 0px;
-    width: 60%;
+    padding: 50px 0px 10px 0px;
+    width: 90%;
 }
 
 .fifth_container .content_container .above_container .left_box h4{
@@ -595,16 +653,16 @@ a{
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 50px;
+    padding: 20px 20px 30px 0px;
 }
 
 .fifth_container .content_container .right_box .btn{
     border-radius: 5px;
     border: 1px solid white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: #FFFFFF;
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
 }
 
@@ -626,7 +684,6 @@ a{
 .fifth_container .content_container .below_container .border{
     width: 50%;
     min-width: 30%;
-    border:1px solid #3A3C56;
     padding: 10px;
 }
 
@@ -639,10 +696,11 @@ a{
     display: flex;
     flex-direction: column-reverse;
     cursor: pointer;
+    z-index: 1;
 }
 
 .fifth_container .content_container .below_container .border .each_img:hover{
-    box-shadow: 5px 5px 10px 5px #391400;
+    box-shadow: 5px 5px 10px #391400;
     transform: scale(1.1);
  }
 
@@ -663,6 +721,7 @@ a{
     overflow-y: auto;
     transition: 1s;
     overflow-x: hidden;
+    z-index: 3;
 }
 
 .fifth_container .inside_container #week_5_bg_1{
@@ -805,7 +864,7 @@ a{
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 20px 10px 50px 0px;
     border-bottom: #F3D1BF solid 1px;
 }
 
@@ -813,7 +872,8 @@ a{
     max-width: 45%;
     display: flex;
     flex-direction: column;
-    padding-right: 100px;
+    padding-right: 50px;
+    margin: auto;
 }
 
 .sixth_container .content_container .left_box a{
@@ -822,7 +882,7 @@ a{
 
 .sixth_container .content_container .left_box h1{
     font-weight: 900;
-    font-size: 5.3vw;
+    font-size: calc(20px + 2.5vw);
     color: #391400;
     margin-bottom: 5px;
 }
@@ -836,22 +896,23 @@ a{
 
 
 .sixth_container .content_container .left_box p{
-    color: #391400;
+    color: rgba(57, 20, 0, 0.64);
     margin: auto;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 30px;
     margin: 5px 0px 30px 0px; 
+    font-size: calc(10px + 1vw);
 }
 
 .sixth_container .content_container .left_box .btn{
     width: fit-content;
     border-radius: 5px;
     background-color: #FFFFFF;
-    padding: 10px 15px;  
+    padding: 10px 15px; 
     font-style: normal;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -866,24 +927,28 @@ a{
 }
 
 .sixth_container .content_container .right_box{
-    max-width: 50%;
-    display: block;
+    max-width: 47%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 30px;
 }
 
-.sixth_container .content_container .right_box .each_work{
-    min-height: 20%;
-    display: block;
-    text-align: center;
-    padding: 0px 10px;
-    border-top: #506D84 1px solid;
-    border-bottom: #506D84 1px solid;
-    text-align: left;
+.sixth_container .content_container .right_box .inside_box{
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.sixth_container .content_container .right_box .each_work h1{
-    font-weight: 800;
-    color: #391400;
-    margin-bottom: 5px
+.sixth_container .content_container .right_box .inside_box img{
+   padding: 10px;
+   width: 50%;
+}
+
+.sixth_container .content_container .right_box .inside_box img:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .seventh_container{
@@ -976,16 +1041,17 @@ a{
 
 .seventh_container .content_container .right_box h1{
     font-weight: 900;
-    font-size: calc(5px + 4.0vw);
+    font-size: calc(20px + 2vw);
     color: white;
 }
 
 .seventh_container .content_container .right_box p{
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
     line-height: 1.5;
     word-break: break-all;
+    font-size: calc(15px + 0.2vw);
 }
 
 .seventh_container .content_container .right_box .round_container{
@@ -1004,6 +1070,10 @@ a{
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+}
+
+.seventh_container .content_container .right_box .round_container .round a{
+    font-size: large;
     color: white;
 }
 
@@ -1105,7 +1175,17 @@ a{
         padding: 20px;
     }
 
+    .third_container .content_container .right_box{
+        min-width: 500px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
     .third_container .content_container .left_box h1{
+        font-size: 28px;
+    }
+
+    .third_container .content_container .right_box h1{
         font-size: 28px;
     }
 
@@ -1185,8 +1265,9 @@ a{
     }
 
     .sixth_container .content_container .right_box{
-        min-width: 90%;
+        max-width: 90%;
         margin: auto;
+        padding-top: 10px;
     }
 
     .sixth_container .content_container .left_box{
@@ -1259,7 +1340,18 @@ a{
     }
 
     .third_container .content_container .left_box h1{
-        font-size: 4.6vw;
+        font-size: calc(18px + 2vw);
+        line-height: 50px;
+    }
+
+    .third_container .content_container .right_box{
+        min-width: 90%;
+        padding: 10px;
+    }
+
+    .third_container .content_container .right_box h1{
+        font-size: calc(18px + 2vw);
+        line-height: 50px;
     }
 
     .third_container .footer_upon{
@@ -1382,8 +1474,6 @@ a{
         padding: 20px 0px 0px 0px;
     }
 
-   
-
     .third_container .footer_upon .get_started_container{
         min-width: 90%;
     }
@@ -1471,33 +1561,28 @@ a{
         padding: 20px 0px;
     }
 
-    .sixth_container .content_container .right_box{
-        min-width: 100%; 
-    }
-
-    .sixth_container .content_container .right_box h1{
-        min-width: 100%; 
-        font-size: 7vw;
-    }
-
     .sixth_container .content_container .left_box{
         min-width: 100%;
         margin-bottom: 20px;
     }
 
     .sixth_container .content_container .left_box h1{
-        text-align: center;
         font-size: 11vw;
         line-height: 50px;
+        text-align: left;
     }
 
-    .sixth_container .content_container .left_box h2{
-        min-width: 100%;
+    .sixth_container .content_container .left_box p{
+        font-size: calc(13px + 1vw);
     }
 
     .sixth_container .content_container .left_box .btn{ 
         font-size: 12px;
         padding: 10px;
+    }
+
+    .sixth_container .content_container .right_box .inside_box img{
+        padding: 5px;
     }
 
     .seventh_container .content_container{
