@@ -21,6 +21,10 @@ a{
     border: 1px solid lightgray;
 }
 
+.top_round:hover{
+    box-shadow: 0px 0px 5px #391400;
+}
+
 .top_round i{
     margin: auto;
     font-size: 30px;
