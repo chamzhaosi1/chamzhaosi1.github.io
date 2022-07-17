@@ -1058,11 +1058,20 @@ a{
     font-size: calc(15px + 0.2vw);
 }
 
+.seventh_container .content_container .right_box a{
+    font-size: large;
+}
+
 .seventh_container .content_container .right_box .round_container{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 3px;
+}
+
+.seventh_container .content_container .right_box .round_container:hover{
+    background-color: gray;
+    border-radius: 20px;
 }
 
 .seventh_container .content_container .right_box .round_container .round{
@@ -1076,14 +1085,6 @@ a{
     margin-right: 20px;
 }
 
-.seventh_container .content_container .right_box .round_container .round a{
-    font-size: large;
-    color: white;
-}
-
-.seventh_container .content_container .right_box .round_container .round:hover{
-    box-shadow: 0px 0px 10px white;
-}
 
 .eight_container{
     display: flex;
