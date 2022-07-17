@@ -271,8 +271,13 @@ a{
 .second_container .below_container .left_box_content{
     max-width: 450px;
     padding: 0px 10px;
-    font-size: 17px;
 }
+
+.second_container .below_container .left_box_content p{ 
+    font-size: 17px;
+    text-align: justify;
+}
+
 
 .second_container .below_container .right_box_picture{
     min-width: 300px;
