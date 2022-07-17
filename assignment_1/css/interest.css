@@ -210,6 +210,10 @@ a{
         max-width: 90%;
     }
 
+    .top_container .top_content h1{ 
+        font-size: 40px
+    }
+
     .top_container .top_content p{ 
         font-size: calc(13px + 1vw);
     }
