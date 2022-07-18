@@ -200,6 +200,7 @@ a{
     border-radius: 5px;
     background-color: #9C3D54;
     padding: 15px 20px;  
+    padding-top: 17px;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -298,6 +299,7 @@ a{
     border-radius: 5px;
     background-color: #FFFFFF;
     padding: 15px 20px;  
+    padding-top: 17px;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -481,6 +483,7 @@ a{
 .third_container .footer_upon .get_started_container .left_box .btn{
     background-color: #9C3D54;
     padding: 10px 20px;
+    padding-top: 12px;
     border-radius: 5px;
     border: 1px solid #9C3D54;
     width: 98px;
@@ -604,6 +607,7 @@ a{
     border-radius: 5px;
     background-color: #FFFFFF;
     padding: 10px 15px;  
+    padding-top: 12px;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -669,6 +673,7 @@ a{
     border-radius: 5px;
     border: 1px solid white;
     padding: 15px 20px;
+    padding-top: 17px;
     color: #FFFFFF;
     text-transform: capitalize;
     font-size: 13px;
@@ -919,6 +924,7 @@ a{
     border-radius: 5px;
     background-color: #FFFFFF;
     padding: 10px 15px; 
+    padding-top: 12px;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
