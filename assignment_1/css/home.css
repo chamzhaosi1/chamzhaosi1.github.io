@@ -71,17 +71,18 @@ a{
 }
 
 
-.nav_container .nav_bar .portfolio_box h2{
-    margin-top: 15px;
+.nav_container .nav_bar .portfolio_box a{
+    margin: auto;
     padding-left: 15px;
     color: white;
     font-weight: 700;
     font-size: 30px;
+    height: fit-content;
 }
 
-.nav_container .nav_bar .portfolio_box h2:hover {
+.nav_container .nav_bar .portfolio_box a:hover {
     color: #391400;
-  }
+}
 
 .nav_container .nav_bar a{
     font-size:calc(9px + 0.5vw);
