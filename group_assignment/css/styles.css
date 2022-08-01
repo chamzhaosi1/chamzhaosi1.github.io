@@ -1,22 +1,38 @@
+:root{
+    --bg-top-nav-green: #064635;
+    --bg-mobile-dropdown-green: #064635;
+    --bg-mobile-dropdown-yellow: #F4EEA9;
+    --bg-dropdown-yellow: rgba(244, 238, 169, 1);
+    --bg-dropdown-green: rgba(81, 146, 89, 0.3);
+}
+
 *{
     font-family: 'Edu SA Beginner', cursive;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.nav-link.active{
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    font-weight: 700;
 }
 
 .bg-top-nav-green{
-    background-color: #064635;
+    background-color: var(--bg-top-nav-green);
 }
 
 .bg-dropdown-yellow-green{
-    background-color: rgba(244, 238, 169, 0.8) !important; 
+    background-color: var(--bg-dropdown-yellow) !important; 
 }
 
-.bg-mobile-dropdown-yellow{
-    background-color: #064635 !important; 
+.bg-mobile-dropdown-green-yellow{
+    background-color: var(--bg-mobile-dropdown-green)!important; 
 }
 
 .bg-dropdown-yellow-width{
-    width: 240px !important; 
+    width: 230px !important; 
 }
 
 .fs-top-nav-vm{
@@ -27,25 +43,26 @@
     color: white !important;
 }
 
-
 @media screen and (max-width: 767px) {
     .bg-dropdown-yellow-green{
-        background-color: rgba(81, 146, 89, 0.3) !important; 
+        background-color: var(--bg-dropdown-green) !important; 
         margin-left: 20px !important;
         max-width: 300px !important;
     }
 
-    .bg-mobile-dropdown-yellow{
-        background-color: #F4EEA9 !important; 
+    .bg-mobile-dropdown-green-yellow{
+        background-color: var(--bg-mobile-dropdown-yellow) !important; 
     }
 
     .bg-dropdown-yellow-width{
-        width: 300px !important;
+        width: 280px !important;
     }
 
     .text-dark-md{
         color: black !important;
-        font-weight: 600 !important;
+    }
 
+    .text-dark-md:hover{
+        font-weight: 700 !important;
     }
 }
