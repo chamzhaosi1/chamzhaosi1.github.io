@@ -1,0 +1,16 @@
+*{
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
+}
+
+.bg-top-nav-green{
+    background-color: #064635;
+}
+
+.bg-dropdown-yellow{
+    background-color: #F4EEA9 !important; 
+}
+
+.fs-top-nav-vm{
+    font-size: 18px !important;
+}
