@@ -7,6 +7,10 @@
     filter: brightness(70%); 
 }
 
+.slidetshow-fixed-heigh{
+    min-height: 500px;
+}
+
 .slideshow-content-position{
     top: 0;
     left: 0;
@@ -27,10 +31,11 @@
 
 @media screen and (max-width: 768px) {
     .slideshow-content-header{
-        font-size: calc(30px + 6vw);
+        font-size: calc(25px + 6.5vw);
     }
 
     .slideshow-content-paragraph{
         font-size: calc(20px);
     }
+
 }
