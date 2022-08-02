@@ -1,6 +1,5 @@
 :root{
-    --bg-top-nav-green: #064635;
-    --bg-mobile-dropdown-green: #064635;
+    --bg-green: #064635;
     --bg-mobile-dropdown-yellow: #F4EEA9;
     --bg-dropdown-yellow: rgba(244, 238, 169, 1);
     --bg-dropdown-green: rgba(81, 146, 89, 0.3);
@@ -20,7 +19,7 @@
 }
 
 .bg-top-nav-green{
-    background-color: var(--bg-top-nav-green);
+    background-color: var(--bg-green);
 }
 
 .bg-dropdown-yellow-green{
@@ -28,7 +27,7 @@
 }
 
 .bg-mobile-dropdown-green-yellow{
-    background-color: var(--bg-mobile-dropdown-green)!important; 
+    background-color: var(--bg-green)!important; 
 }
 
 .bg-dropdown-yellow-width{
@@ -41,6 +40,13 @@
 
 .text-light-lg{
     color: white !important;
+}
+
+.round{
+   width: 110px;
+   height: 110px;
+   border-radius: 50%; 
+   background-color: red;
 }
 
 @media screen and (max-width: 767px) {
