@@ -1,0 +1,36 @@
+:root{
+    --bg-btn-green: rgba(81, 146, 89, 0.9);
+}
+
+
+.image-fill-black{
+    filter: brightness(70%); 
+}
+
+.slideshow-content-position{
+    top: 0;
+    left: 0;
+}
+
+.slideshow-content-header{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.slideshow-content-paragraph{
+    font-size: calc(1.325rem + .9vw);
+}
+
+.bg-btn-green{
+    background-color: var(--bg-btn-green) !important;
+}
+
+@media screen and (max-width: 768px) {
+    .slideshow-content-header{
+        font-size: calc(30px + 6vw);
+    }
+
+    .slideshow-content-paragraph{
+        font-size: calc(20px);
+    }
+}
