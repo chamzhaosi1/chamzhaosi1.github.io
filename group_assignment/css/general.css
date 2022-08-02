@@ -42,13 +42,6 @@
     color: white !important;
 }
 
-.round{
-   width: 110px;
-   height: 110px;
-   border-radius: 50%; 
-   background-color: red;
-}
-
 @media screen and (max-width: 767px) {
     .bg-dropdown-yellow-green{
         background-color: var(--bg-dropdown-green) !important; 
