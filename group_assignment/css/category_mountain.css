@@ -29,9 +29,39 @@
     background-color: var(--bg-btn-green) !important;
 }
 
+.bg-triangle{
+    background-image: url(../images/bg-green-triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.padding-image-top{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content_body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg-triangle h1{
+    font-size: calc(18px + 1vw);
+}
+
+.bg-triangle h2{
+    font-size: calc(10px + 1vw);
+}
+
+.decoration{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 @media screen and (max-width: 768px) {
     .slideshow-content-header{
-        font-size: calc(25px + 6.5vw);
+        font-size: calc(20px + 6vw);
     }
 
     .slideshow-content-paragraph{

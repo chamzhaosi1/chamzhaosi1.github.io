@@ -1,118 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Mountain Category
-        </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/category_mountain.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md bg-light py-0">
-            <div class="container-fluid bg-top-nav-green px-0">
-              <a class="navbar-brand ms-3 my-2" href="#"><img src="images/logo_white_circle.png" alt="logo_white 1.png" width="100%"></a>
-              <button class="navbar-toggler navbar-dark me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse bg-mobile-dropdown-green-yellow" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      MOUNTAIN
-                    </a>
-                    <ul class="dropdown-menu bg-dropdown-yellow-green">
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Genting Highland</a></li>
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Cameron Highland</a></li>
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Penang Hill</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      BEACH
-                    </a>
-                    <ul class="dropdown-menu bg-dropdown-yellow-green">
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Perhentian Island</a></li>
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Pulau Rawa</a></li>
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Pantai Cenang</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      CULTURE
-                    </a>
-                    <ul class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width">
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Thean Hou Temple</a></li>
-                      <li><a class="dropdown-item fw-bold fs-5" href="#">Batu Caves</a></li>
-                      <li><a class="dropdown-item fw-bold fs-5 text-wrap" href="#">Sultan Salahuddin Abdul Aziz Mosque</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page" href="#">CONTACT</a>
-                  </li>
-                </ul>
+
+<head>
+  <title>
+    Mountain Category
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/category_mountain.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-light py-0 sticky-top">
+    <div class="container-fluid bg-top-nav-green px-0">
+      <a class="navbar-brand ms-3 my-2" href="#"><img src="images/logo_white_circle.png" alt="logo_white 1.png"
+          width="100%"></a>
+      <button class="navbar-toggler navbar-dark me-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-mobile-dropdown-green-yellow" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MOUNTAIN
+            </a>
+            <ul class="dropdown-menu bg-dropdown-yellow-green">
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Genting Highland</a></li>
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Cameron Highland</a></li>
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Penang Hill</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              BEACH
+            </a>
+            <ul class="dropdown-menu bg-dropdown-yellow-green">
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Perhentian Island</a></li>
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Pulau Rawa</a></li>
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Pantai Cenang</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              CULTURE
+            </a>
+            <ul class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width">
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Thean Hou Temple</a></li>
+              <li><a class="dropdown-item fw-bold fs-5" href="#">Batu Caves</a></li>
+              <li><a class="dropdown-item fw-bold fs-5 text-wrap" href="#">Sultan Salahuddin Abdul Aziz Mosque</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid px-0 position-relative">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item w-0 active">
+          <img src="images/categorie_slideshow_1.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh"
+            alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="images/categorie_slideshow_2.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh"
+            alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="images/categorie_slideshow_3.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh"
+            alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="images/categorie_slideshow_4.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh"
+            alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="images/categorie_slideshow_5.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh"
+            alt="...">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div
+      class="container position-absolute slideshow-content-position d-flex justify-content-center align-items-center h-100">
+      <div class="w-75 mx-5 mt-2 p-2 p-md-5">
+        <h1 class="text-light slideshow-content-header">MOUNTAIN</h1>
+        <p class="text-light slideshow-content-paragraph">Leaving the heat and noisy city, hike to the peak and listen
+          to your echo blended with the natural music.</p>
+        <button type="button" href="#" class="btn bg-btn-green text-light fs-5">Read More</button>
+      </div>
+    </div>
+  </div>
+  <div class="bg-triangle">
+    <div class="padding-image-top">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="content_body row d-flex flex-nowrap justify-content-center align-items-start m-0">
+          <div class="col-7 me-3 h-100">
+            <div class="h-50 d-flex justify-content-center">
+              <div class="align-self-center">
+                <h1 class="fw-bold">Malaysia doesn't have winter? </h1>
+                <h2 >Definitely yes, however, you will be able to feel the chill if you are willing to go outside. Is it going to the shopping mall? Of course not!! The power of the natural is cannot be compared with the air-conditional. Please come into the hug of the mountain in Malaysia.</h2>
               </div>
             </div>
-          </nav>
-          <div class="container-fluid px-0 position-relative">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item w-0 active">
-                  <img src="images/categorie_slideshow_1.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh" alt="...">
-                  
-                </div>
-                <div class="carousel-item">
-                  <img src="images/categorie_slideshow_2.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh" alt="...">
-                  
-                </div>
-                <div class="carousel-item">
-                  <img src="images/categorie_slideshow_3.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh" alt="...">
-                  
-                </div>
-                <div class="carousel-item">
-                  <img src="images/categorie_slideshow_4.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh" alt="...">
-                  
-                </div>
-                <div class="carousel-item">
-                  <img src="images/categorie_slideshow_5.png" class="d-block w-100 image-fill-black slidetshow-fixed-heigh" alt="...">
-                  
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-              <div class="container position-absolute slideshow-content-position d-flex justify-content-center align-items-center h-100">
-                <div class="w-75 mx-5 mt-2 p-2 p-md-5">
-                  <h1 class="text-light slideshow-content-header">MOUNTAIN</h1>
-                  <p class="text-light slideshow-content-paragraph">Leaving the heat and noisy city, hike to the peak and listen to your echo blended with the natural music.</p>
-                  <button type="button" href="#" class="btn bg-btn-green text-light fs-5">Read More</button>
-                </div>
-              </div>
+              <img src="images/second_container_mountain_2_image.png" class="h-50" alt="" width="100%">
           </div>
-    </body>
+          <div  class="col-4 d-flex justify-content-center px-0 h-100">
+            <img src="images/second_container_mountain_image.png" alt="" width="100%">
+          </div>
+        </div>
+      </div>
+      <div class="position-relative bg-primary">
+        <img src="images/decoration_1.png" class="ms-auto position-absolute top-0 end-0" alt="" width="30%">
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
