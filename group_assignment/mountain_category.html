@@ -21,10 +21,11 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
+  <script src="javascript/javascript.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md bg-light py-0 sticky-top">
+  <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
     <div class="container-fluid bg-top-nav-green px-0">
       <a class="navbar-brand ms-3 my-2" href="#"><img src="images/logo_white_circle.png" alt="logo_white 1.png"
           width="100%"></a>
@@ -142,21 +143,28 @@
   </div>
   <div class="bg-triangle">
     <div class="padding-image-top">
-      <div class="container-fluid d-flex justify-content-center">
+      <div class="container-fluid d-md-flex d-block justify-content-center">
         <div class="content_body row d-flex flex-nowrap justify-content-center align-items-start m-0">
-          <div class="col-7 me-3 h-100">
-            <div class="h-50 d-flex justify-content-center">
+          <div class="col-7 me-3 h-100 align-self-center">
+            <div class="h-50 d-none d-md-flex justify-content-center">
               <div class="align-self-center">
                 <h1 class="fw-bold">Malaysia doesn't have winter? </h1>
                 <h2 >Definitely yes, however, you will be able to feel the chill if you are willing to go outside. Is it going to the shopping mall? Of course not!! The power of the natural is cannot be compared with the air-conditional. Please come into the hug of the mountain in Malaysia.</h2>
               </div>
             </div>
-              <img src="images/second_container_mountain_2_image.png" class="h-50" alt="" width="100%">
+              <img src="images/second_container_mountain_2_image.png" class="h-50 d-none d-md-block" alt="" width="100%">
+
+              <div class="h-100 d-bloc d-md-none justify-content-center">
+                  <h1 class="fw-bold">Malaysia doesn't have winter? </h1>
+                  <h2 >Definitely yes, however, you will be able to feel the chill if you are willing to go outside. Is it going to the shopping mall? Of course not!! The power of the natural is cannot be compared with the air-conditional. Please come into the hug of the mountain in Malaysia.</h2>
+              </div>
           </div>
           <div  class="col-4 d-flex justify-content-center px-0 h-100">
             <img src="images/second_container_mountain_image.png" alt="" width="100%">
           </div>
         </div>
+        <img src="images/second_container_mountain_2_image.png" class="h-50 d-md-none d-block container-fluid" alt="" width="100%">
+        
       </div>
       <div class="position-relative bg-primary">
         <img src="images/decoration_1.png" class="ms-auto position-absolute top-0 end-0" alt="" width="30%">
