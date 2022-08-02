@@ -29,33 +29,59 @@
     background-color: var(--bg-btn-green) !important;
 }
 
-.bg-triangle{
+.bg-triangle-green{
     background-image: url(../images/bg-green-triangle.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.bg-triangle-yellow{
+    background-image: url(../images/bg-yellow-triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .padding-image-top{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 10vw;
+    padding-bottom: 20vw;
+}
+
+.padding-image-bwl{
+    padding-top: 20vw;
+    padding-bottom: 20vw;
 }
 
 .content_body{
     padding: 100px 0px;
 }
 
-.bg-triangle h1{
-    font-size: calc(18px + 1vw);
+.bg-triangle-green h1{
+    font-size: calc(18px + 1.5vw);
 }
 
-.bg-triangle h2{
-    font-size: calc(10px + 1vw);
+.bg-triangle-green h2{
+    font-size: calc(10px + 1.5vw);
 }
 
-.decoration{
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.bg-triangle-yellow h1{
+    font-size: calc(20px + 3vw);
+}
+
+.bg-triangle-yellow h2{
+    font-size: calc(30px + 1vw);
+}
+
+.decoration_2-position{
+    left: 10%;
+    top: -180%;
+}
+
+.tooltip-inner {
+    background-color: #8FCD80 !important;
+    color: black !important;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,5 +96,10 @@
     .content_body{
         padding: 20px 0px;
     }
+}
 
+@media screen and (max-width: 440px) {
+    .padding-image-bwl{
+        padding-top: 7vw;
+    }
 }
