@@ -13,6 +13,11 @@
     font-weight: 500;
 }
 
+.container-1920{
+    max-width: 1920px;
+    margin: auto
+}
+
 .scrolled-down{
     transform:translateY(-100%); transition: all 0.25s ease-in-out;
 }

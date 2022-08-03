@@ -5,10 +5,6 @@
     --card-gray: rgba(116, 116, 116, 0.2);
 }
 
-body{
-    max-width: 1920px;
-}
-
 .image-fill-black{
     filter: brightness(70%); 
 }
