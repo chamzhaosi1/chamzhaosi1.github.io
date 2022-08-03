@@ -1,7 +1,13 @@
 :root{
     --bg-btn-green: rgba(81, 146, 89, 0.9);
+    --tooltip-green: #8FCD80;
+    --card-yellow: rgba(244, 238, 169, 1);
+    --card-gray: rgba(116, 116, 116, 0.2);
 }
 
+body{
+    max-width: 1920px;
+}
 
 .image-fill-black{
     filter: brightness(70%); 
@@ -82,7 +88,7 @@
 }
 
 .tooltip-inner {
-    background-color: #8FCD80 !important;
+    background-color: var(--tooltip-green) !important;
     color: black !important;
     font-size: calc(20px + 0.5vw);
     font-weight: 600;
@@ -163,7 +169,7 @@
 }
 
 .card {
-    background: linear-gradient(4deg, rgba(244, 238, 169, 1), rgba(116, 116, 116, 0.2)), #F4EEA9;
+    background: linear-gradient(4deg, var(--card-yellow), var(--card-gray)), #F4EEA9;
     width: 18rem;
     min-width: 30% !important;
     box-shadow: -5px 5px 25px #0000009d;
