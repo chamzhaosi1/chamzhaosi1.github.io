@@ -149,11 +149,13 @@ footer a:hover img{
 #west_malaysia {
     left: 30%;
     bottom: 85px;
+    width: 15%;
 }
 
 #east_malaysia {
     right:24%;
     bottom: 85px;
+    width: 20%
 }
 
 @media screen and (max-width: 992px) {
