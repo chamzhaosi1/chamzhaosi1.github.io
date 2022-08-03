@@ -17,7 +17,7 @@
 }
 
 .slideshow-content-header{
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 600;
 }
 
@@ -84,7 +84,7 @@
 .tooltip-inner {
     background-color: #8FCD80 !important;
     color: black !important;
-    font-size: 30px;
+    font-size: calc(20px + 0.5vw);
     font-weight: 600;
 }
 
@@ -104,23 +104,17 @@
     height: 1000%;
 }
 
-.w-30p{
-    width: 45% !important;
-}
 
 .third_container_image{
     z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
-    .w-30p{
-        width: 30% !important;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .slideshow-content-header{
-        font-size: calc(20px + 6vw);
+        font-size: calc(14px + 5.8vw);
+
     }
 
     .slideshow-content-paragraph{
@@ -138,9 +132,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .w-30p{
-        width: 90% !important;
-    }
+
 
     .round-shape{
         width: 50%;
@@ -212,9 +204,20 @@
 }
 
 
+@media screen and (min-width: 768px) {
+    .w-30p{
+        width: 30% !important;
+    }
+}
+
+
 @media screen and (max-width: 576px){
     .card{
-        margin-left: 25px !important;
+        margin-left: 15px !important;
+    }
+
+    .w-30p{
+        width: 90% !important;
     }
 
     .card:not(:first-child) {
