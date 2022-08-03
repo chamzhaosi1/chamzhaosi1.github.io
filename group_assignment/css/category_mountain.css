@@ -120,8 +120,8 @@
         font-size: 1.6vw !important;
     }
 
-    #second_container h2{
-        font-size: 60px;
+    #second_container p{
+        font-size: 60px !important;
     }
 
     .bg-triangle-yellow h1{
