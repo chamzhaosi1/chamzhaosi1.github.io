@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
                   el_autohide.classList.add('scrolled-down');
                 }
             }
-            last_scroll_top = scroll_top + 1;
+            last_scroll_top = scroll_top;
       }); 
     }
 
