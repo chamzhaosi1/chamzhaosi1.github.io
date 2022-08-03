@@ -22,9 +22,16 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
   <script src="javascript/javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#test").load("test.html"); 
+    });
+  </script>
 </head>
 
 <body>
+  <div id="test"></div>
   <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
     <div class="container-fluid bg-top-nav-green px-0">
       <a class="navbar-brand ms-3 my-2" href="#"><img src="images/logo_white_circle.png" alt="logo_white 1.png"

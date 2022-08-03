@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     el_autohide = document.querySelector('.autohide');
-    
-    // add padding-top to bady (if necessary)
-    navbar_height = document.querySelector('.navbar').offsetHeight;
-    
   
     if(el_autohide){
       var last_scroll_top = 0;
@@ -27,3 +23,6 @@ document.addEventListener("DOMContentLoaded", function(){
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 }); 
+
+
+
