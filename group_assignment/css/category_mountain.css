@@ -99,6 +99,11 @@
     height: 650%;
 }
 
+.round-shape_d2{
+    width: 30%;
+    height: 1000%;
+}
+
 .w-30p{
     width: 45% !important;
 }
@@ -141,11 +146,20 @@
         width: 50%;
         height: 380%;
     }
+
+    .round-shape_d2{
+        width: 30%;
+        height: 500%;
+    }
 }
 
 @media screen and (max-width: 440px) {
     .padding-image-bwl{
         padding-top: 7vw;
+    }
+
+    .round-shape{
+        height: 250%;
     }
 }
 
