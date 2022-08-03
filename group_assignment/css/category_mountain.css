@@ -30,20 +30,20 @@
 }
 
 .bg-triangle-green{
-    background-image: url(../images/bg-green-triangle.png);
+    background-image: url(../images/category_mountain/bg-green-triangle.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-triangle-yellow{
-    background-image: url(../images/bg-yellow-triangle.png);
+    background-image: url(../images/category_mountain/bg-yellow-triangle.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 .padding-image-top{
-    padding-top: 10vw;
+    padding-top: 5vw;
     padding-bottom: 20vw;
 }
 
@@ -89,18 +89,18 @@
 }
 
 .bg-bottom{
-    background-image: url(../images/bottom-bg.png);
+    background-image: url(../images/category_mountain/bottom-bg.png);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 .round-shape{
-    width: 40%;
-    height: 650%;
+    width: 30%;
+    height: 950%;
 }
 
 .round-shape_d2{
-    width: 30%;
+    width: 20%;
     height: 1000%;
 }
 
@@ -108,8 +108,6 @@
 .third_container_image{
     z-index: 2;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .slideshow-content-header{
@@ -132,11 +130,9 @@
 }
 
 @media screen and (max-width: 576px) {
-
-
     .round-shape{
-        width: 50%;
-        height: 380%;
+        width: 40%;
+        height: 400%;
     }
 
     .round-shape_d2{
@@ -155,6 +151,8 @@
     }
 }
 
+
+/* card css design, copy from my bootstrap_test folder file*/
 .container {
     overflow: auto;
 }
