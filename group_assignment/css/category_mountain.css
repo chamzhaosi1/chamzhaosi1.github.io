@@ -73,8 +73,12 @@
 }
 
 .decoration_2-position{
-    left: 10%;
-    top: -180%;
+    left: 5%;
+    top: -150%;
+}
+
+#decoration_2{
+    z-index: 1;
 }
 
 .tooltip-inner {
@@ -90,6 +94,25 @@
     background-size: cover; 
 }
 
+.round-shape{
+    width: 40%;
+    height: 650%;
+}
+
+.w-30p{
+    width: 45% !important;
+}
+
+.third_container_image{
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .w-30p{
+        width: 30% !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .slideshow-content-header{
         font-size: calc(20px + 6vw);
@@ -101,6 +124,22 @@
 
     .content_body{
         padding: 20px 0px;
+    }
+
+    .round-shape{
+        width: 50%;
+        height: 500%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .w-30p{
+        width: 90% !important;
+    }
+
+    .round-shape{
+        width: 50%;
+        height: 380%;
     }
 }
 
@@ -159,9 +198,13 @@
 }
 
 
-@media screen and (max-width: 567px){
+@media screen and (max-width: 576px){
+    .card{
+        margin-left: 25px !important;
+    }
+
     .card:not(:first-child) {
-        margin-top: -8rem;
+        margin-top: -5rem;
         margin-left: 0rem;
     }
 
@@ -173,6 +216,6 @@
 
     .card:hover,
     .card:focus-within{
-        transform: translateY(-5rem) rotateZ(5deg);
+        transform: translateY(-8rem) rotateZ(5deg);
     }
 }

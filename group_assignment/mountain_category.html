@@ -21,17 +21,10 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
-  <script src="javascript/javascript.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    $(function(){
-      $("#test").load("test.html"); 
-    });
-  </script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
-  <div id="test"></div>
   <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
     <div class="container-fluid bg-top-nav-green px-0">
       <a class="navbar-brand ms-3 my-2" href="#"><img src="images/logo_white_circle.png" alt="logo_white 1.png"
@@ -174,10 +167,10 @@
         
       </div>
       <div class="position-relative pt-5">
-        <img src="images/decoration_1.png" class="ms-auto position-absolute top-50 end-0"
-      data-bs-toggle="tooltip" data-bs-placement="right"
-      data-bs-custom-class="custom-tooltip"
-      data-bs-title="Don't be shy, Come on here!!" width="50%">
+        <img src="images/decoration_1.png" class="ms-auto position-absolute top-50 end-0 round-shape"
+          data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="Don't be shy, Come on here!!" width="40%">
       </div>
     </div>
   </div>
@@ -188,15 +181,15 @@
       </h1>
     </div>
     <div class="position-relative pt-5">
-      <img src="images/decoration_2.png" class="position-absolute decoration_2-position"
+      <img id="decoration_2" src="images/decoration_2.png" class="position-absolute decoration_2-position"
       data-bs-toggle="tooltip" data-bs-placement="right"
       data-bs-custom-class="custom-tooltip"
-      data-bs-title="Don't forget to take a nice picture with me." width="35%">
+      data-bs-title="Don't forget to take a nice picture with me." width="30%">
     </div>
     <div class="padding-image-bwl">
       <div class="container-fluid d-md-flex d-block justify-content-center">
         <div class="content_body row d-sm-flex flex-sm-row d-flex flex-column-reverse flex-nowrap justify-content-center align-items-start m-0 pt-sm-3 pt-5">
-          <div  class="col-md-4 col-sm-6 col-12 d-flex justify-content-center px-0 h-100">
+          <div  class="third_container_image col-md-4 col-sm-6 col-12 d-flex justify-content-center px-0 h-100">
             <img src="images/third_container_mountain_image.png" alt="" width="100%">
           </div>
           <div class="col-md-7 col-sm-5 col-12 ms-sm-3 ms-0 h-100 align-self-center">
@@ -217,35 +210,70 @@
       </div>
     </div>
   </div>
+  <div id="back-top">
+    <a href="#"><img src="images/top.png" alt="arrow to top" width="30px"></a>
+  </div>
   <div class="bg-bottom">
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 p-0 p-sm-3">
       <div class="d-block d-sm-flex align-items-center justify-content-center py-5">
-          <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+          <div class="card p-0 rounded-3 w-30p">
+              <img src="images/card_genting_1.png" class="card-img-top rounded-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title fs-2 fw-bold">Genting Highland</h5>
+                <p class="card-text fs-4">Breathe deep in Genting Highlands where, unlike nearby Kuala Lumpur, the air is fresh and clean.</p>
+                <a href="#" class="btn bg-btn-green fs-5">Read More</a>
               </div>
             </div>
-          <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+          <div class="card p-0 rounded-3 w-30p">
+              <img src="images/card_penanghill_1.png" class="card-img-top rounded-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title fs-2 fw-bold">Penang Hill</h5>
+                <p class="card-text fs-4">The Habitat Penang Hill provides the most authentic, diverse, and educational Malaysian rainforest experience.</p>
+                <a href="#" class="btn bg-btn-green fs-5">Read More</a>
               </div>
             </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card p-0 rounded-3 w-30p">
+              <img src="images/card_cameron_1.png" class="card-img-top rounded-3" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's contentSome quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content..</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title fs-2 fw-bold">Cameron Highland</h5>
+                <p class="card-text fs-4">Cameron Highlands is an extensive hill station in Pahang, West Malaysia that is comprised of three townships and five settlements.</p>
+                <a href="#" class="btn bg-btn-green fs-5">Read More</a>
               </div>
             </div>
       </div>
+    </div>
+    <footer class="position-relative d-flex align-items-center flex-column">
+      <div class="container-fluid">
+        <div class="row pt-5 justify-content-center">
+          <div class="col-12 col-sm-5 col-md-3 mx-md-3 mx-lg-5 mb-5 mb-sm-0 d-flex justify-content-center align-items-end">
+            <a href="index.html"><img src="images/logo_Light.png" width="117px"></a>
+          </div>
+          <div class="col-12 col-sm-2 col-md-2 ms-md-35 ms-lg-5 mb-3 mb-sm-0 text-center text-sm-start text-white">
+            <h3 class="fw-bold">MENU</h3>
+            <ul class="list-unstyled fs-5 ">
+              <a href="#"><li class="mb-2">ABOUT</li></a>
+              <a href="#"><li class="mb-2">MOUTAIN</li></a>
+              <a href="#"><li class="mb-2">BEACH</li></a>
+              <a href="#"><li class="mb-2">CULTURE</li></a>
+              <a href="#"><li >CONTACT</li></a>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end">
+            <h3 class="fw-bold">CONTACT US</h3>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100002367838790" target="_blank"><img src="images/facebook.png" class="mx-2"></a>
+              <a href="https://www.instagram.com/yeushyang/" target="_blank"><img src="images/instagram.png" class="mx-2"></a>
+              <a href="https://github.com/chiayeushyang" target="_blank"><img src="images/github.png" class="mx-2"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="images/west_malaysia 1.png" id="west_malaysia" class="position-absolute d-none d-lg-block">
+      <img src="images/east_malaysia 2.png" id="east_malaysia" class="position-absolute d-none d-lg-block">
+      <div id="line" class="position-absolute"></div>
+      <p class="position-absolute bottom-0 text-light">Copyright © 2022 3C2L. All Rights Reserved.</p>
+    </footer>
   </div>
-  </div>
+  
 </body>
 </html>

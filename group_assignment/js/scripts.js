@@ -1,3 +1,8 @@
+window.addEventListener("scroll", function () {
+  var t = document.querySelector("#back-top");
+  t.classList.toggle("sticky", window.scrollY > 100);
+})
+
 document.addEventListener("DOMContentLoaded", function(){
 
     el_autohide = document.querySelector('.autohide');
