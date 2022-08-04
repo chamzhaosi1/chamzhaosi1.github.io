@@ -1,488 +1,471 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/practices.css">
-        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700;800&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
-        <title>
-            Assignment 1: Practices Page
-        </title>
-    </head>
-    <body>
-        <div id="top" class="container">
-            <div id="nav_container" class="nav_container">
-                <div id="nav_bar" class="nav_bar">
-                    <div class="portfolio_box">
-                        <img src="images/logo.png" alt="logo" height="53px">
-                        <a href="https://chamzhaosi1.github.io/assignment_1/home.html">CHAM</a>
-                    </div>
-                    <a href="https://chamzhaosi1.github.io/assignment_1/about.html">About</a>
-                    <a href="https://chamzhaosi1.github.io/assignment_1/work_experience.html">Work Experience</a>
-                    <a href="https://chamzhaosi1.github.io/assignment_1/interest.html">My Interest</a>
-                    <a href="https://chamzhaosi1.github.io/assignment_1/practices.html">My Practices</a>
-                    <a href="https://chamzhaosi1.github.io/assignment_1/contact.html">
-                        <h4>
-                            CONTACT
-                        </h4>
-                    </a>
-                    <div id="menu_content" class="menu_content">
-                        <a href="https://chamzhaosi1.github.io/assignment_1/about.html">About</a>
-                        <a href="https://chamzhaosi1.github.io/assignment_1/work_experience.html">Work Experience</a>
-                        <a href="https://chamzhaosi1.github.io/assignment_1/interest.html">My Interest</a>
-                        <a href="https://chamzhaosi1.github.io/assignment_1/practices.html">My Practices</a>
-                        <a href="https://chamzhaosi1.github.io/assignment_1/contact.html">Contact</a>
-                    </div> 
-                    <div class="menu_bar" onclick="show_menu_content()">
-                        <i id="menu_icon" class="fa-solid fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="top_container">
-                <div class="top_content">
-                    <h1>
-                        My Practices
-                    </h1>
-                    <h4>
-                        All My Web Design Practices Exercise and Homework
-                    </h4>
-                </div>
-            </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/practices.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/13427233db.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Assignment 1: Practices Page</title>
+  </head>
+  <body>
+    <div id="top" class="container">
+      <div id="nav_container" class="nav_container">
+        <div id="nav_bar" class="nav_bar">
+          <div class="portfolio_box">
+            <img src="images/logo.png" alt="logo" height="53px" />
+            <a href="index.html">CHAM</a>
+          </div>
+          <a href="about.html">About</a>
+          <a href="work_experience.html">Work Experience</a>
+          <a href="interest.html">My Interest</a>
+          <a href="practices.html">My Practices</a>
+          <a href="contact.html">
+            <h4>CONTACT</h4>
+          </a>
+          <div id="menu_content" class="menu_content">
+            <a href="about.html">About</a>
+            <a href="work_experience.html">Work Experience</a>
+            <a href="interest.html">My Interest</a>
+            <a href="practices.html">My Practices</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="menu_bar" onclick="show_menu_content()">
+            <i id="menu_icon" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="top_container">
+        <div class="top_content">
+          <h1>My Practices</h1>
+          <h4>All My Web Design Practices Exercise and Homework</h4>
+        </div>
+      </div>
 
-            <div class="second_container">
-                <div class="nav_bar">
-                    <a onclick="show_all_each(99)" class="99_week active">Show All <span>22</span></a>
-                    <a onclick="show_all_each(1)" class="2_week">2nd Week <span>1</span></a>
-                    <a onclick="show_all_each(2)" class="3_week">3rd Week <span>7</span></a>
-                    <a onclick="show_all_each(3)" class="4_week">4th Week <span>2</span></a>
-                    <a onclick="show_all_each(4)" class="5_week">5th Week <span>4</span></a>
-                    <a onclick="show_all_each(5)" class="6_week">6th Week <span>6</span></a>
-                    <a onclick="show_all_each(6)" class="7_week">7th Week <span>2</span></a>
+      <div class="second_container">
+        <div class="nav_bar">
+          <a onclick="show_all_each(99)" class="99_week active"
+            >Show All <span>22</span></a
+          >
+          <a onclick="show_all_each(1)" class="2_week"
+            >2nd Week <span>1</span></a
+          >
+          <a onclick="show_all_each(2)" class="3_week"
+            >3rd Week <span>7</span></a
+          >
+          <a onclick="show_all_each(3)" class="4_week"
+            >4th Week <span>2</span></a
+          >
+          <a onclick="show_all_each(4)" class="5_week"
+            >5th Week <span>4</span></a
+          >
+          <a onclick="show_all_each(5)" class="6_week"
+            >6th Week <span>6</span></a
+          >
+          <a onclick="show_all_each(6)" class="7_week"
+            >7th Week <span>2</span></a
+          >
 
-                    <select name="week_select" id="week_select" onchange="change_week()">
-                        <option value="99" >Show All</option>
-                        <option value="1">2nd Week</option>
-                        <option value="2">3rd Week</option>
-                        <option value="3">4th Week</option>
-                        <option value="4">5th Week</option>
-                        <option value="5">6th Week</option>
-                        <option value="6">7th Week</option>
-                    </select>
-                </div>
-
-                <div class="content_container">
-                    <div id="week_2" class="inside_container">
-                        <div class="top_bar">
-                            <h1>
-                                2nd Week
-                            </h1>
-                            <i class="fa-solid fa-xmark" onclick="close_icon(2)"></i>
-                        </div>
-                        <div class="inside_box_container">
-                            <a href="https://chamzhaosi1.github.io/week_2" target="_blank">
-                                <div id="week_2_bg" class="inside_box">
-                                    <div class="box_btn">
-                                        EXERCISE 1
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="week_3" class="inside_container">
-                        <div class="top_bar">
-                            <h1>
-                                3nd Week
-                            </h1>
-                            <i class="fa-solid fa-xmark" onclick="close_icon(3)"></i>
-                        </div>
-                        <div class="inside_box_container">
-                            <a href="https://chamzhaosi1.github.io/week_3/apple.html" target="_blank">
-                                <div id="week_3_bg_1" class="inside_box">
-                                    <div class="box_btn">
-                                        EXERCISE 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_3/exercise_2/index.html" target="_blank">
-                                <div id="week_3_bg_2" class="inside_box">
-                                    <div class="box_btn">
-                                        EXERCISE 2
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_3/homework/homework_1/homework1.html" target="_blank"> 
-                                <div id="week_3_bg_3" class="inside_box">
-                                    <div class="box_btn">
-                                        HOMEWORK 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_3/homework/homework_2/homework2.html" target="_blank">
-                                <div id="week_3_bg_4" class="inside_box">
-                                    <div class="box_btn">
-                                        HOMEWORK 2
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_3/homework/homework_3/homework3.html" target="_blank">
-                                <div id="week_3_bg_5" class="inside_box">
-                                    <div class="box_btn">
-                                        HOMEWORK 3
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_3/homework/homework_4/homework4.html" target="_blank">
-                                <div id="week_3_bg_6" class="inside_box">
-                                    <div class="box_btn">
-                                        HOMEWORK 4
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_3/homework/homework_5/homework5.html" target="_blank">
-                                <div id="week_3_bg_7" class="inside_box">
-                                    <div class="box_btn">
-                                        HOMEWORK 5
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="week_4" class="inside_container">
-                        <div class="top_bar">
-                            <h1>
-                                4th Week
-                            </h1>
-                            <i class="fa-solid fa-xmark" onclick="close_icon(4)"></i>
-                        </div>
-                        <div class="inside_box_container">
-                            <a href="https://chamzhaosi1.github.io/index_previous.html" target="_blank">
-                                <div id="week_4_bg_1" class="inside_box">
-                                    <div class="box_btn">
-                                        Old Home Page
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/" target="_blank">
-                                <div id="week_4_bg_2" class="inside_box">
-                                    <div class="box_btn">
-                                        New Home Page
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="week_5" class="inside_container">
-                        <div class="top_bar">
-                            <h1>
-                               5th Week
-                            </h1>
-                            <i class="fa-solid fa-xmark" onclick="close_icon(5)"></i>
-                        </div>
-                        <div class="inside_box_container">
-                            <a href="https://chamzhaosi1.github.io/week_5/" target="_blank">
-                                <div id="week_5_bg_1" class="inside_box">
-                                    <div class="box_btn">
-                                        Exercise 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_5/homework_1/" target="_blank">
-                                <div id="week_5_bg_2" class="inside_box">
-                                    <div class="box_btn">
-                                        Homework 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_5/homework_2/" target="_blank">
-                                <div id="week_5_bg_3" class="inside_box">
-                                    <div class="box_btn">
-                                        Homework 2
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_5/homework_3/" target="_blank">
-                                <div id="week_5_bg_4" class="inside_box">
-                                    <div class="box_btn">
-                                        Homework 3
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="week_6" class="inside_container">
-                        <div class="top_bar">
-                            <h1>
-                               6th Week
-                            </h1>
-                            <i class="fa-solid fa-xmark" onclick="close_icon(6)"></i>
-                        </div>
-                        <div class="inside_box_container">
-                            <a href="https://chamzhaosi1.github.io/week_6/exercise_1" target="_blank">
-                                <div id="week_6_bg_1" class="inside_box">
-                                    <div class="box_btn">
-                                        Exercise 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_1/" target="_blank">
-                                <div id="week_6_bg_2" class="inside_box">
-                                    <div class="box_btn">
-                                        Exe_Layout 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_2/" target="_blank">
-                                <div id="week_6_bg_3" class="inside_box">
-                                    <div class="box_btn">
-                                        Exe_Layout 2
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_3/" target="_blank">
-                                <div id="week_6_bg_4" class="inside_box">
-                                    <div class="box_btn">
-                                        Exe_Layout 3
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_4/" target="_blank">
-                                <div id="week_6_bg_5" class="inside_box">
-                                    <div class="box_btn">
-                                        Exe_Layout 4
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_6/homework" target="_blank">
-                                <div id="week_6_bg_6" class="inside_box">
-                                    <div class="box_btn">
-                                        Homework
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div id="week_7" class="inside_container">
-                        <div class="top_bar">
-                            <h1>
-                               7th Week
-                            </h1>
-                            <i class="fa-solid fa-xmark" onclick="close_icon(7)"></i>
-                        </div>
-                        <div class="inside_box_container">
-                            <a href="https://chamzhaosi1.github.io/week_7/exercise_1" target="_blank">
-                                <div id="week_7_bg_1" class="inside_box">
-                                    <div class="box_btn">
-                                        Exercise 1
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="https://chamzhaosi1.github.io/week_7/exercise_2" target="_blank">
-                                <div id="week_7_bg_2" class="inside_box">
-                                    <div class="box_btn">
-                                        Exercise 2
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div id="practice_1" class="box" onclick="show_exe_hm_container(2)">
-                        <h1>
-                            HTML BASIC
-                        </h1>
-                        <div class="box_btn">
-                            2nd Week
-                        </div> 
-                        </div>
-                    <div id="practice_2" class="box" onclick="show_exe_hm_container(3)">
-                        <h1>
-                            HTML, CSS, BOORSTRAP
-                           </h1>
-                        <div class="box_btn">
-                             3rd Week
-                        </div> 
-                     </div>
-                     <div id="practice_3" class="box" onclick="show_exe_hm_container(4)">
-                        <h1>
-                            REVISED HOME PAGE
-                           </h1>
-                        <div class="box_btn">
-                             4th Week
-                        </div> 
-                     </div>
-                     <div id="practice_4" class="box" onclick="show_exe_hm_container(5)">
-                        <h1>
-                            LAYOUT RESPONSIVE
-                           </h1>
-                        <div class="box_btn">
-                             5th Week
-                        </div> 
-                     </div>
-                     <div id="practice_5" class="box" onclick="show_exe_hm_container(6)">
-                        <h1>
-                            CSS PROPERTIES, GRID LAYOUT
-                           </h1>
-                        <div class="box_btn">
-                             6th Week
-                        </div> 
-                     </div>
-                     <div id="practice_6" class="box" onclick="show_exe_hm_container(7)">
-                        <h1>
-                            MOBILE, CURTAIN MENU
-                           </h1>
-                        <div class="box_btn">
-                             7th Week
-                        </div> 
-                     </div>
-                     
-                </div>
-            </div>
-
-
-            <div class="footer_container">
-                <div class="bottom_container">
-                    <div class="left_box">
-                        <h4>
-                            Copyright &copy; 2022 Cham. All Rights Reserved.
-                        </h4>
-                    </div>
-                    <div class="right_box">
-                        <div class="inside_box">
-                            <a href="https://www.facebook.com/cham.zhaosi/" target="_blank">
-                                <div class="round">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                            </a>
-                            <a href="https://twitter.com/Cham66170032/" target="_blank">
-                                <div class="round">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </div>
-                            </a>
-                            <a href="https://www.instagram.com/happiness_czs/" target="_blank">
-                                <div class="round">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </div>
-                            </a> 
-                        </div> 
-                    </div>      
-                </div>
-            </div>
-           <a href="#top">
-            <div id="top_round" class="top_round">
-                <i class="fa-solid fa-arrows-up-to-line"></i>
-            </div>
-        </a>
+          <select name="week_select" id="week_select" onchange="change_week()">
+            <option value="99">Show All</option>
+            <option value="1">2nd Week</option>
+            <option value="2">3rd Week</option>
+            <option value="3">4th Week</option>
+            <option value="4">5th Week</option>
+            <option value="5">6th Week</option>
+            <option value="6">7th Week</option>
+          </select>
         </div>
 
-        
-        <script>
-            function show_menu_content() {
-                let menu_content = document.getElementById("menu_content");
-                let menu_icon = document.getElementById("menu_icon");
-                
-                if (menu_icon.className == "fa-solid fa-bars"){
-                    menu_content.style.display = "flex"
-                    menu_icon.className = "fa-solid fa-xmark"
-                    menu_icon.style.color = "#9C3D54"
-                }else{
-                    menu_content.style.display ="none"
-                    menu_icon.className = "fa-solid fa-bars"
-                    menu_icon.style.color = "white"
-                }
-            }
+        <div class="content_container">
+          <div id="week_2" class="inside_container">
+            <div class="top_bar">
+              <h1>2nd Week</h1>
+              <i class="fa-solid fa-xmark" onclick="close_icon(2)"></i>
+            </div>
+            <div class="inside_box_container">
+              <a href="https://chamzhaosi1.github.io/week_2" target="_blank">
+                <div id="week_2_bg" class="inside_box">
+                  <div class="box_btn">EXERCISE 1</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-            var navContainer = document.getElementById('nav_container');
-            var navBar = document.getElementById('nav_bar');
-            window.onscroll = function () { 
-                "use strict";
-                if (document.documentElement.scrollTop >= 3 ) {
-                    navContainer.classList.add("chg_color");
-                    navBar.classList.add("chg_color");
-                    document.getElementById("top_round").style.display = 'flex';
-                } 
-                else {
-                    navContainer.classList.remove("chg_color");
-                    navBar.classList.remove("chg_color");
-                    document.getElementById("top_round").style.display = 'none';
-                }
-            };
+          <div id="week_3" class="inside_container">
+            <div class="top_bar">
+              <h1>3nd Week</h1>
+              <i class="fa-solid fa-xmark" onclick="close_icon(3)"></i>
+            </div>
+            <div class="inside_box_container">
+              <a
+                href="https://chamzhaosi1.github.io/week_3/apple.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_1" class="inside_box">
+                  <div class="box_btn">EXERCISE 1</div>
+                </div>
+              </a>
 
-            function change_week(){
-                let index = document.getElementById("week_select").value
-                show_all_each(index)
-            }
+              <a
+                href="https://chamzhaosi1.github.io/week_3/exercise_2/index.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_2" class="inside_box">
+                  <div class="box_btn">EXERCISE 2</div>
+                </div>
+              </a>
 
-            function show_all_each(index){
-                if(index == 99){
-                    document.getElementById("practice_1").style.display = 'flex';
-                    document.getElementById("practice_2").style.display = 'flex';
-                    document.getElementById("practice_3").style.display = 'flex';
-                    document.getElementById("practice_4").style.display = 'flex';
-                    document.getElementById("practice_5").style.display = 'flex';
-                    document.getElementById("practice_6").style.display = 'flex';
-                }else{
-                    document.getElementById("practice_1").style.display = 'none';
-                    document.getElementById("practice_2").style.display = 'none';
-                    document.getElementById("practice_3").style.display = 'none';
-                    document.getElementById("practice_4").style.display = 'none';
-                    document.getElementById("practice_5").style.display = 'none';
-                    document.getElementById("practice_6").style.display = 'none';
+              <a
+                href="https://chamzhaosi1.github.io/week_3/homework/homework_1/homework1.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_3" class="inside_box">
+                  <div class="box_btn">HOMEWORK 1</div>
+                </div>
+              </a>
 
-                    document.getElementById("practice_"+index).style.display = 'flex';
-                }
-                
-                let y = document.getElementsByClassName("active");
-                y[0].classList.remove("active")
+              <a
+                href="https://chamzhaosi1.github.io/week_3/homework/homework_2/homework2.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_4" class="inside_box">
+                  <div class="box_btn">HOMEWORK 2</div>
+                </div>
+              </a>
 
-                if (index != 99){
-                    index++;
-                }
+              <a
+                href="https://chamzhaosi1.github.io/week_3/homework/homework_3/homework3.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_5" class="inside_box">
+                  <div class="box_btn">HOMEWORK 3</div>
+                </div>
+              </a>
 
-                let x = document.getElementsByClassName(index+"_week");
-                x[0].className += " active"
-            }
+              <a
+                href="https://chamzhaosi1.github.io/week_3/homework/homework_4/homework4.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_6" class="inside_box">
+                  <div class="box_btn">HOMEWORK 4</div>
+                </div>
+              </a>
 
-            function show_exe_hm_container(index){
-                document.getElementById("week_2").style.width = "0%";
-                document.getElementById("week_3").style.width = "0%"; 
-                document.getElementById("week_4").style.width = "0%"; 
-                document.getElementById("week_5").style.width = "0%"; 
-                document.getElementById("week_6").style.width = "0%"; 
-                document.getElementById("week_7").style.width = "0%";                 
+              <a
+                href="https://chamzhaosi1.github.io/week_3/homework/homework_5/homework5.html"
+                target="_blank"
+              >
+                <div id="week_3_bg_7" class="inside_box">
+                  <div class="box_btn">HOMEWORK 5</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-                document.getElementById("week_"+index).style.width = "75%";
-            }
+          <div id="week_4" class="inside_container">
+            <div class="top_bar">
+              <h1>4th Week</h1>
+              <i class="fa-solid fa-xmark" onclick="close_icon(4)"></i>
+            </div>
+            <div class="inside_box_container">
+              <a
+                href="https://chamzhaosi1.github.io/index_previous.html"
+                target="_blank"
+              >
+                <div id="week_4_bg_1" class="inside_box">
+                  <div class="box_btn">Old Home Page</div>
+                </div>
+              </a>
 
-            function close_icon(index){
-                document.getElementById("week_"+index).style.width = "0%";
-            }
+              <a href="https://chamzhaosi1.github.io/" target="_blank">
+                <div id="week_4_bg_2" class="inside_box">
+                  <div class="box_btn">New Home Page</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-        </script>
-    </body>
+          <div id="week_5" class="inside_container">
+            <div class="top_bar">
+              <h1>5th Week</h1>
+              <i class="fa-solid fa-xmark" onclick="close_icon(5)"></i>
+            </div>
+            <div class="inside_box_container">
+              <a href="https://chamzhaosi1.github.io/week_5/" target="_blank">
+                <div id="week_5_bg_1" class="inside_box">
+                  <div class="box_btn">Exercise 1</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_5/homework_1/"
+                target="_blank"
+              >
+                <div id="week_5_bg_2" class="inside_box">
+                  <div class="box_btn">Homework 1</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_5/homework_2/"
+                target="_blank"
+              >
+                <div id="week_5_bg_3" class="inside_box">
+                  <div class="box_btn">Homework 2</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_5/homework_3/"
+                target="_blank"
+              >
+                <div id="week_5_bg_4" class="inside_box">
+                  <div class="box_btn">Homework 3</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div id="week_6" class="inside_container">
+            <div class="top_bar">
+              <h1>6th Week</h1>
+              <i class="fa-solid fa-xmark" onclick="close_icon(6)"></i>
+            </div>
+            <div class="inside_box_container">
+              <a
+                href="https://chamzhaosi1.github.io/week_6/exercise_1"
+                target="_blank"
+              >
+                <div id="week_6_bg_1" class="inside_box">
+                  <div class="box_btn">Exercise 1</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_1/"
+                target="_blank"
+              >
+                <div id="week_6_bg_2" class="inside_box">
+                  <div class="box_btn">Exe_Layout 1</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_2/"
+                target="_blank"
+              >
+                <div id="week_6_bg_3" class="inside_box">
+                  <div class="box_btn">Exe_Layout 2</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_3/"
+                target="_blank"
+              >
+                <div id="week_6_bg_4" class="inside_box">
+                  <div class="box_btn">Exe_Layout 3</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_6/exercise_2/layout_4/"
+                target="_blank"
+              >
+                <div id="week_6_bg_5" class="inside_box">
+                  <div class="box_btn">Exe_Layout 4</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_6/homework"
+                target="_blank"
+              >
+                <div id="week_6_bg_6" class="inside_box">
+                  <div class="box_btn">Homework</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div id="week_7" class="inside_container">
+            <div class="top_bar">
+              <h1>7th Week</h1>
+              <i class="fa-solid fa-xmark" onclick="close_icon(7)"></i>
+            </div>
+            <div class="inside_box_container">
+              <a
+                href="https://chamzhaosi1.github.io/week_7/exercise_1"
+                target="_blank"
+              >
+                <div id="week_7_bg_1" class="inside_box">
+                  <div class="box_btn">Exercise 1</div>
+                </div>
+              </a>
+
+              <a
+                href="https://chamzhaosi1.github.io/week_7/exercise_2"
+                target="_blank"
+              >
+                <div id="week_7_bg_2" class="inside_box">
+                  <div class="box_btn">Exercise 2</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div id="practice_1" class="box" onclick="show_exe_hm_container(2)">
+            <h1>HTML BASIC</h1>
+            <div class="box_btn">2nd Week</div>
+          </div>
+          <div id="practice_2" class="box" onclick="show_exe_hm_container(3)">
+            <h1>HTML, CSS, BOORSTRAP</h1>
+            <div class="box_btn">3rd Week</div>
+          </div>
+          <div id="practice_3" class="box" onclick="show_exe_hm_container(4)">
+            <h1>REVISED HOME PAGE</h1>
+            <div class="box_btn">4th Week</div>
+          </div>
+          <div id="practice_4" class="box" onclick="show_exe_hm_container(5)">
+            <h1>LAYOUT RESPONSIVE</h1>
+            <div class="box_btn">5th Week</div>
+          </div>
+          <div id="practice_5" class="box" onclick="show_exe_hm_container(6)">
+            <h1>CSS PROPERTIES, GRID LAYOUT</h1>
+            <div class="box_btn">6th Week</div>
+          </div>
+          <div id="practice_6" class="box" onclick="show_exe_hm_container(7)">
+            <h1>MOBILE, CURTAIN MENU</h1>
+            <div class="box_btn">7th Week</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_container">
+        <div class="bottom_container">
+          <div class="left_box">
+            <h4>Copyright &copy; 2022 Cham. All Rights Reserved.</h4>
+          </div>
+          <div class="right_box">
+            <div class="inside_box">
+              <a href="https://www.facebook.com/cham.zhaosi/" target="_blank">
+                <div class="round">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+              </a>
+              <a href="https://twitter.com/Cham66170032/" target="_blank">
+                <div class="round">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/happiness_czs/"
+                target="_blank"
+              >
+                <div class="round">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#top">
+        <div id="top_round" class="top_round">
+          <i class="fa-solid fa-arrows-up-to-line"></i>
+        </div>
+      </a>
+    </div>
+
+    <script>
+      function show_menu_content() {
+        let menu_content = document.getElementById("menu_content");
+        let menu_icon = document.getElementById("menu_icon");
+
+        if (menu_icon.className == "fa-solid fa-bars") {
+          menu_content.style.display = "flex";
+          menu_icon.className = "fa-solid fa-xmark";
+          menu_icon.style.color = "#9C3D54";
+        } else {
+          menu_content.style.display = "none";
+          menu_icon.className = "fa-solid fa-bars";
+          menu_icon.style.color = "white";
+        }
+      }
+
+      var navContainer = document.getElementById("nav_container");
+      var navBar = document.getElementById("nav_bar");
+      window.onscroll = function () {
+        "use strict";
+        if (document.documentElement.scrollTop >= 3) {
+          navContainer.classList.add("chg_color");
+          navBar.classList.add("chg_color");
+          document.getElementById("top_round").style.display = "flex";
+        } else {
+          navContainer.classList.remove("chg_color");
+          navBar.classList.remove("chg_color");
+          document.getElementById("top_round").style.display = "none";
+        }
+      };
+
+      function change_week() {
+        let index = document.getElementById("week_select").value;
+        show_all_each(index);
+      }
+
+      function show_all_each(index) {
+        if (index == 99) {
+          document.getElementById("practice_1").style.display = "flex";
+          document.getElementById("practice_2").style.display = "flex";
+          document.getElementById("practice_3").style.display = "flex";
+          document.getElementById("practice_4").style.display = "flex";
+          document.getElementById("practice_5").style.display = "flex";
+          document.getElementById("practice_6").style.display = "flex";
+        } else {
+          document.getElementById("practice_1").style.display = "none";
+          document.getElementById("practice_2").style.display = "none";
+          document.getElementById("practice_3").style.display = "none";
+          document.getElementById("practice_4").style.display = "none";
+          document.getElementById("practice_5").style.display = "none";
+          document.getElementById("practice_6").style.display = "none";
+
+          document.getElementById("practice_" + index).style.display = "flex";
+        }
+
+        let y = document.getElementsByClassName("active");
+        y[0].classList.remove("active");
+
+        if (index != 99) {
+          index++;
+        }
+
+        let x = document.getElementsByClassName(index + "_week");
+        x[0].className += " active";
+      }
+
+      function show_exe_hm_container(index) {
+        document.getElementById("week_2").style.width = "0%";
+        document.getElementById("week_3").style.width = "0%";
+        document.getElementById("week_4").style.width = "0%";
+        document.getElementById("week_5").style.width = "0%";
+        document.getElementById("week_6").style.width = "0%";
+        document.getElementById("week_7").style.width = "0%";
+
+        document.getElementById("week_" + index).style.width = "75%";
+      }
+
+      function close_icon(index) {
+        document.getElementById("week_" + index).style.width = "0%";
+      }
+    </script>
+  </body>
 </html>
