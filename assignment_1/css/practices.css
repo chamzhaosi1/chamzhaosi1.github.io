@@ -311,7 +311,7 @@ a{
     border-radius: 10px;
     padding: 5px 10px;
     width: fit-content;
-    color: black
+    color: black;
 }
 
 .second_container .content_container .box h1{
@@ -336,91 +336,91 @@ a{
 }
 
 .second_container .inside_container #week_2_bg{
-    background-image: url(../images/week2_exe1.png);
+    background-image: url(../images/week2_exe1.jpg);
 }
 
 .second_container .inside_container #week_3_bg_1{
-    background-image: url(../images/week3_exe1.png);
+    background-image: url(../images/week3_exe1.jpg);
 }
 
 .second_container .inside_container #week_3_bg_2{
-    background-image: url(../images/week3_exe2.png);
+    background-image: url(../images/week3_exe2.jpg);
 }
 
 .second_container .inside_container #week_3_bg_3{
-    background-image: url(../images/week3_homework_1.png);
+    background-image: url(../images/week3_homework_1.jpg);
 }
 
 .second_container .inside_container #week_3_bg_4{
-    background-image: url(../images/week3_homework_2.png);
+    background-image: url(../images/week3_homework_2.jpg);
 }
 
 .second_container .inside_container #week_3_bg_5{
-    background-image: url(../images/week3_homework_3.png);
+    background-image: url(../images/week3_homework_3.jpg);
 }
 
 .second_container .inside_container #week_3_bg_6{
-    background-image: url(../images/week3_homework_4.png);
+    background-image: url(../images/week3_homework_4.jpg);
 }
 
 .second_container .inside_container #week_3_bg_7{
-    background-image: url(../images/week3_homework_5.png);
+    background-image: url(../images/week3_homework_5.jpg);
 }
 
 .second_container .inside_container #week_4_bg_1{
-    background-image: url(../images/week4_home_page.png);
+    background-image: url(../images/week4_home_page.jpg);
 }
 
 .second_container .inside_container #week_4_bg_2{
-    background-image: url(../images/week4_new_home_page.png);
+    background-image: url(../images/week4_new_home_page.jpg);
 }
 
 .second_container .inside_container #week_5_bg_1{
-    background-image: url(../images/week_5_class_practies.png);
+    background-image: url(../images/week_5_class_practies.jpg);
 }
 
 .second_container .inside_container #week_5_bg_2{
-    background-image: url(../images/wk_5_homework_1.png);
+    background-image: url(../images/wk_5_homework_1.jpg);
 }
 
 .second_container .inside_container #week_5_bg_3{
-    background-image: url(../images/wk_5_homework_2.png);
+    background-image: url(../images/wk_5_homework_2.jpg);
 }
 
 .second_container .inside_container #week_5_bg_4{
-    background-image: url(../images/wk_5_homework_3.png);
+    background-image: url(../images/wk_5_homework_3.jpg);
 }
 
 .second_container .inside_container #week_6_bg_1{
-    background-image: url(../images/week_6_exe_1.png);
+    background-image: url(../images/week_6_exe_1.jpg);
 }
 
 .second_container .inside_container #week_6_bg_2{
-    background-image: url(../images/week_6_layout_1.png);
+    background-image: url(../images/week_6_layout_1.jpg);
 }
 
 .second_container .inside_container #week_6_bg_3{
-    background-image: url(../images/week_6_layout_2.png);
+    background-image: url(../images/week_6_layout_2.jpg);
 }
 
 .second_container .inside_container #week_6_bg_4{
-    background-image: url(../images/week_6_layout_3.png);
+    background-image: url(../images/week_6_layout_3.jpg);
 }
 
 .second_container .inside_container #week_6_bg_5{
-    background-image: url(../images/week_6_layout_4.png);
+    background-image: url(../images/week_6_layout_4.jpg);
 }
 
 .second_container .inside_container #week_6_bg_6{
-    background-image: url(../images/week_6_homework.png);
+    background-image: url(../images/week_6_homework.jpg);
 }
 
 .second_container .inside_container #week_7_bg_1{
-    background-image: url(../images/week_7_exercise_1.png);
+    background-image: url(../images/week_7_exercise_1.jpg);
 }
 
 .second_container .inside_container #week_7_bg_2{
-    background-image: url(../images/week_7_exercise_2.png);
+    background-image: url(../images/week_7_exercise_2.jpg);
 }
 
 .second_container .inside_container .top_bar{
@@ -472,11 +472,12 @@ a{
     padding: 10px 10px;
     width: fit-content;
     color: black;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 800px) {
     .second_container .inside_container .inside_box_container .inside_box .box_btn{
-        font-size: 2vw;
+        font-size: 1rem;
     }
 
     .second_container .nav_bar a{
@@ -490,10 +491,6 @@ a{
 }
 
 @media screen and (max-width: 480px) {
-    .second_container .inside_container .inside_box_container .inside_box .box_btn{
-        font-size: 3vw;
-    }
-
     .second_container .inside_container .inside_box_container .inside_box{
         width: 60vw;
     }

@@ -226,7 +226,7 @@ a{
 .top_container .content_container .right_box img{ 
     max-width: 500px;
     min-width: 250px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .second_container{
@@ -251,7 +251,7 @@ a{
 .second_container .content_container .left_box img{ 
     max-width: 500px;
     min-width: 250px;
-    border-radius: 25px;
+    border-radius: 10px;
     max-height: 650px;
 }
 
@@ -381,7 +381,7 @@ a{
     background-repeat: no-repeat;
     background-position: 0px -10px;
     background-blend-mode: darken;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-right: 10px;
 }
 
@@ -422,7 +422,7 @@ a{
     background-repeat: no-repeat;
     background-position: 0px -20px;
     background-blend-mode: darken;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-right: 10px;
 }
 
@@ -517,8 +517,8 @@ a{
     max-width: 50%;
     min-width: 270px;
     color: #391400;
-    border-radius: 50px;
-    padding-left: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 .four_container{
@@ -544,7 +544,7 @@ a{
     min-height: 25%;
     display: block;
     text-align: center;
-    padding: 0px 10px;
+    margin: 0px 10px;
     text-align: left;
 }
 
@@ -556,6 +556,7 @@ a{
 
 .four_container .content_container .left_box .each_work img{
     width: 99%;
+    border-radius: 10px;
 }
 
 .four_container .content_container .right_box{
@@ -707,7 +708,7 @@ a{
     padding: 40px;
     background-color: lightgray;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column-reverse;
     cursor: pointer;
@@ -740,51 +741,51 @@ a{
 }
 
 .fifth_container .inside_container #week_5_bg_1{
-    background-image: url(../images/week_5_class_practies.png);
+    background-image: url(../images/week_5_class_practies.jpg);
 }
 
 .fifth_container .inside_container #week_5_bg_2{
-    background-image: url(../images/wk_5_homework_1.png);
+    background-image: url(../images/wk_5_homework_1.jpg);
 }
 
 .fifth_container .inside_container #week_5_bg_3{
-    background-image: url(../images/wk_5_homework_2.png);
+    background-image: url(../images/wk_5_homework_2.jpg);
 }
 
 .fifth_container .inside_container #week_5_bg_4{
-    background-image: url(../images/wk_5_homework_3.png);
+    background-image: url(../images/wk_5_homework_3.jpg);
 }
 
 .fifth_container .inside_container #week_6_bg_1{
-    background-image: url(../images/week_6_exe_1.png);
+    background-image: url(../images/week_6_exe_1.jpg);
 }
 
 .fifth_container .inside_container #week_6_bg_2{
-    background-image: url(../images/week_6_layout_1.png);
+    background-image: url(../images/week_6_layout_1.jpg);
 }
 
 .fifth_container .inside_container #week_6_bg_3{
-    background-image: url(../images/week_6_layout_2.png);
+    background-image: url(../images/week_6_layout_2.jpg);
 }
 
 .fifth_container .inside_container #week_6_bg_4{
-    background-image: url(../images/week_6_layout_3.png);
+    background-image: url(../images/week_6_layout_3.jpg);
 }
 
 .fifth_container .inside_container #week_6_bg_5{
-    background-image: url(../images/week_6_layout_4.png);
+    background-image: url(../images/week_6_layout_4.jpg);
 }
 
 .fifth_container .inside_container #week_6_bg_6{
-    background-image: url(../images/week_6_homework.png);
+    background-image: url(../images/week_6_homework.jpg);
 }
 
 .fifth_container .inside_container #week_7_bg_1{
-    background-image: url(../images/week_7_exercise_1.png);
+    background-image: url(../images/week_7_exercise_1.jpg);
 }
 
 .fifth_container .inside_container #week_7_bg_2{
-    background-image: url(../images/week_7_exercise_2.png);
+    background-image: url(../images/week_7_exercise_2.jpg);
 }
 
 .fifth_container .inside_container .top_bar{
@@ -836,6 +837,7 @@ a{
     padding: 10px 10px;
     width: fit-content;
     color: black;
+    font-size: 1.5rem;
 }
 
 
@@ -1413,7 +1415,7 @@ a{
     .third_container .footer_upon .get_started_container .special_box img{
         min-width: 90%;
         margin: auto;
-        padding: 20px 0px;
+        margin: 20px 0px;
     }
 }
 
@@ -1566,10 +1568,6 @@ a{
         padding: 10px 25px;
     }
 
-    .fifth_container .inside_container .inside_box_container .inside_box .box_btn{
-        font-size: 3vw;
-    }
-
     .fifth_container .inside_container .inside_box_container .inside_box{
         width: 60vw;
     }
@@ -1691,6 +1689,10 @@ a{
 }
 
 @media screen and (max-width: 800px) {
+    .fifth_container .inside_container .inside_box_container .inside_box .box_btn{
+        font-size: 1rem;
+    }
+
     .footer_container .bottom_container{
         flex-direction: column-reverse;
     }
